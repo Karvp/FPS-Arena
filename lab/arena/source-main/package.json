@@ -1,0 +1,21 @@
+{
+  "name": "fps-arena",
+  "version": "1.0.0",
+  "description": "Browser multiplayer FPS: Three.js + Node + Express + Socket.IO",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node tools/check.js",
+    "test": "node test/run.js",
+    "smoke": "node --import ./tools/smoke/register.mjs tools/smoke/smoke.mjs && node --import ./tools/smoke/register.mjs tools/smoke/smoke-client.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "three": "^0.170.0"
+  }
+}

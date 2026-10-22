@@ -1,0 +1,18 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {AimMovementRandomizerC35AB,assignC35AB,C35AB_SCHEMA} from '../lab/arena/aim-movement-randomization-c35ab.mjs';
+const client=()=>({pos:{x:0,y:0,z:0},rig:{yaw:0,pitch:0},you:{tm:0},local:{alive:true,down:false,team:0,mv:{vx:3,vz:0,onGround:true,stance:0}},remotes:{list:[{id:'enemy',team:1,alive:true,pos:{x:0,y:0,z:-15},buf:[{t:1.96}],stance:0}]}});
+const cmd=(aim=true)=>({aim,fire:true,forward:true,left:false,right:false,backward:false});
+const make=(policy='randomized')=>new AimMovementRandomizerC35AB({seed:17,matchId:'match',setupId:'setup',weapon:'hk_sl8',policy});
+const shot=ads=>({schema:'fpsarena-c35l-authoritative-ballistics-v1',ads,spreadDegrees:.06,pellets:[{hitKind:'player'}]});
+test('C35AB deterministic balanced assignment and valid seed',()=>{let n=0;for(let i=1;i<=10000;i++){assert.equal(assignC35AB(17,i),assignC35AB(17,i));n+=+(assignC35AB(17,i)==='treatment');}assert.ok(n>4700&&n<5300);assert.throws(()=>assignC35AB(-1,1));});
+test('observe arm always passes command without offers',()=>{const c=make('observe'),a=cmd();assert.equal(c.command(2,client(),a,a),a);assert.equal(c.finish().rows.length,0)});
+test('ADS intervention is only attempted for hip-fire, no motor rewrite',()=>{const c=make(),a=cmd(false),o=c.command(2,client(),a,a);if(c.offers.length){assert.equal(c.offers[0].axis,'ads');for(const k of ['forward','backward','left','right','fire'])assert.equal(o[k],a[k]);}c.afterStep({serverShotsBefore:0,serverShotsAfter:0});assert.equal(c.finish().counts.fireChanged,0)});
+test('hold intervention changes only directional keys and preserves ADS, fire',()=>{const c=make(),a=cmd(),o=c.command(2,client(),a,a);if(c.offers.length){assert.equal(c.offers[0].axis,'hold');assert.equal(o.fire,a.fire);assert.equal(o.aim,a.aim);}c.afterStep({serverShotsBefore:0,serverShotsAfter:0});c.finish();});
+test('upstream controller edits take priority',()=>{const c=make(),a=cmd(),b={...a,left:true};assert.equal(c.command(2,client(),a,b),b);assert.equal(c.finish().counts.refused['upstream-priority'],1);});
+test('no fire intent is never intervened',()=>{const c=make(),a={...cmd(),fire:false};assert.equal(c.command(2,client(),a,a),a);assert.equal(c.finish().counts.assignments,0);});
+test('stale target fails closed',()=>{const c=make(),cl=client(),a=cmd();cl.remotes.list[0].buf[0].t=1;assert.equal(c.command(2,cl,a,a),a);assert.equal(c.finish().counts.assignments,0);});
+test('airborne, skill and priority actions fail closed',()=>{for(const variant of ['air','skill']){const c=make(),cl=client(),a=cmd();if(variant==='air')cl.local.mv.onGround=false;else a.skill=true;c.command(2,cl,a,a);assert.equal(c.finish().counts.assignments,0)}});
+test('authoritative shot and pellet attached only after choice',()=>{const c=make(),a=cmd(),o=c.command(2,client(),a,a);assert.equal(c.offers[0].factualShot,null);c.onShot(shot(o.aim));c.afterStep({serverShotsBefore:0,serverShotsAfter:1});const r=c.finish();assert.equal(r.schema,C35AB_SCHEMA);assert.equal(r.rows[0].factualShot.playerHit,1);assert.equal(r.rows[0].unselectedOutcome,null);assert.equal(r.counts.confirmedShots,1)});
+test('missing server shot label fails hard',()=>{const c=make(),a=cmd();c.command(2,client(),a,a);assert.throws(()=>c.afterStep({serverShotsBefore:0,serverShotsAfter:1}),/parity/)});
+test('no invented miss if fire-intent did not produce server shot',()=>{const c=make(),a=cmd();c.command(2,client(),a,a);c.afterStep({serverShotsBefore:0,serverShotsAfter:0});assert.equal(c.finish().rows[0].outcome.playerHit,null);});
+test('cannot overwrite original fire across upstream command',()=>{const c=make(),a=cmd();assert.throws(()=>c.command(2,client(),a,{...a,fire:false}),/upstream firing/)});

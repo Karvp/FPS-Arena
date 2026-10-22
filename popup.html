@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FPS Arena Combat Suite</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><div class="logo"><span class="reticle">⊕</span> FPS <span>ARENA</span></div><span class="version">COMBAT 2.9.11</span></header>
+  <div class="status"><i id="indicator"></i><span id="status">Đang kiểm tra kết nối…</span></div>
+  <main>
+    <section class="feature-panel domain-panel" aria-label="Tên miền trò chơi">
+      <div class="feature-head"><b>TÊN MIỀN TRÒ CHƠI</b><span>TÙY CHỈNH</span></div>
+      <div class="note">Extension chỉ hoạt động trên các trang FPS Arena có trong danh sách. Tên miền mới cần được LibreWolf cấp quyền.</div>
+      <div id="domainList" class="domain-list" aria-label="Các tên miền đã cho phép"></div>
+      <label class="domain-label" for="domainInput">Thêm tên miền (HTTPS hoặc localhost)</label>
+      <form id="domainForm" class="domain-form">
+        <input id="domainInput" type="text" autocomplete="off" spellcheck="false" placeholder="https://game.example.com" maxlength="2048" aria-label="Tên miền FPS Arena mới">
+        <button type="submit" id="domainAdd" class="preset">Thêm</button>
+      </form>
+      <button id="domainFromTab" class="link-button" type="button">Dùng địa chỉ tab hiện tại</button>
+      <div id="domainFeedback" class="domain-feedback" role="status" aria-live="polite"></div>
+    </section>
+
+    <label class="toggle-row" for="enabled"><span><b>Bật Combat Suite</b><small>Bật/tắt Aim &amp; Combat: F8</small></span><input type="checkbox" id="enabled" class="toggle"></label>
+
+    <section class="feature-panel big"><div class="feature-head"><b>COMBAT DIRECTOR</b><span>ASSIST / AUTOPILOT</span></div>
+      <div class="group"><label for="mode">Chế độ điều khiển</label><select id="mode"><option value="assist">Assist — người chơi điều khiển</option><option value="autopilot">Autopilot — AI tự chiến đấu</option></select></div>
+      <div class="row"><button id="presetAll" type="button" class="preset">Bật bộ tính năng</button><button id="presetOff" type="button" class="preset secondary">Tắt tính năng</button></div>
+      <p class="warning">Autopilot sẽ điều khiển góc nhìn, hướng di chuyển và khai hỏa. Chỉ kích hoạt trong trận thử nghiệm do bạn quản lý.</p>
+    </section>
+    <section class="feature-panel"><div class="feature-head"><b>INTELLIGENT AIM</b><span>NHẬN DIỆN &amp; CHỌN MỤC TIÊU</span></div>
+      <label class="check-row"><input type="checkbox" id="prediction"> Dự đoán chuyển động đối thủ</label>
+      <div class="group slide"><label for="predictionMs">Độ đón đầu <output id="predictionMsOut">65 ms</output></label><input type="range" id="predictionMs" min="0" max="180" step="5"></div>
+      <div class="group"><label for="priority">Ưu tiên mục tiêu</label><select id="priority"><option value="crosshair">Gần tâm ngắm</option><option value="threat">Mức đe dọa</option><option value="low-health">Đối thủ ít máu</option><option value="nearest">Khoảng cách</option></select></div>
+      <label class="check-row"><input type="checkbox" id="multiTarget"> Chuyển mục tiêu nhanh sau giao tranh</label>
+      <label class="check-row"><input type="checkbox" id="trigger"> Triggerbot — tự khai hỏa khi khóa chính xác</label>
+      <label class="check-row"><input type="checkbox" id="recoil"> Bù giật góc nhìn sau khi bắn</label>
+    </section>
+    <section class="feature-panel"><div class="feature-head"><b>TACTICAL MOVEMENT</b><span>ĐỊA HÌNH &amp; THOÁT HIỂM</span></div>
+      <label class="check-row"><input type="checkbox" id="tactical"> Hỗ trợ di chuyển chiến thuật (Assist)</label>
+      <label class="check-row"><input type="checkbox" id="autoPeek"> Tự tìm cover, peek và rút lui</label>
+      <label class="check-row"><input type="checkbox" id="cameraTactics"> Camera Intelligence — đánh giá yaw/pitch, góc nhìn và điểm mù đối thủ</label>
+      <label class="check-row"><input type="checkbox" id="reloadCover"> Ưu tiên tìm và giữ cover khi nạp đạn</label>
+      <label class="check-row"><input type="checkbox" id="peekLongDelay"> Surprise Peek — thay đổi bên peek và thời gian ẩn, đôi khi chờ lâu</label>
+      <div class="note">Peek được kích hoạt khi có cover thật và đường ngắm ra ngoài hợp lệ. Góc nhìn đối thủ chỉ là ước lượng, không bảo đảm vùng phía sau an toàn.</div>
+      <label class="check-row"><input type="checkbox" id="pathfinding"> Tìm đường vòng qua tường (A* 2D)</label>
+      <label class="check-row"><input type="checkbox" id="routeCommitment"> TDM: theo tuyến tới góc bắn khi an toàn (đã kiểm chứng full-match)</label>
+      <label class="check-row"><input type="checkbox" id="macroTargetCommitment"> TDM: giữ ổn định mục tiêu di chuyển khi khuất tầm nhìn (macro goal, có thể tắt)</label>
+      <label class="check-row"><input type="checkbox" id="macroCombat2"> Macro Combat 2.0 (thử nghiệm) — áp sát đúng tầm shotgun; SMG chỉ áp dụng rất xa, có thể tắt</label>
+      <label class="check-row"><input type="checkbox" id="occludedPursuitLab"> Experimental: tiếp tục áp sát sau cover khi toàn bộ đường ngắm bị chặn (chưa xác nhận full-match)</label>
+      <label class="check-row"><input type="checkbox" id="proMovement"> Pro Movement — cover, spacing, peek và sprint</label>
+      <label class="check-row"><input type="checkbox" id="teamCoordination"> Phối hợp đồng đội — tìm góc bắn chéo và tránh tranh vị trí (Autopilot)</label>
+      <label class="check-row"><input type="checkbox" id="autoSlide"> Auto Slide — trượt khi di chuyển nhanh trên đường trống</label>
+      <label class="check-row"><input type="checkbox" id="autoCrouch"> Auto Crouch — giữ cúi khi núp và bắn từ cover</label>
+      <label class="check-row"><input type="checkbox" id="evasiveCrouch"> Evasive Crouch — cúi theo nhịp khi né đường đạn</label>
+      <label class="check-row"><input type="checkbox" id="adaptiveADS"> ADS thông minh — hip-fire khi đủ chính xác để cơ động, ADS khi cần tầm xa</label>
+      <label class="check-row"><input type="checkbox" id="fastAim"> Fast Target Acquisition — tìm mục tiêu có LOS mỗi tick 60 Hz và ngắm tức thì</label>
+      <div class="note">Chỉ áp dụng tư thế tự động trong Autopilot. Trượt cần đường trống, không bắn/ADS/nạp/giáp; cúi có thể giữ khi khai hỏa. Tự đứng dậy khi cần chạy thoát.</div>
+      <div class="group"><label for="brAggression">Battle Royale — mức độ chủ động giao tranh</label><select id="brAggression"><option value="40">40 · Thận trọng</option><option value="60">60 · Cân bằng</option><option value="80">80 · Chủ động (mặc định)</option><option value="95">95 · Áp sát mạnh</option></select></div>
+      <div class="group"><label for="brLeadSeconds">Battle Royale — thời gian dự phòng chạy bo</label><select id="brLeadSeconds"><option value="12">12 giây</option><option value="18">18 giây</option><option value="24">24 giây (mặc định)</option><option value="32">32 giây</option><option value="40">40 giây</option></select></div>
+      <div class="note">Xoay bo sớm nhưng vẫn bắn khi có thể; khi quá trễ hoặc ở ngoài bo, tập trung chạy. Bot tránh truy đuổi ra ngoài vòng an toàn.</div>
+      <label class="check-row"><input type="checkbox" id="autoLoot"> Auto Loot — nhặt crate / súng / đạn / giáp (BR &amp; Zombies)</label>
+      <div class="group"><label for="lootRange">Bán kính tìm đồ</label><select id="lootRange"><option value="25">25 m</option><option value="40">40 m</option><option value="55">55 m</option><option value="80">80 m</option></select></div>
+      <div class="group"><label for="zombieSpacing">Giữ khoảng cách zombie</label><select id="zombieSpacing"><option value="14">14 m</option><option value="18">18 m</option><option value="22">22 m</option><option value="28">28 m</option><option value="32">32 m</option></select></div>
+      <div class="group"><label for="reloadQuietSeconds">Thời gian yên giao tranh trước nạp đạn</label><select id="reloadQuietSeconds"><option value="1.5">1.5 giây</option><option value="2.5">2.5 giây</option><option value="3.5">3.5 giây</option><option value="5">5 giây</option><option value="8">8 giây</option></select></div>
+      <div class="note">Tự nạp súng đang cầm khi hết băng và có đạn dự trữ (sau khi hoàn tất đổi slot); ưu tiên phục hồi súng chính, tìm cover, kiting và nhặt đồ an toàn; súng phụ chỉ dành cho mối đe dọa rất gần.</div>
+      <div class="group"><label for="engageRange">Khoảng cách thủ công (khi tắt chiến thuật theo súng)</label><select id="engageRange"><option value="8">8 m (cận chiến)</option><option value="12">12 m</option><option value="16">16 m</option><option value="24">24 m</option><option value="35">35 m (tầm xa)</option></select></div>
+      <div class="note">Dùng kiểm tra vật cản và chọn hướng ngắn hạn; không phải hệ thống navmesh toàn bản đồ.</div>
+    </section>
+    <section class="feature-panel" aria-label="Match Recorder">
+      <div class="feature-head"><b>MATCH RECORDER</b><span>DỮ LIỆU PHÂN TÍCH</span></div>
+      <label class="check-row"><input type="checkbox" id="recordMatches"> Ghi trận đấu (telemetry — tự động khi vào trận)</label>
+      <div class="note">Ghi tự động tất cả mode (Classic, Zombies, Battle Royale), nhiều trận liên tiếp. Lưu tối đa 30 trận gần nhất trong LibreWolf; không quay video, ghi âm hay tải lên mạng. Nhấn “Xuất tất cả trận” định kỳ để lưu trữ không giới hạn theo ý bạn.</div>
+      <div class="row two"><button id="exportRecord" class="preset" type="button">Xuất trận mới nhất</button><button id="exportAllRecords" class="preset" type="button">Xuất tất cả trận</button><button id="clearRecords" class="preset secondary" type="button">Xóa bản ghi</button></div>
+      <div id="recordStatus" class="domain-feedback" role="status" aria-live="polite">Chưa có bản ghi.</div>
+      <button type="button" id="openReplayLab" class="preset">Mở Combat Replay Lab (ngoại tuyến)</button>
+    </section>
+    <section class="feature-panel"><div class="feature-head"><b>RADAR &amp; RESOURCE</b><span>ĐỊNH VỊ &amp; TRANG BỊ</span></div>
+      <label class="check-row"><input type="checkbox" id="radar"> Radar 360° và cảnh báo đối thủ đang ADS</label>
+      <div class="group"><label for="radarRange">Tầm radar</label><select id="radarRange"><option value="45">45 m</option><option value="90">90 m</option><option value="140">140 m</option><option value="250">250 m</option><option value="300">300 m</option><option value="400">400 m</option></select></div>
+      <label class="check-row"><input type="checkbox" id="weaponTactics"> Chiến thuật động theo từng khẩu súng và tình huống (Autopilot)</label>
+      <label class="check-row"><input type="checkbox" id="autoReload"> Tự thay đạn khi cần</label>
+      <label class="check-row"><input type="checkbox" id="autoSwitch"> Chỉ đổi sang súng phụ khi địch áp sát và súng chính không bắn được</label>
+      <div class="group"><label for="sidearmEmergencyRange">Khoảng cách cấp cứu bằng súng phụ</label><select id="sidearmEmergencyRange"><option value="6">6 m · Rất gần</option><option value="8">8 m · Gần</option><option value="10">10 m · Mặc định</option><option value="12">12 m · An toàn hơn</option><option value="15">15 m · Tối đa</option></select></div>
+      <label class="check-row"><input type="checkbox" id="autoSkills"> Tự kích hoạt skill (T) theo tình huống — đủ năng lượng và đúng điều kiện server</label>
+      <label class="check-row"><input type="checkbox" id="autoThrowables"> Tự dùng throwable (G) theo tình huống, tránh ném vào đồng đội</label>
+      <label class="check-row"><input type="checkbox" id="autoArmor"> Tự dùng giáp (khi yên giao tranh hoặc địch đang hồi sinh)</label>
+      <div class="group"><label for="armorQuietSeconds">Thời gian an toàn trước khi thay giáp</label><select id="armorQuietSeconds"><option value="4">4 giây</option><option value="5">5 giây (khuyến nghị)</option><option value="7">7 giây</option><option value="10">10 giây</option><option value="15">15 giây</option></select></div>
+      <div class="note">Ưu tiên sinh tồn: Không auto plate khi nổ súng, ADS, thay đạn, nhận sát thương, có địch gần hoặc đang có đường bắn. Thay giáp trong game mất 3 giây, không thể hủy giữa chừng.</div>
+      <label class="check-row"><input type="checkbox" id="grenadeAssist"> Hướng dẫn góc ném lựu đạn</label>
+    </section>
+    <div class="group"><label for="activation">Điều kiện kích hoạt</label><select id="activation"><option value="ads">Giữ chuột phải (ADS)</option><option value="hold">Giữ phím phụ</option><option value="always">Luôn hỗ trợ khi đang chơi</option></select></div>
+    <div class="group"><label for="switchWeaponKey">Phím đổi súng (người chơi, không Autopilot)</label><select id="switchWeaponKey"><option value="KeyV">V (mặc định)</option><option value="KeyX">X</option><option value="KeyY">Y</option><option value="KeyN">N</option><option value="Backquote">`</option><option value="None">Tắt</option></select><div class="note">Đổi qua lại giữa 2 ô súng nếu ô còn lại có vũ khí. Không hoạt động khi đang mặc giáp/đổi súng hoặc đang nhập văn bản. Phím V cần extension được nạp trên trang game.</div></div>
+    <div class="group" id="hold-group" hidden><label for="holdKey">Phím giữ</label><select id="holdKey"><option value="KeyH">H</option><option value="KeyB">B</option><option value="KeyJ">J</option><option value="AltLeft">Left Alt</option><option value="ShiftRight">Right Shift</option></select></div>
+    <div class="row two">
+      <div class="group"><label for="target">Vùng ngắm</label><select id="target"><option value="head">Đầu</option><option value="body">Thân</option></select></div>
+      <div class="group"><label for="maxDistance">Tầm ngắm</label><select id="maxDistance"><option value="40">40 m</option><option value="80">80 m</option><option value="130">130 m</option><option value="180">180 m</option><option value="250">250 m</option></select></div>
+    </div>
+    <div class="group slide"><label for="fov">Aim cone <output id="fovOut">15°</output></label><input type="range" id="fov" min="1" max="45" step="1"></div>
+    <div class="group slide"><label for="smoothing">Smoothing <output id="smoothingOut">90 ms</output></label><input type="range" id="smoothing" min="0" max="500" step="10"></div>
+    <label class="check-row"><input type="checkbox" id="visibility"> Không ngắm xuyên tường</label>
+    <label class="check-row"><input type="checkbox" id="sticky"> Giữ mục tiêu ổn định</label>
+    <label class="check-row"><input type="checkbox" id="showRing"> Hiện vòng FOV trong game</label>
+    <section class="feature-panel"><div class="feature-head"><b>WALL ESP</b><span>NHÌN QUA VẬT CẢN</span></div>
+      <label class="toggle-row" for="esp"><span><b>Hiện hộp ESP</b><small>Khung vị trí kẻ địch, kể cả sau tường</small></span><input type="checkbox" id="esp" class="toggle"></label>
+      <div class="group"><label for="espDistance">Khoảng cách ESP</label><select id="espDistance"><option value="40">40 m</option><option value="80">80 m</option><option value="120">120 m</option><option value="180">180 m</option><option value="250">250 m</option></select></div>
+      <label class="check-row"><input type="checkbox" id="espNames"> Hiện tên / khoảng cách</label>
+    </section>
+    <section class="feature-panel"><div class="feature-head"><b>AUTO EVADE</b><span>DỰ ĐOÁN NGUY CƠ</span></div>
+      <label class="toggle-row" for="dodge"><span><b>Tự động né nguy hiểm</b><small>Ưu tiên tuyến có che chắn và độ phơi nhiễm thấp</small></span><input type="checkbox" id="dodge" class="toggle"></label>
+      <label class="check-row"><input type="checkbox" id="smartCover"> Threat-Aware Routing — dự đoán đối thủ, chọn đường qua cover</label>
+      <label class="check-row"><input type="checkbox" id="predictiveEvasion"> TDM Experimental — né theo hướng súng và sự kiện bắn gần đây</label>
+      <label class="check-row"><input type="checkbox" id="combatCoverPressure"> TDM Experimental — chủ động tìm cover khi nghe đối phương nổ súng</label>
+      <label class="check-row"><input type="checkbox" id="enemyAmmoAwareness"> Phân tích nhịp bắn/ước lượng đạn đối thủ (không giả định hết đạn)</label>
+      <div class="note">Dữ liệu server không bao gồm số đạn của đối thủ. Bộ ước lượng dùng sự kiện bắn quan sát được; LOS vẫn được coi là nguy hiểm dù đối thủ có thể vừa hết đạn.</div>
+      <div class="group"><label for="dodgeRange">Tầm dự đoán hướng bắn</label><select id="dodgeRange"><option value="20">20 m</option><option value="30">30 m</option><option value="45">45 m</option><option value="65">65 m</option><option value="75">75 m</option><option value="85">85 m</option></select></div>
+      <div class="note">Tỷ lệ né được đo trong mô phỏng, chưa chứng minh đạt 90%; hai tuỳ chọn thử nghiệm mặc định tắt và chỉ hoạt động trong TDM.</div>
+      <div class="note">Đạn súng là hitscan: hệ thống dự đoán trước phát bắn, không thể né viên đạn đã trúng tức thì. WASD có thể bị ưu tiên thay thế khi nguy hiểm.</div>
+    </section>
+  </main>
+  <footer><span id="saved">Cài đặt lưu tự động</span><span>VERCEL + TÙY CHỈNH</span></footer>
+  <script src="domain-utils.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+--- a/server/modes/zombie.js
++++ b/server/modes/zombie.js
+@@
+-    z.history.push({ t: now, x: z.x, y: z.y, z: z.z, s: false }); if (z.history.length > 45) z.history.shift();
++    z.history.push({ t: now, x: z.x, y: z.y, z: z.z, s: false, st: z.stance || 0, l: z.lean || 0, yaw: z.yaw || 0 }); if (z.history.length > 45) z.history.shift();

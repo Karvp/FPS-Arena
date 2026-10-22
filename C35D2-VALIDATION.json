@@ -1,0 +1,102 @@
+{
+  "schema": "fpsarena-c35d2-delivery-validation-v1",
+  "checkpoint": "C35-D2",
+  "researchStage": "completed observational model and failed motor-policy pilot; NO PRODUCTION PROMOTION",
+  "tests": {
+    "aiNode": "1079/1079",
+    "engine": "733/733",
+    "python": "22/22",
+    "fiveModes": "5/5"
+  },
+  "passiveTraining": {
+    "matches": 18,
+    "completeLabeledWindows": 5276,
+    "train": 2624,
+    "validation": 923,
+    "holdout": 1729,
+    "holdoutBrier": 0.08404527,
+    "holdoutQuietOnlyBrier": 0.09133267,
+    "holdoutConstantBrier": 0.0957892,
+    "validationGate": "PASS_VALIDATION",
+    "observedLowTail": "46/724 observed public priority despite predicted risk <=5% (6.35%)"
+  },
+  "motorPilot": {
+    "matches": 36,
+    "matchedSetups": 18,
+    "preoffers": 21536,
+    "assignedOffers": 222,
+    "byPolicy": {
+      "legacy80": {
+        "attempts": 10258,
+        "eligible": 152,
+        "micro": 107,
+        "interrupt": 34,
+        "ticks": 459,
+        "hitPositive": 6,
+        "kills": 214,
+        "shots": 1687,
+        "hits": 1125,
+        "blocked": 0,
+        "totalPredictedLowRisk": 0
+      },
+      "predictive80": {
+        "attempts": 11278,
+        "eligible": 70,
+        "micro": 48,
+        "interrupt": 18,
+        "ticks": 197,
+        "hitPositive": 2,
+        "kills": 222,
+        "shots": 1752,
+        "hits": 1193,
+        "blocked": 5748,
+        "totalPredictedLowRisk": 2204
+      }
+    },
+    "bootstrapDifferences": {
+      "interruptionRate": {
+        "difference": 0.05724299065420563,
+        "bootstrap95": [
+          -0.07936507936507936,
+          0.20398481973434535
+        ]
+      },
+      "microPerAttempt": {
+        "difference": -0.0061748094411565885,
+        "bootstrap95": [
+          -0.00917884290525446,
+          -0.0036506796225149727
+        ]
+      },
+      "ticksPerAttempt": {
+        "difference": -0.02727792833181969,
+        "bootstrap95": [
+          -0.03861544270996947,
+          -0.017556655444873576
+        ]
+      },
+      "eligibilityRate": {
+        "difference": -0.00861092900524164,
+        "bootstrap95": [
+          -0.012217350629642562,
+          -0.005599500056684595
+        ]
+      }
+    },
+    "causalCombatEfficacy": "NOT ESTABLISHED"
+  },
+  "sourceIntegrity": {
+    "productionPageAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+    "C35BExactReplaySHA256": "14ea0cca4b335e167511b407abee260f286d0e3f2bff915b2e38470f72f1bddc",
+    "C35BExactByteReplay": true,
+    "independentC21AssignmentMismatch": 0,
+    "passiveRegistrationSHA256": "4547f09cdeab031886b2d7d15f392c6aa7070f817ad5037f5f6c70f9e8f54ae4",
+    "motorRegistrationSHA256": "ec292f930f705f071abd44864b33d486495e642b5781fa992cc351e349573d6c"
+  },
+  "gates": {
+    "motorActionPromotion": "REJECTED",
+    "productionPromotion": "NO",
+    "neuralC36": "BLOCKED",
+    "githubPush": "NO"
+  }
+}

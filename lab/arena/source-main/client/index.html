@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FPS ARENA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/client/style.css">
+<script type="importmap">
+{ "imports": { "three": "/vendor/three/build/three.module.js", "three/addons/": "/vendor/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+
+<div id="loading"><div class="ld-title">FPS ARENA</div><div class="ld-bar"><div id="ld-fill"></div></div><div id="ld-text">Loading weapons…</div></div>
+
+<!-- ============ MAIN MENU ============ -->
+<div id="screen-menu" class="screen">
+  <div class="tri"></div>
+  <div class="menu-content">
+    <h1 class="logo">FPS<span>ARENA</span></h1>
+    <div class="menu-sub">TACTICAL MULTIPLAYER</div>
+    <nav id="menu-buttons">
+      <button class="mbtn" data-action="classic">CLASSIC</button>
+      <button class="mbtn" data-action="br">BATTLE ROYALE</button>
+      <button class="mbtn" data-action="zm">ZOMBIES</button>
+      <button class="mbtn" data-action="loadout">LOADOUT</button>
+      <button class="mbtn" data-action="dev" id="btn-dev">DEV MODE: OFF</button>
+      <button class="mbtn" data-action="settings">SETTINGS</button>
+    </nav>
+    <div id="join-panel" class="panel-inline" hidden>
+      <label id="join-mode">CLASSIC</label>
+      <label>CALLSIGN</label>
+      <input id="in-name" maxlength="16" placeholder="Player" autocomplete="off">
+      <div class="row">
+        <button id="btn-join" class="mbtn small">JOIN SERVER</button>
+        <button id="btn-join-back" class="mbtn small ghost">BACK</button>
+      </div>
+      <div id="join-status"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ WAITING ROOM ============ -->
+<div id="screen-lobby" class="screen">
+  <div class="panel lobby">
+    <div class="lobby-head"><h2 id="lobby-title">WAITING ROOM</h2><div id="lobby-timer">60</div></div>
+    <div id="lobby-host">Waiting for players…</div>
+    <div class="lobby-grid">
+      <div class="col" id="vote-col">
+        <h3 id="vote-mode-title">VOTE · GAME MODE</h3>
+        <div id="mode-buttons" class="opt-list"></div>
+        <h3 id="vote-map-title">VOTE · MAP</h3>
+        <div id="map-buttons" class="opt-list"></div>
+      </div>
+      <div class="col" id="players-col">
+        <h3>PLAYERS <span id="lobby-count"></span></h3>
+        <div class="teams" id="lobby-teams">
+          <div class="team red"><div class="team-head">RED <button class="team-btn" data-team="red">JOIN</button></div><ul id="team-red"></ul></div>
+          <div class="team blue"><div class="team-head">BLUE <button class="team-btn" data-team="blue">JOIN</button></div><ul id="team-blue"></ul></div>
+          <div class="team green br-only"><div class="team-head">GREEN <button class="team-btn" data-team="green">JOIN</button></div><ul id="team-green"></ul></div>
+          <div class="team gold br-only"><div class="team-head">GOLD <button class="team-btn" data-team="gold">JOIN</button></div><ul id="team-gold"></ul></div>
+        </div>
+        <ul id="solo-list" class="solo"></ul>
+      </div>
+    </div>
+    <div id="lobby-note"></div>
+    <div class="lobby-foot">
+      <button id="btn-lobby-loadout" class="mbtn small ghost">LOADOUT</button>
+      <button id="btn-lobby-leave" class="mbtn small ghost">LEAVE</button>
+      <button id="btn-add-ai" class="mbtn small" hidden>+ ADD AI</button>
+      <button id="btn-start" class="mbtn small go">START (0/1)</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LOADOUT ============ -->
+<div id="screen-loadout" class="screen">
+  <div class="loadout">
+    <div id="weapon-list" class="weapon-list">
+      <div class="lo-tabs"><button class="lo-tab sel" id="tab-weapons">WEAPONS</button><button class="lo-tab" id="tab-skills">SKILLS</button><button class="lo-tab" id="tab-throw">THROWABLES</button><button class="lo-tab" id="tab-streaks">SCORESTREAKS</button></div>
+      <div id="wl-weapons"></div><div id="skill-list"></div><div id="throw-list"></div><div id="streak-list"></div>
+    </div>
+    <div class="preview-side">
+      <canvas id="preview-canvas"></canvas>
+      <div class="preview-info">
+        <div id="pv-name" class="pv-name">—</div><div id="pv-cat" class="pv-cat">—</div>
+        <div id="pv-desc" class="pv-desc"></div>
+        <div id="pv-stats" class="pv-stats"></div>
+        <div id="pv-att" class="pv-att"></div>
+      </div>
+      <button id="btn-range" class="mbtn small go range">SHOOTING RANGE</button>
+      <button id="btn-loadout-back" class="mbtn small ghost back">BACK</button>
+      <button id="btn-deploy" class="mbtn small go deploy" hidden>DEPLOY  [SPACE]</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SETTINGS ============ -->
+<div id="screen-settings" class="screen">
+  <div class="panel settings">
+    <h2>SETTINGS</h2>
+    <label>Mouse sensitivity <span id="v-sens"></span><input type="range" id="s-sens" min="0.2" max="3" step="0.05"></label>
+    <label>Field of view <span id="v-fov"></span><input type="range" id="s-fov" min="60" max="110" step="1"></label>
+    <label>Master volume <span id="v-volume"></span><input type="range" id="s-volume" min="0" max="1" step="0.05"></label>
+    <label>Camera shake <span id="v-shake"></span><input type="range" id="s-shake" min="0" max="1" step="0.05"></label>
+    <label class="chk"><input type="checkbox" id="s-reduced"> Reduced motion (no weapon sway / menu camera drift)</label>
+    <button id="btn-settings-back" class="mbtn small">BACK</button>
+  </div>
+</div>
+
+<!-- ============ RESULTS / VOTE ============ -->
+<div id="screen-results" class="screen">
+  <div class="panel results">
+    <div id="res-title" class="res-title">MATCH OVER</div>
+    <div id="res-reason" class="res-reason"></div>
+    <div class="res-scores"><span class="rs red" id="res-red">0</span><span class="rs-sep">—</span><span class="rs blue" id="res-blue">0</span></div>
+    <table id="res-board" class="board"></table>
+    <div class="res-foot">Voting begins shortly…</div>
+  </div>
+</div>
+<!-- ============ IN-GAME HUD (never receives pointer events) ============ -->
+<div id="hud">
+  <div id="vignette-red"></div><div id="vignette-blue"></div><div id="marked-warn"></div><div id="vignette-gas"></div><div id="vignette-polter"></div><div id="vignette-spirit"></div><div id="em2-warn"></div><div id="vignette-down"></div>
+  <div id="scope"><div class="scope-ret h"></div><div class="scope-ret v"></div><div class="scope-dot"></div></div>
+  <div id="hud-top">
+    <div class="scorebox"><span id="score-red" class="red">0</span><span class="sc-sep">—</span><span id="score-blue" class="blue">0</span></div>
+    <div id="score-target"></div><div id="hud-timer"></div><div id="hud-objective"></div><div id="alive-count"></div>
+  </div>
+  <div id="killfeed"></div>
+  <div id="markers"></div>
+  <div id="crosshair"><i class="l"></i><i class="r"></i><i class="t"></i><i class="b"></i></div>
+  <div id="hitmarker"><div class="hm-in"><i class="a1 ol"><b></b></i><i class="a2 or"><b></b></i><i class="a3 ol"><b></b></i><i class="a4 or"><b></b></i></div></div>
+  <div id="enemy-hp"><div id="eh-track" class="hbar"><div id="eh-hp-shadow" class="hb-sh"></div><div id="eh-hp" class="hb-hp"></div><div id="eh-ar-shadow" class="hb-ash"></div><div id="eh-ar" class="hb-ar"></div></div><div id="eh-icon"></div></div>
+  <div id="dmg-numbers"></div>
+  <div id="score-feed"></div>
+  <div id="banner"><div id="banner-main"></div><div id="banner-sub"></div></div>
+  <div id="interact"><div id="interact-text"></div><div id="interact-bar"><div id="interact-fill"></div></div></div>
+  <div id="chamber-wrap"><div id="chamber-bar"><div id="chamber-fill"></div></div><div id="chamber-text">CHAMBERING</div></div>
+  <div id="reload-wrap"><div id="reload-bar"><div id="reload-fill"></div></div><div id="reload-text">RELOADING</div></div>
+  <div id="plate-wrap"><div id="plate-bar"><div id="plate-fill"></div></div><div id="plate-text">ARMOR PLATING</div></div>
+  <div id="debuff-wrap"><div id="debuff-text"></div><div id="debuff-bar"><div id="debuff-fill"></div></div></div>
+  <div id="ring-warn"></div>
+  <div id="respawn-msg"></div>
+  <div id="hud-health">
+    <div id="hb-wrap">
+      <div id="hb-labels"><span>HP <b id="hp-text">100</b></span><span class="al">ARMOR <b id="armor-text">50</b></span></div>
+      <div id="hb-track" class="hbar">
+        <div id="hp-shadow" class="hb-sh"></div><div id="hp-fill" class="hb-hp"></div>
+        <div id="armor-shadow" class="hb-ash"></div><div id="armor-fill" class="hb-ar"></div>
+      </div>
+    </div>
+    <div id="plates"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M12 2 L21 5 V12 C21 17 17 20.5 12 22 C7 20.5 3 17 3 12 V5 Z" fill="#7fb6ff" stroke="#fff" stroke-width="1.2"/></svg><b id="plate-count">1</b></div>
+  </div>
+  <div id="skill-hud"><div id="sk-name">SKILL</div><div id="sk-bar"><div id="sk-fill"></div><div id="sk-cost"></div></div><div id="sk-state"></div></div>
+  <div id="streak-hud"></div><div id="streak-toast"></div><div id="odin-count"><div id="odin-title"></div><div id="odin-time"></div></div>
+  <div id="emp-fx"></div><div id="white-flash"></div><div id="phone-anim"><div class="ph-body"><div class="ph-screen"></div></div></div>
+  <div id="view-hud"><div class="vh-top"><span id="vh-title"></span><span id="vh-sub"></span></div><div class="vh-fuel-l">FUEL</div><div class="vh-gauge"><div id="vh-fuel"></div></div><div class="vh-cross"></div><div class="vh-noise"></div></div>
+  <div id="kit-hud"><span class="key">V</span><span>SELF-REVIVE KIT</span><b id="kit-count"></b></div>
+  <div id="throw-hud"><span class="key">G</span><span id="th-name">—</span><b id="th-count"></b></div>
+  <div id="hud-ammo"><div id="ammo-weapon">M4A1</div><div id="ammo-line"><b id="ammo-mag">32</b><span> / </span><b id="ammo-max">32</b></div></div>
+  <div id="scoreboard"></div>
+  <div id="pause-hint">CLICK TO RESUME</div>
+  <div id="place-overlay"><div id="po-main"></div><div id="po-sub"></div></div>
+  <div id="vignette-flash"></div>
+</div>
+
+<!-- ============ DEV MODE HUD ============ -->
+<pre id="dev-hud"></pre>
+<div id="toast"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script type="module" src="/client/main.js"></script>
+</body>
+</html>

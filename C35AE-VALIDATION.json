@@ -1,0 +1,130 @@
+{
+  "agentErrors": 0,
+  "censored": 4,
+  "engineTests": {
+    "failed": 0,
+    "passed": 733
+  },
+  "fireMutations": 0,
+  "frozenModelsSHA256": "0c5e2f63e2496119617b095c79d20fb810d705053a73489447bc7c95e2e12636",
+  "frozenProspectiveRegistrationSHA256": "540642073a8c0bff284364e36c92947428d352431a8318c8bc254c5ec47bbe7b",
+  "frozenTrainingRegistrationSHA256": "f32a0ea8904f745a17d98940d2bc670fe92f9fcb5d69c9b2334605dfb41eee45",
+  "historicalMicroAssignments": 121,
+  "historicalShaLockedTestsExcluded": 7,
+  "holdoutBrier": {
+    "action-logistic": {
+      "brier": 0.11680212,
+      "logloss": 0.38444533,
+      "n": 301,
+      "positive": 47
+    },
+    "action-mlp": {
+      "brier": 0.15164652,
+      "logloss": 0.58331872,
+      "n": 301,
+      "positive": 47
+    },
+    "constant": {
+      "brier": 0.13178162,
+      "logloss": 0.43328947,
+      "n": 301,
+      "positive": 47
+    },
+    "state-logistic": {
+      "brier": 0.11750382,
+      "logloss": 0.38929562,
+      "n": 301,
+      "positive": 47
+    }
+  },
+  "neuralPolicyDeployed": false,
+  "newSetupClusters": 12,
+  "nodeTests": {
+    "failed": 0,
+    "passed": 1275
+  },
+  "productionAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+  "productionCodeModified": false,
+  "prospectiveBrier": {
+    "action-logistic": {
+      "brier": 0.10628303,
+      "logloss": 0.35623743,
+      "n": 568,
+      "positive": 91
+    },
+    "action-mlp": {
+      "brier": 0.13783075,
+      "logloss": 0.61967789,
+      "n": 568,
+      "positive": 91
+    },
+    "constant": {
+      "brier": 0.1346108,
+      "logloss": 0.4402769,
+      "n": 568,
+      "positive": 91
+    },
+    "state-logistic": {
+      "brier": 0.10534801,
+      "logloss": 0.34822189,
+      "n": 568,
+      "positive": 91
+    }
+  },
+  "prospectiveFactualWindows": 568,
+  "prospectiveIPS": {
+    "caveat": "IPS assumes registered 50/50 valid assignment; eligible-only factual windows; same-match interference and cluster dependence; not all-match combat value.",
+    "ips": {
+      "control": 0.147887,
+      "predict": 0.161972,
+      "retention": 0.158451,
+      "toggle": 0.172535
+    },
+    "ipsLearnedMinusControlCI95": [
+      -0.019967,
+      0.045113
+    ],
+    "matchingEffectiveSampleSize": {
+      "control": 280.0,
+      "predict": 290.0,
+      "retention": 259.0,
+      "toggle": 288.0
+    },
+    "n": 568,
+    "setupCount": 12
+  },
+  "prospectiveMatches": 24,
+  "prospectivePellets": 2589,
+  "prospectiveRandomAssignments": 572,
+  "prospectiveShots": 1225,
+  "python": {
+    "failed": 0,
+    "historicalSkips": 5,
+    "historicalSourceHashExcluded": [
+      "test_c35aa_aim.AimMovementStudy.test_preregister_sha_locked",
+      "test_c35q_robustness.RobustnessTests.test_12_preregistered_research_matches",
+      "test_c35q_robustness.RobustnessTests.test_no_control_promotion_even_if_hit_model_better",
+      "test_c35u_pilot.WeaponPositioningAuditTests.test_source_frozen_before_matches",
+      "test_c35v_factual.C35VProductionSeparation.test_source_locked_and_all_24_actual_engine_matches",
+      "test_c35w_pilot.C35WRegisteredStudy.test_source_sha_and_36_locked_matches",
+      "test_c35z_precision.PrecisionExplorationAudit.test_source_hash_lock"
+    ],
+    "passed": 150,
+    "schema": "fpsarena-c35ae-python-regression-v1",
+    "success": true
+  },
+  "retrospectiveFactualWindows": 1136,
+  "retrospectiveSplit": {
+    "holdout": 301,
+    "train": 546,
+    "validation": 289
+  },
+  "schema": "fpsarena-c35ae-validation-v1",
+  "status": "ENGINEERING_PASS_NO_POLICY_PROMOTION",
+  "trainingModels": [
+    "action-logistic",
+    "action-mlp",
+    "state-logistic"
+  ],
+  "unselectedOutcomeLabels": 0
+}

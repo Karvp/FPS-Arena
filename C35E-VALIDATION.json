@@ -1,0 +1,66 @@
+{
+  "schema": "fpsarena-c35e-complete-source-and-holdout-release-v1",
+  "checkpoint": "C35-E",
+  "status": "PASS_ENGINEERING_SHADOW_ONLY_NO_MOTOR_PROMOTION",
+  "matches": 36,
+  "actualSimulatedMinutes": 63,
+  "historicalMatched": 18,
+  "independentNewSeedHoldout": 18,
+  "prospectivePreoffers": 24115,
+  "C16EligibleOffers": 339,
+  "microAssignments": 231,
+  "executedMicroTicks": 999,
+  "interruptedMicro": 65,
+  "tests": {
+    "aiNode": "1083/1083",
+    "engine": "733/733",
+    "python": "28/28",
+    "fiveModeSmoke": "5/5"
+  },
+  "integrity": {
+    "C21AssignmentMismatch": 0,
+    "matchedHistoricalGameplayExact": true,
+    "C35BLegacyByteReplaySHA256": "14ea0cca4b335e167511b407abee260f286d0e3f2bff915b2e38470f72f1bddc",
+    "productionPageAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+    "matchedRegistrationSHA256": "9130a79c88aaec220a24b31da2b3ef2109d0cedc9bd7beb0ac84277e06e6a781",
+    "holdoutRegistrationSHA256": "ffa85b6bed8eeea93306ce977df8dcad070a34acf3161d625a4cd1f2400560ef"
+  },
+  "c16EligibleFuturePriority": {
+    "matched": {
+      "n": 152,
+      "positive": 23,
+      "observedRate": 0.1513157894736842,
+      "meanPredicted": 0.16049065465676227,
+      "brier": 0.11046732181293792
+    },
+    "holdout": {
+      "n": 186,
+      "positive": 27,
+      "meanPredicted": 0.13879396339053118,
+      "observedRate": 0.14516129032258066,
+      "brier": 0.11224615277419127
+    },
+    "holdoutLowRisk5": {
+      "n": 75,
+      "positive": 5,
+      "meanPredicted": 0.04264187997075785,
+      "observedRate": 0.06666666666666667,
+      "brier": 0.06253173986823632
+    },
+    "holdoutHighRisk": {
+      "n": 111,
+      "positive": 22,
+      "meanPredicted": 0.20376158732281044,
+      "observedRate": 0.1981981981981982,
+      "brier": 0.14583697230524192
+    }
+  },
+  "gates": {
+    "safeTelemetry": "PASS",
+    "actuatorImprovement": "NOT_TESTED",
+    "motorPromotion": "NO",
+    "combatEfficacy": "NOT_ESTABLISHED",
+    "neuralC36": "BLOCKED",
+    "githubPush": "NO"
+  }
+}

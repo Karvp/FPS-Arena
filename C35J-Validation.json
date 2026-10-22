@@ -1,0 +1,78 @@
+{
+  "geometry": {
+    "lateral": {
+      "fireModified": 0,
+      "fireTicks": 557,
+      "invalidPublic": 1,
+      "legacySelectedAllyOrMissing": 464,
+      "oracleAvailable": 449,
+      "public2DBlocked3DClear": 168,
+      "public2DClear3DBlocked": 0,
+      "publicAimPostStepMismatch": 29,
+      "publicNearestPostStepMismatch": 29,
+      "publicTargetsDiffer": 191,
+      "serverHits": 377,
+      "serverShots": 557,
+      "storedDropped": 0,
+      "ticks": 64800,
+      "validPublic": 556
+    },
+    "observe": {
+      "fireModified": 0,
+      "fireTicks": 621,
+      "invalidPublic": 0,
+      "legacySelectedAllyOrMissing": 533,
+      "oracleAvailable": 508,
+      "public2DBlocked3DClear": 153,
+      "public2DClear3DBlocked": 0,
+      "publicAimPostStepMismatch": 36,
+      "publicNearestPostStepMismatch": 31,
+      "publicTargetsDiffer": 210,
+      "serverHits": 420,
+      "serverShots": 621,
+      "storedDropped": 0,
+      "ticks": 64800,
+      "validPublic": 621
+    }
+  },
+  "limitations": [
+    "first diagnostic pilot rejected (legacy team-code mismatch)",
+    "post-step oracle is not actual firing-time LOS or hit truth",
+    "no causal effect of motor policy established",
+    "C36 remains blocked"
+  ],
+  "pilot": {
+    "matches": 36,
+    "minutes": 36,
+    "preregistrationSHA256": "78321fd24c5be832c332b5d55a3b64953fee80d194a5bac34b953b2a46fcad11",
+    "setups": 18
+  },
+  "safety": {
+    "100ShotReplayParity": "PASS",
+    "c21RehashAndC16Gate": "PASS",
+    "fireModifications": 0,
+    "legacyTracesByteIdentical": true,
+    "productionPageAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed"
+  },
+  "schema": "fpsarena-c35j-validation-v1",
+  "status": "ENGINEERING_PASS_RESEARCH_ONLY_NO_PROMOTION",
+  "tests": {
+    "engine": {
+      "failed": 0,
+      "passed": 733
+    },
+    "fiveModeSmokes": {
+      "failed": 0,
+      "passed": 5
+    },
+    "node": {
+      "failed": 0,
+      "passed": 1123
+    },
+    "python": {
+      "failed": 0,
+      "passed": 37,
+      "skipped": 1
+    }
+  }
+}

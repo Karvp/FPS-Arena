@@ -1,0 +1,83 @@
+{
+  "C36TrainingUnlocked": false,
+  "checkpoint": "C35-P",
+  "eightHistoricalSidecarsByteIdentical": true,
+  "engineFirstRun": {
+    "failed": 1,
+    "failedTest": "AI glides down and lands",
+    "passed": 732
+  },
+  "engineRetry": {
+    "failed": 0,
+    "passed": 733
+  },
+  "foamOfficialAbilityFixturePassed": true,
+  "holdoutHitBrier": {
+    "constant": 0.2008301523111139,
+    "frozen": 0.19633128258559263
+  },
+  "holdoutIDBrier": {
+    "constant": 0.03967524746359467,
+    "frozen": 0.03973183381782857
+  },
+  "independentAudit": "PASS",
+  "matchedOriginalReleaseTDM": {
+    "matches": 12,
+    "perArmSimulatedMinutes": 12,
+    "ratioCI95ClusterSetup": {
+      "hits": [
+        0.8333333333333334,
+        1.7280701754385965
+      ],
+      "kills": [
+        0.8188976377952756,
+        1.3333333333333333
+      ],
+      "meters": [
+        0.8100214125435878,
+        0.96879755819345
+      ],
+      "shots": [
+        0.7803837953091685,
+        1.7103174603174602
+      ]
+    },
+    "totals": {
+      "release": {
+        "agentErrors": 0,
+        "deaths": 2,
+        "hits": 243,
+        "kills": 78,
+        "meters": 3418.71,
+        "shots": 439
+      },
+      "shadow80": {
+        "agentErrors": 0,
+        "deaths": 4,
+        "hits": 260,
+        "kills": 76,
+        "meters": 3062.2400000000002,
+        "shots": 513
+      }
+    }
+  },
+  "motorOrAimPromotion": false,
+  "naturalFoamBlockedPellets": 0,
+  "node": {
+    "failed": 0,
+    "passed": 1168
+  },
+  "pellets": 513,
+  "productionSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+  "prospectiveMatches": 12,
+  "python": {
+    "failed": 0,
+    "passed": 86,
+    "skippedHistorical": 5
+  },
+  "schema": "fpsarena-c35p-validation-v1",
+  "shots": 513,
+  "smokeFiveModes": 5,
+  "sourceParentC35OChecksumVerified": true,
+  "verifiedC21Offers": 28
+}

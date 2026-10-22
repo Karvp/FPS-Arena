@@ -1,0 +1,75 @@
+{
+  "bootstrapMicroTicksRatio": {
+    "CI95": [
+      0.7296137339055794,
+      1.0
+    ],
+    "lower5": 0.7518518518518519,
+    "ratio": 0.881578947368421
+  },
+  "bootstrapShotsRatio": {
+    "CI95": [
+      0.9529914529914529,
+      1.0553097345132743
+    ],
+    "lower5": 0.9608355091383812,
+    "ratio": 1.0
+  },
+  "c35iSampledFire": {
+    "lateral": 487,
+    "observe": 487
+  },
+  "c35iValidSampledFire": {
+    "lateral": 484,
+    "observe": 484
+  },
+  "checkpoint": "C35I",
+  "date": "2026-10-13",
+  "limitations": [
+    "18 clusters; 3 per gun",
+    "geometry proxy is not actual 3D LOS",
+    "observational only",
+    "9 extra treated macro ticks"
+  ],
+  "microTicks": {
+    "lateral": 201,
+    "observe": 228
+  },
+  "pilot": {
+    "audit": "PASS",
+    "intervention": "C35H lateral only; C35I passive",
+    "matches": 36,
+    "minutes": 36,
+    "setups": 18
+  },
+  "productionPageAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+  "promotion": false,
+  "safety": {
+    "agentErrors": 0,
+    "c21Mismatch": 0,
+    "changedFireCommands": 0,
+    "observerDisabledDatasetByteParity": true
+  },
+  "shots": {
+    "lateral": 487,
+    "observe": 487
+  },
+  "sourceParentC35H_SHA256": "20b33afa2a21999be946a06e6d8be3384c1b72169c35ec3c4a74f1d517212a99",
+  "status": "ENGINEERING_PASS_OBSERVATIONAL_NO_PROMOTION",
+  "tests": {
+    "engine": {
+      "failed": 0,
+      "passed": 733
+    },
+    "node": {
+      "failed": 0,
+      "passed": 1110
+    },
+    "python": {
+      "failed": 0,
+      "passed": 33
+    },
+    "smokeModes": 5
+  },
+  "unlockC36": false
+}

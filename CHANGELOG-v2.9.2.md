@@ -1,0 +1,8 @@
+# FPS Arena 2.9.2 — Macro Approach Research & Validation
+
+- Preserves **2.9.1's exact default combat, routing, ADS and evasive behavior** after controlled experiments found that the proposed covered-corridor replacement regressed shotgun/SMG attacks. This is a research/diagnostic checkpoint, **not a competitive AI upgrade**.
+- Includes isolated `macro-cover-approach.mjs` with short-horizon sampled approach headings, 3-D hard-cover tests, bounded lookahead exposure evaluation, brief direction commitment and explicit emergency guards. The implementation is **not exposed in the popup and is disabled in production**; simulator `--profile macro-covered-lab` is the only intended way to evaluate it. It also requires `macroCombat2` to be enabled.
+- Rejects unprotected camera-blind lanes. Restricts the prototype to currently *occluded* targets, leaving visible gunplay unchanged. Even this stricter version did not beat baseline; do not enable by default.
+- Experimental isolation preserves `--profile macro-combat-lab` for the opt-in 2.9.1 behavior, `--profile release` for the unmodified 2.9.0 combat policy and `--profile macro-covered-lab` for the rejected experiment.
+- 6 full-match TDM runs on independent map/weapon/seed configurations, 15 fixed-duration headless corridor evaluations (3 corridor versions x 5 paired baseline scenarios; baseline reused); real original server events, no fabricated opponents/aim hits. Additional tests verify that geometry/LOS and action priority are honored.
+- More work required: a goal-level attack-opportunity planner, not repeated local best-exposure heading. Need full-match and realistic human evaluations before any default change.

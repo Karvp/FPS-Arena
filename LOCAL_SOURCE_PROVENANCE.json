@@ -1,0 +1,10 @@
+﻿{
+    "archived_sha256":  "65592d167f2cb67b2b301b646b456ef4ffc8579c13cdc2cdac4758e1227ff0ef",
+    "source_archive":  "C:\\Users\\admin\\Downloads\\FPS-Arena-Combat-Suite-v2.9.11-C35AJ-State-Conditioned-Tactical-Value.zip",
+    "source_bytes":  90652030,
+    "recorded_utc":  "2026-10-22T15:33:01.2162044Z",
+    "excluded":  "reports/",
+    "source_files":  974,
+    "status":  "partial_research_baseline_pending_latest_import",
+    "source_baseline":  "v2.9.11-C35AJ"
+}

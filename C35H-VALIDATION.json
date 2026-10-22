@@ -1,0 +1,127 @@
+{
+  "checkpoint": "C35H",
+  "date": "2026-10-13",
+  "experiment": {
+    "bootstrap": {
+      "damageTaken": {
+        "CI95": [
+          0.7177375068643602,
+          1.0935979034069636
+        ],
+        "lower5": 0.7447552447552448,
+        "ratio": 0.9018427980443776
+      },
+      "hits": {
+        "CI95": [
+          0.8125613346418057,
+          1.1691988950276244
+        ],
+        "lower5": 0.8364444444444444,
+        "ratio": 0.972693032015066
+      },
+      "kills": {
+        "CI95": [
+          0.7946428571428571,
+          1.164021164021164
+        ],
+        "lower5": 0.8187134502923976,
+        "ratio": 0.9552238805970149
+      },
+      "microTicks": {
+        "CI95": [
+          0.8308457711442786,
+          1.1090909090909091
+        ],
+        "lower5": 0.8584070796460177,
+        "ratio": 0.9896103896103896
+      },
+      "originalFire": {
+        "CI95": [
+          0.7628437986507525,
+          1.1584377302873987
+        ],
+        "lower5": 0.789279112754159,
+        "ratio": 0.942557134033354
+      },
+      "shots": {
+        "CI95": [
+          0.7603972687771571,
+          1.1597014925373135
+        ],
+        "lower5": 0.7867479055597868,
+        "ratio": 0.942557134033354
+      }
+    },
+    "matches": 36,
+    "safety": "36/36 data audit PASS; C21 hash matching; C16 arm symmetry; zero fire suppression/injection; zero agent errors",
+    "setups": 18,
+    "simulatedMinutes": 54,
+    "totals": {
+      "lateral": {
+        "damageDealt": 30548,
+        "damageTaken": 2398,
+        "fireAndMotion": 1525,
+        "hits": 1033,
+        "kills": 192,
+        "macroEligible": 33,
+        "macroModified": 33,
+        "microTicks": 381,
+        "movementModified": 414,
+        "originalFire": 1526,
+        "preoffers": 10518,
+        "shots": 1526
+      },
+      "observe": {
+        "damageDealt": 31530,
+        "damageTaken": 2659,
+        "fireAndMotion": 1618,
+        "hits": 1062,
+        "kills": 201,
+        "macroEligible": 40,
+        "macroModified": 0,
+        "microTicks": 385,
+        "movementModified": 385,
+        "originalFire": 1619,
+        "preoffers": 10596,
+        "shots": 1619
+      }
+    }
+  },
+  "frozenForecastSHA256": "3c00f92332ca4a7cd4694efe6b98eabcbd888b93020e50875c21f858fb5b0f10",
+  "limitations": [
+    "research-only macro guard uses public static clearance but cannot guarantee dynamic collision avoidance",
+    "policy not shown non-inferior",
+    "no combat improvement established"
+  ],
+  "observerParity": {
+    "c35cDataset": "byte-identical",
+    "c35gFireLedger": "byte-identical",
+    "gameplayMetrics": "identical"
+  },
+  "parentSourceArchiveSHA256": "d8afc47e382fa4d451096044b82255b963f5f9a11d60bc1fcd57caf417c391fa",
+  "productionPageAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+  "registrationSHA256": "7b28ce2712f0efcd922aeba165e82e141ac90693d2d57a2cecbe26afd113b8ec",
+  "status": "ENGINEERING_PASS_POLICY_REJECTED_C36_BLOCKED",
+  "tests": {
+    "engine": [
+      733,
+      733
+    ],
+    "fiveModeSmoke": [
+      5,
+      5
+    ],
+    "newC35HUnit": [
+      7,
+      7
+    ],
+    "node": [
+      1100,
+      1100
+    ],
+    "python": [
+      28,
+      28
+    ]
+  }
+}

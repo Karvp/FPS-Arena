@@ -1,0 +1,31 @@
+{
+  "artifacts": {
+    "FPS-Arena-Combat-Suite-v2.9.11-C35Q-Robust-Target-Confidence.zip": {
+      "bytes": 57439923,
+      "sha256": "aed69db61d1d82529cb254d3170fb239a189815c48360843cd5f13af221a70fa"
+    },
+    "FPS-Arena-v2.9.11-C35Q-Engineering-Report.md": {
+      "bytes": 6403,
+      "sha256": "1c7dd4e960d00cf0b9a82c69337e2eac8a9a5e679dc694e5cd6cd905b817c5a1"
+    },
+    "FPS-Arena-v2.9.11-C35Q-Raw-Evaluation.zip": {
+      "bytes": 1113191,
+      "sha256": "6a3220fa79a21a4895f28ad67951f5d19ec3ba2facd8929b4275fb0fbf757f3f"
+    },
+    "FPS-Arena-v2.9.11-C35Q-TDM-Original-vs-Research-12.csv": {
+      "bytes": 1077,
+      "sha256": "0ee835d7ad155b1e490acb890214a0cc863368bf640bd92f107843675a65e686"
+    },
+    "FPS-Arena-v2.9.11-C35Q-Validation.json": {
+      "bytes": 1248,
+      "sha256": "037bb9c53394429430cba8e8a071fe3762d5ba5902c4c7312d11b15441b15eda"
+    }
+  },
+  "decision": "engineering PASS; ID confidence model fails promotion; production unchanged; C36 blocked",
+  "experimentRegistrationSHA256": "c4c50da9e0a4b6f5f29df96705476d78ea89dc12bff114c44961572489303a4f",
+  "parentC35P_SHA256": "4a12405600518bf889b668b89b739bab0964418ebdf36d9ec2a0aeeadc847df2",
+  "productionAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+  "rawEvidenceFileCount": 247,
+  "schema": "fpsarena-c35q-delivery-manifest-v1",
+  "sourceFileCount": 6696
+}

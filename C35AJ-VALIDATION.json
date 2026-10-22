@@ -1,0 +1,67 @@
+{
+  "schema": "fpsarena-c35aj-final-validation-v1",
+  "status": "ENGINEERING_PASS;TACTICAL_POLICY_NOT_PROMOTED",
+  "matches": 108,
+  "setupClusters": 36,
+  "simulatedMinutes": 162,
+  "sourceLockSHA256": "618282a108fe609cebc8425f167449dffb6ce219eb41b3e9a8f9f784a4ec64e5",
+  "regression": {
+    "node": 1324,
+    "engine": 733,
+    "pythonPass": 172,
+    "pythonHistoricalSkip": 5,
+    "fiveModeSmoke": 5,
+    "newNodeTests": 5
+  },
+  "randomizedAssignments": 240,
+  "censored": 18,
+  "physicalModifiedTicks": 1400,
+  "physicalRealizedModifiedTicks": 1396,
+  "matchedGameTotals": {
+    "release": {
+      "kills": 326,
+      "deaths": 14,
+      "shots": 2091,
+      "hits": 1214,
+      "damageDealt": 893919,
+      "damageTaken": 3377,
+      "distance": 14652.85,
+      "errors": 0
+    },
+    "observe": {
+      "kills": 305,
+      "deaths": 17,
+      "shots": 1966,
+      "hits": 1208,
+      "damageDealt": 679669,
+      "damageTaken": 15285,
+      "distance": 15261.53,
+      "errors": 0
+    },
+    "randomized": {
+      "kills": 327,
+      "deaths": 19,
+      "shots": 2187,
+      "hits": 1340,
+      "damageDealt": 672831,
+      "damageTaken": 24848,
+      "distance": 15111.81,
+      "errors": 0
+    }
+  },
+  "modelSelection": {
+    "stateOnly": "state_ridge_100",
+    "actionConditioned": "action_ridge_100"
+  },
+  "modelHeldoutN": 77,
+  "offPolicyBootstrapCI": [
+    -0.6082228915662652,
+    1.1981923194614439
+  ],
+  "holdoutGuns": [
+    "aa12",
+    "uzi"
+  ],
+  "productionAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+  "decision": "Unproven combat/policy improvement; MLP did not beat Ridge; no trained model controlled games; offline only."
+}

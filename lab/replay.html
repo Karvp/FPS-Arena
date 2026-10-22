@@ -1,0 +1,42 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FPS Arena Combat Lab — Offline Replay</title>
+<style>:root{color-scheme:dark;font:14px system-ui,Arial}body{background:#08111c;color:#e6f3fa;margin:0}header{padding:17px 24px;border-bottom:1px solid #264255;display:flex;gap:12px;align-items:center;justify-content:space-between}h1{font-size:20px;margin:0}header small{color:#90b4c5}.layout{display:grid;grid-template-columns:minmax(330px,1fr) 310px;gap:14px;padding:16px;max-width:1400px;margin:auto}.panel{background:#101f2d;border:1px solid #2b4a5d;border-radius:12px;padding:14px}canvas{display:block;width:100%;background:#071522;border:1px solid #2d5261;border-radius:8px;aspect-ratio:1.35}button,select,input::file-selector-button{background:#16445a;color:#fff;border:1px solid #42748a;padding:8px 11px;border-radius:7px;cursor:pointer}button:hover,select:hover{background:#205b72}input[type=file]{width:100%;color:#9ec8d8;font-size:13px}input[type=range]{width:100%;accent-color:#4bdfd3}.controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:13px 0}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px}.metric{background:#132c3e;padding:10px;border-radius:8px}.metric small{display:block;color:#8eb5c9}.metric strong{font-size:17px}#logs{max-height:250px;overflow:auto;font-size:12px;color:#bbd9e6;line-height:1.65}#logs p{margin:0;padding:3px 0;border-bottom:1px solid #254253}details{color:#accbdc}footer{color:#9bb8c7;padding:2px 16px 18px;max-width:1400px;margin:auto}.warning{background:#3b3020;color:#ffdd9c;padding:8px 12px;border-radius:8px;font-size:12px;margin-bottom:10px}@media(max-width:820px){.layout{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(4,1fr)}}@media(max-width:490px){.metrics{grid-template-columns:1fr 1fr}}</style></head>
+<body><header><div><h1>FPS Arena · Combat Lab</h1><small>Local Match Replay / Spatial Debugger</small></div><span id="fileStatus">Không tải dữ liệu lên mạng</span></header>
+<div class="layout"><section class="panel"><div class="warning">Đây là bản xem lại dữ liệu 2 Hz, không phải trận đấu live hoặc kết quả headshot server.</div><label>Tải file JSON từ Match Recorder: <input type="file" id="file" accept=".json,application/json"></label>
+<div class="controls"><label>Trận <select id="match"></select></label><button id="play">▶ Phát</button><button id="reset">↺ Đầu trận</button><label>Zoom <select id="zoom"><option value="40">40 m</option><option selected value="80">80 m</option><option value="150">150 m</option><option value="250">250 m</option></select></label></div>
+<canvas id="map" width="1000" height="740"></canvas><input id="timeline" type="range" min="0" max="0" value="0"><div style="display:flex;justify-content:space-between;color:#9fc4d6"><span id="clock">00:00</span><span id="counter">0/0</span></div>
+<details><summary>Chú giải / giới hạn</summary><p>Lam: người chơi · Đỏ: đối thủ · Cam: zombie · Lục: crate · Vòng tím: barrier Battle Royale. Hướng mũi tên là yaw ghi trong snapshot. Vị trí được nội suy theo mẫu đã ghi, không mô phỏng lại physics/hitbox server.</p></details></section>
+<aside class="panel"><h2 style="font-size:17px;margin-top:0">Trạng thái trận</h2><div class="metrics"><div class="metric"><small>HP</small><strong id="hp">–</strong></div><div class="metric"><small>Armor</small><strong id="armor">–</strong></div><div class="metric"><small>Súng</small><strong id="weapon">–</strong></div><div class="metric"><small>Đạn</small><strong id="ammo">–</strong></div></div><p id="reason" style="color:#9ec6d5">Chọn JSON để bắt đầu</p><h3>Sự kiện gần nhất</h3><div id="logs"></div></aside></div>
+<footer>Replay chạy hoàn toàn trên máy. File JSON chỉ được đọc trong trang này; không gửi tới máy chủ. Để kiểm chứng tỷ lệ headshot thực tế cần có sự kiện bắn/trúng đầu được server xác nhận.</footer>
+<script>
+'use strict';
+const E=id=>document.getElementById(id),ctx=E('map').getContext('2d');let records=[],record=null,idx=0,timer=null;
+const fmt=t=>`${String(Math.floor(t/60)).padStart(2,'0')}:${String(Math.floor(t%60)).padStart(2,'0')}`;
+const coord=p=>Array.isArray(p)?{x:+p[0]||0,z:+p[2]||0}:{x:+p?.x||0,z:+p?.z||0};
+function arrow(p,yaw,col,rad=6){const x=p.x,z=p.z;ctx.save();ctx.translate(x,z);ctx.rotate(yaw||0);ctx.fillStyle=col;ctx.beginPath();ctx.moveTo(0,-rad*1.7);ctx.lineTo(rad,rad);ctx.lineTo(-rad,rad);ctx.closePath();ctx.fill();ctx.restore()}
+function draw(){const c=E('map'),w=c.width,h=c.height;ctx.fillStyle='#071522';ctx.fillRect(0,0,w,h);ctx.strokeStyle='#204056';ctx.lineWidth=1;for(let x=0;x<w;x+=50){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke()}for(let z=0;z<h;z+=50){ctx.beginPath();ctx.moveTo(0,z);ctx.lineTo(w,z);ctx.stroke()}
+ if(!record||!record.samples?.length){ctx.fillStyle='#b8dce8';ctx.font='22px system-ui';ctx.fillText('Nạp file Match Recorder JSON để xem bản đồ',90,h/2);return}
+ const s=record.samples[idx],p=coord(s.p),range=+E('zoom').value,scale=Math.min(w,h)/(range*2);
+ const pos=x=>({x:w/2+(coord(x).x-p.x)*scale,z:h/2+(coord(x).z-p.z)*scale});
+ const ring=s.ring;if(ring){const cx=ring.cx??ring.x??ring?.cur?.cx,cz=ring.cz??ring.z??ring?.cur?.cz,rr=ring.r??ring.radius??ring?.cur?.r;if([cx,cz,rr].every(Number.isFinite)){const mid=pos([cx,0,cz]);ctx.strokeStyle='#be85fb';ctx.lineWidth=3;ctx.beginPath();ctx.arc(mid.x,mid.z,rr*scale,0,Math.PI*2);ctx.stroke()}}
+ for(const q of s.crates||[]){const point=pos(q.pos||q);ctx.fillStyle='#45d6a7';ctx.fillRect(point.x-4,point.z-4,8,8)}
+ for(const r of s.enemies||[]){const point=pos(r.pos||r);arrow(point,r.yaw,'#ff6879',6)}
+ for(const z of s.zombies||[]){const point=pos(z.pos||z);arrow(point,z.yaw,'#ffad68',5)}
+ const own={x:w/2,z:h/2};arrow(own,s.dir?.[0]||0,'#57e1ed',9);
+ const tgt=s.target?.pos;if(tgt){const t=pos(tgt);ctx.strokeStyle=s.target.visible?'#63edb0':'#f7ba61';ctx.lineWidth=1.5;ctx.setLineDash([6,5]);ctx.beginPath();ctx.moveTo(own.x,own.z);ctx.lineTo(t.x,t.z);ctx.stroke();ctx.setLineDash([])}
+ const ws=s.ws||{};E('hp').textContent=s.hp??'–';E('armor').textContent=s.armor??'–';E('weapon').textContent=ws.guns?.[ws.slot]?.id||'–';E('ammo').textContent=ws.guns?.[ws.slot]?.mag??'–';E('reason').textContent=`Mode: ${record.meta?.mode||'unknown'} · Decision: ${s.decision?.reason||'unknown'} · Target: ${s.target?.id||'none'}`;
+ E('clock').textContent=fmt(s.t||0);E('counter').textContent=`${idx+1}/${record.samples.length}`;
+ const events=(record.events||[]).filter(e=>e.t<=(s.t||0)).slice(-14).reverse();E('logs').replaceChildren(...events.map(e=>{const n=document.createElement('p');n.textContent=`${fmt(e.t||0)} · ${String(e.type||'?').slice(0,36)}`;return n}));
+}
+function seek(i){idx=Math.min(Math.max(0,i),Math.max(0,(record?.samples?.length||1)-1));E('timeline').value=idx;draw()}
+function setRecord(i){record=records[i]||null;E('timeline').max=Math.max(0,(record?.samples?.length||1)-1);seek(0)}
+E('file').addEventListener('change',async e=>{try{stop();const data=JSON.parse(await e.target.files[0].text());if(!Array.isArray(data.records))throw Error('Không thấy trường records[]');records=data.records.filter(r=>Array.isArray(r.samples)&&r.samples.length);E('match').replaceChildren(...records.map((r,i)=>{const n=document.createElement('option');n.value=i;n.textContent=`${r.matchId||i} · ${r.meta?.mode||'unknown'} (${r.samples.length} samples)`;return n}));E('fileStatus').textContent=`${records.length} bản ghi`;
+ setRecord(0)}catch(err){alert('Không thể đọc Match Recorder JSON: '+err.message)}});
+E('match').addEventListener('change',e=>{stop();setRecord(+e.target.value)});
+E('timeline').addEventListener('input',e=>{stop();seek(+e.target.value)});
+E('zoom').addEventListener('change',draw);
+E('reset').addEventListener('click',()=>{stop();seek(0)});
+function stop(){if(timer!==null){clearInterval(timer);timer=null}E('play').textContent='▶ Phát'}
+E('play').addEventListener('click',()=>{if(timer!==null){stop();return}if(!record)return;E('play').textContent='⏸ Tạm dừng';timer=setInterval(()=>{if(idx+1>=record.samples.length){stop();return}seek(idx+1)},500)});
+draw();
+</script></body></html>

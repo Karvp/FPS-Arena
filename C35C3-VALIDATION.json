@@ -1,0 +1,106 @@
+{
+  "schema": "fpsarena-c35c3-release-validation-v1",
+  "stage": "research-only authoritative-engine technical pilot; NO proven efficacy",
+  "parentC35BArchiveSHA256": "50039be4efca0e4d081600675d50abfb0dde7e44a48db2bb26af361fc782a6de",
+  "registrationSHA256": "0ce8ace19ec466dea3d90012103815317e25ca9ce88cb68c0ee728b798f5278d",
+  "checks": {
+    "aiNode": "1067/1067",
+    "engine": "733/733",
+    "python": "16/16",
+    "fiveModes": "5/5",
+    "C35BLegacyExactReplay": true,
+    "C35C3IndependentAudit": true,
+    "matches": 36,
+    "matchedSetups": 18,
+    "agentErrors": 0,
+    "C21AssignmentMismatch": 0,
+    "C16OriginalSafetyUnchanged": true,
+    "productionAgentUnchanged": true
+  },
+  "pilot": {
+    "simulatedMinutes": 54,
+    "totalPreoffers": 20894,
+    "totalOffers": 274,
+    "byPolicy": {
+      "legacy80": {
+        "matches": 18,
+        "offers": 152,
+        "micro": 107,
+        "interruptions": 34,
+        "complete": 151,
+        "hitPositive": 6,
+        "attempts": 10258,
+        "kills": 214,
+        "shots": 1687,
+        "hits": 1125,
+        "deaths": 12
+      },
+      "hierarchical80": {
+        "matches": 18,
+        "offers": 122,
+        "micro": 85,
+        "interruptions": 20,
+        "complete": 121,
+        "hitPositive": 4,
+        "attempts": 10636,
+        "kills": 215,
+        "shots": 1748,
+        "hits": 1177,
+        "deaths": 12
+      }
+    },
+    "matchedSetupBootstrap": {
+      "status": "DESCRIPTIVE_MATCHED_SETUP_ONLY",
+      "matchedSetups": 18,
+      "bootstrapReplicates": 2000,
+      "direction": "hierarchical80 minus legacy80",
+      "estimates": {
+        "eligibilityRateDifference": {
+          "difference": -0.003347225632828717,
+          "bootstrap95": [
+            -0.006427096373322123,
+            -0.0009572503651585334
+          ],
+          "validResamples": 2000
+        },
+        "microAssignedPerAttemptDifference": {
+          "difference": -0.002439157000239991,
+          "bootstrap95": [
+            -0.004957967185581683,
+            -0.0005811659347061083
+          ],
+          "validResamples": 2000
+        },
+        "executedTicksPerAttemptDifference": {
+          "difference": -0.009864030026079315,
+          "bootstrap95": [
+            -0.020421257812487485,
+            -0.0013837375688951492
+          ],
+          "validResamples": 2000
+        },
+        "interruptionRateAmongMicroDifference": {
+          "difference": -0.08246289169873555,
+          "bootstrap95": [
+            -0.15681818181818183,
+            0.0006504065040650597
+          ],
+          "validResamples": 2000
+        }
+      },
+      "warning": "Engineering diagnostics, not combat causal efficacy"
+    },
+    "hitPositiveTotal": 10,
+    "unknownPublicThreatRisk": true
+  },
+  "gates": {
+    "technicalPipeline": "PASS",
+    "interruptionUnder5Percent": "FAIL",
+    "opportunityPreservation": "FAIL",
+    "causalCombatEfficacy": "NOT ESTIMATED",
+    "C36NeuralTraining": "BLOCKED",
+    "productionPromotion": "NO",
+    "githubPush": "NO"
+  },
+  "productionAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed"
+}

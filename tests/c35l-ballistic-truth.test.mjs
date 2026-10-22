@@ -1,0 +1,17 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {BallisticTruthObserverC35L} from '../lab/arena/ballistic-truth-c35l.mjs';
+import {setBallisticTruthSinkC35L} from '../lab/arena/source-main/server/combat.js';
+const noop={local:{team:0},remotes:{list:[]}};
+const sample=(kind='world',worldKind='static')=>({schema:'fpsarena-c35l-authoritative-ballistics-v1',seq:12,pelletCount:1,rewindSeconds:.05,pellets:[{i:0,hitKind:kind,worldKind,targetId:null}]});
+function before(a){a.beforeStep({now:1,client:noop,incumbent:{fire:true},applied:{fire:true},serverShots:0,serverHits:0});}
+test('reject malformed setup and afterStep without beforeStep',()=>{assert.throws(()=>new BallisticTruthObserverC35L({}),/configuration/);assert.throws(()=>new BallisticTruthObserverC35L({matchId:'a',maxRows:0}),/configuration/);assert.throws(()=>new BallisticTruthObserverC35L({matchId:'x'}).afterStep({serverShots:0,serverHits:0}),/afterStep/)});
+test('validate server packet pellet-count and seq',()=>{const a=new BallisticTruthObserverC35L({matchId:'x'});before(a);assert.throws(()=>a.onShot({...sample(),pelletCount:2}),/malformed/);assert.throws(()=>a.onShot({...sample(),seq:NaN}),/malformed/)});
+test('one shot vs one pellet separate totals',()=>{const a=new BallisticTruthObserverC35L({matchId:'x'});before(a);a.onShot(sample());a.afterStep({serverShots:1,serverHits:0});const r=a.finish();assert.equal(r.counts.confirmedShots,1);assert.equal(r.counts.staticBlockedPellets,1);assert.equal(r.counts.confirmedPellets,1)});
+test('multi-pellet shotgun counted as one shot',()=>{const a=new BallisticTruthObserverC35L({matchId:'x'});before(a);let s=sample();s.pelletCount=12;s.pellets=Array.from({length:12},(_,i)=>({i,hitKind:i===0?'player':'range',worldKind:'none',targetId:i===0?'enemy':null}));a.onShot(s);a.afterStep({serverShots:1,serverHits:1});assert.equal(a.finish().counts.confirmedPellets,12)});
+test('record foam wall independent of static obstruction',()=>{const a=new BallisticTruthObserverC35L({matchId:'x'});before(a);a.onShot(sample('world','dynamic-foam'));a.afterStep({serverShots:1,serverHits:0});assert.equal(a.finish().counts.dynamicFoamBlockedPellets,1)});
+test('counter mismatch fails closed',()=>{const a=new BallisticTruthObserverC35L({matchId:'x'});before(a);assert.throws(()=>a.afterStep({serverShots:1,serverHits:0}),/mismatch/)});
+test('firing command tamper forbidden',()=>{const a=new BallisticTruthObserverC35L({matchId:'x'});a.beforeStep({now:1,client:noop,incumbent:{fire:true},applied:{fire:false},serverShots:0,serverHits:0});a.afterStep({serverShots:0,serverHits:0});assert.throws(()=>a.finish(),/invariant/)});
+test('no injection: sink limited to specified game instance',()=>{let a=0,b=0;const g={},other={};setBallisticTruthSinkC35L(g,()=>a++);setBallisticTruthSinkC35L(other,()=>b++);assert.throws(()=>setBallisticTruthSinkC35L(g,'bad'),/sink/);setBallisticTruthSinkC35L(g,null);assert.equal(a+b,0)});
+test('enforce one pending tick',()=>{const a=new BallisticTruthObserverC35L({matchId:'x'});before(a);assert.throws(()=>before(a),/beforeStep/)});
+test('never store server-only data in publicBeforeStep',()=>{const a=new BallisticTruthObserverC35L({matchId:'x'});before(a);a.afterStep({serverShots:0,serverHits:0});const row=a.finish().rows[0];assert.equal('authoritativeFiringTimeShots' in row.publicBeforeStep,false);assert.equal(row.authoritativeFiringTimeShots.length,0)});

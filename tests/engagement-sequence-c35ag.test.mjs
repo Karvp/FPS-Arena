@@ -1,0 +1,19 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {EngagementSequenceObserverC35AG,C35AG_SCHEMA} from '../lab/arena/engagement-sequence-c35ag.mjs';
+const metrics=()=>({shots:0,hits:0,damageDealt:0,damageTaken:0,ownKills:0,deathCount:0});
+const arm=(a='toggle')=>({index:1,start:0,propensity:.5,assignedArm:a,baselineADS:false,unselectedOutcome:null,publicFeatures:{provenance:'PUBLIC_BEFORE_GAME_STEP_ONLY',targetId:'enemy1'}});
+const cmd=(overrides={})=>({aim:false,fire:false,forward:true,...overrides});
+const setup=()=>new EngagementSequenceObserverC35AG({setupId:'one',matchId:'m',weapon:'hk_sl8',horizonSeconds:2,cooldownSeconds:3});
+test('C35AG strict research-only configuration',()=>{assert.throws(()=>new EngagementSequenceObserverC35AG({setupId:'x',matchId:'y',weapon:'z',horizonSeconds:6,cooldownSeconds:6}),/config/);});
+test('C35AG rejects missing or tampered propensity before step',()=>{const o=setup();assert.throws(()=>o.beforeStep({now:0,assignments:[{...arm(),propensity:.9}],metrics:metrics(),incumbent:cmd(),applied:cmd()}),/assignment/);});
+test('C35AG rejects fabricated alternative outcomes',()=>{const o=setup();assert.throws(()=>o.beforeStep({now:0,assignments:[{...arm(),unselectedOutcome:{hits:1}}],metrics:metrics(),incumbent:cmd(),applied:cmd()}),/assignment/);});
+test('C35AG enforces before/after phase and monotonic clocks',()=>{const o=setup(),m=metrics();o.beforeStep({now:0,assignments:[],metrics:m,incumbent:cmd(),applied:cmd()});assert.throws(()=>o.beforeStep({now:.1,assignments:[],metrics:m}),/phase/);o.afterStep({now:0,metrics:m,alive:true});assert.throws(()=>o.beforeStep({now:0,assignments:[],metrics:m}),/phase/);});
+test('C35AG stores RLE factual sequence and server after-step truth',()=>{
+ const o=setup(),m=metrics(),a=[arm()];for(let i=0;i<123;i++){const now=i/60,x=i<25?cmd({aim:true}):cmd({fire:i>50});o.beforeStep({now,assignments:a,metrics:m,incumbent:cmd(),applied:x,client:{local:{mv:{onGround:true}}}});if(i===80){m.shots++;m.hits++;m.damageDealt+=30;}if(i===110){m.ownKills++;}o.afterStep({now,metrics:m,alive:true});}
+ const result=o.finish(),r=result.rows[0];assert.equal(result.schema,C35AG_SCHEMA);assert.equal(r.unselectedOutcome,null);assert.equal(r.factual.shots,1);assert.equal(r.factual.damageDealt,30);assert.equal(r.factual.ownKills,1);assert.equal(r.sequence.ticks,121);assert.equal(r.sequence.segments.reduce((n,s)=>n+s.ticks,0),121);assert.equal(r.sequence.segments.reduce((n,s)=>n+s.shots,0),1);assert.equal(r.sequence.changedADSTicks,25);assert.ok(r.sequence.samples.length>3);assert.equal(result.counts.completed,1);
+});
+test('C35AG finish censors partial matches, does not zero-fill truth',()=>{const o=setup(),m=metrics();o.beforeStep({now:0,assignments:[arm('control')],metrics:m,incumbent:cmd(),applied:cmd()});o.afterStep({now:0,metrics:m,alive:true});const a=o.finish();assert.deepEqual(a.rows[0].factual,{complete:false,censored:true,reason:'match-ended-before-six-second-outcome'});assert.equal(a.counts.censored,1);});
+test('C35AG rejects overlapping randomized offers',()=>{const o=setup(),m=metrics();o.beforeStep({now:0,assignments:[arm()],metrics:m,incumbent:cmd(),applied:cmd()});o.afterStep({now:0,metrics:m,alive:true});assert.throws(()=>o.beforeStep({now:1,assignments:[arm(),{...arm(),index:2,start:1}],metrics:m,incumbent:cmd(),applied:cmd()}),/overlap/);});
+test('C35AG rejects server counter decrements',()=>{const o=setup(),m=metrics();m.shots=2;o.beforeStep({now:0,assignments:[arm()],metrics:m,incumbent:cmd(),applied:cmd()});m.shots=1;assert.throws(()=>o.afterStep({now:0,metrics:m,alive:true}),/decreased/);});
+test('C35AG never changes applied command reference',()=>{const o=setup(),m=metrics(),x=Object.freeze(cmd({aim:true,fire:true}));o.beforeStep({now:0,assignments:[arm()],metrics:m,incumbent:cmd(),applied:x});o.afterStep({now:0,metrics:m,alive:true});assert.equal(x.aim,true);assert.equal(x.fire,true);});

@@ -1,0 +1,19 @@
+# Transient data: retained on disk but not in Git.
+reports/
+data/
+.checkpoint-stage/
+__pycache__/
+.pytest_cache/
+node_modules/
+**/node_modules/
+.venv/
+.venv-*/
+.cache/
+*.pyc
+*.pyo
+*.zip
+*.7z
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

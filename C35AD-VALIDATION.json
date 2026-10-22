@@ -1,0 +1,57 @@
+{
+  "schema": "fpsarena-c35ad-release-validation-v1",
+  "status": "ENGINEERING_PASS_POLICY_NOT_PROMOTED",
+  "sourceSHA256": "f710a5e62276b5a838be7a875d97756bbf9fa2d5c80d9097497e6f4298c28d14",
+  "productionAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+  "registrationSHA256": "a5da2e3b7ef793eff94e4c40505ad75e603653e1db11ebafd40639841efe8f9b",
+  "fullMatches": 72,
+  "setupCount": 24,
+  "simulatedMinutes": 108,
+  "randomizationAssignments": 1145,
+  "c21Assignments": 241,
+  "shots": 3660,
+  "pellets": 7246,
+  "agentErrors": 0,
+  "fireMutations": 0,
+  "nodeTests": {
+    "passed": 1271,
+    "failed": 0
+  },
+  "engineTests": {
+    "passed": 733,
+    "failed": 0
+  },
+  "python": {
+    "passed": 143,
+    "historicalSkipped": 5,
+    "hashLockedExcluded": 7
+  },
+  "smokeModes": 5,
+  "replay": {
+    "status": "PASS",
+    "byteIdenticalTraces": [
+      "aim",
+      "dataset",
+      "fire",
+      "macro"
+    ],
+    "sameGameplayIgnoringCreatedAndPassiveCounts": true,
+    "seed": 88220601
+  },
+  "analysis": {
+    "matchedKillRatioRandomizedObserve": 1.0686274509803921,
+    "matchedKillRatioCI95": [
+      0.80543,
+      1.433333
+    ],
+    "adsOnTreatmentMinusControlHitShotCI95": [
+      -0.618132,
+      -0.044544
+    ],
+    "hipTreatmentMinusControlHitShotCI95": [
+      -0.094002,
+      0.062345
+    ]
+  },
+  "promotion": false
+}

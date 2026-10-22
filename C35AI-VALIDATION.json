@@ -1,0 +1,220 @@
+{
+  "schema": "fpsarena-c35ai-final-validation-v1",
+  "status": "PASS_ENGINEERING;NOT_PROMOTED_COMBAT",
+  "checkpoint": "v2.9.11-C35AI",
+  "preregisteredDesignSHA256": "1b35a0665b16289d29d9038f812e7e3191b7dd62045af1e9cc7042c54f19e0d9",
+  "passed": {
+    "node": 1319,
+    "officialEngine": 733,
+    "pythonApplicable": 164,
+    "pythonHistoricalSkips": 5,
+    "fiveModes": 5
+  },
+  "caseCount": 72,
+  "setupClusters": 24,
+  "simulatedMinutes": 108,
+  "independentVerification": {
+    "schema": "fpsarena-c35ai-independent-verification-v1",
+    "matches": 72,
+    "setupClusters": 24,
+    "designHash": "1b35a0665b16289d29d9038f812e7e3191b7dd62045af1e9cc7042c54f19e0d9",
+    "sourceAndArtifactHashesVerified": true,
+    "randomizedAssignments": 148,
+    "byArm": {
+      "incumbent": 82,
+      "option-a": 37,
+      "option-b": 29
+    },
+    "complete": 138,
+    "censored": 10,
+    "totalChangedMotorTicks": 683,
+    "actualMovingTicksWithChangedCommand": 683,
+    "actualTravelWithChangedCommandMeters": 49.8077,
+    "momentumTravelMeters": 199.6494,
+    "teleportTicks": 13,
+    "stalledMotorTicksWithinOffers": 90,
+    "interruptions": 66,
+    "byWeapon": {
+      "hk_sl8": {
+        "offers": 25,
+        "modifiedTicks": 60,
+        "completed": 22,
+        "censored": 3
+      },
+      "l115a3": {
+        "offers": 26,
+        "modifiedTicks": 149,
+        "completed": 25,
+        "censored": 1
+      },
+      "m4a1": {
+        "offers": 29,
+        "modifiedTicks": 65,
+        "completed": 27,
+        "censored": 2
+      },
+      "mp5sd": {
+        "offers": 26,
+        "modifiedTicks": 126,
+        "completed": 25,
+        "censored": 1
+      },
+      "aa12": {
+        "offers": 16,
+        "modifiedTicks": 59,
+        "completed": 14,
+        "censored": 2
+      },
+      "uzi": {
+        "offers": 26,
+        "modifiedTicks": 224,
+        "completed": 25,
+        "censored": 1
+      }
+    },
+    "c21AssignmentsIndependentlyVerified": 174,
+    "verifiedBallistics": {
+      "shots": 2321,
+      "pellets": 3729
+    },
+    "agentErrors": 0,
+    "unselectedOutcomesNull": true,
+    "fireMutations": 0,
+    "status": "PASS; respawn/teleport discontinuities separately excluded from locomotion; distinct motor commands vs authoritative physical movement; intent-to-treat preserved; no counterfactual returns"
+  },
+  "independentAnalysis": {
+    "schema": "fpsarena-c35ai-physical-tactical-analysis-v1",
+    "matches": 72,
+    "setupClusters": 24,
+    "simulatedMinutes": 108.0,
+    "matchedTDM": {
+      "release": {
+        "kills": 218,
+        "deaths": 15,
+        "shots": 1266,
+        "hits": 770,
+        "errors": 0,
+        "distance": 9977.8
+      },
+      "observe": {
+        "kills": 211,
+        "deaths": 17,
+        "shots": 1228,
+        "hits": 771,
+        "errors": 0,
+        "distance": 10320.79
+      },
+      "randomized": {
+        "kills": 190,
+        "deaths": 16,
+        "shots": 1093,
+        "hits": 666,
+        "errors": 0,
+        "distance": 9981.63
+      }
+    },
+    "setupBootstrap95RatioRandomizedToObserve": {
+      "kills": [
+        0.755,
+        1.0763
+      ],
+      "deaths": [
+        0.5882,
+        1.4615
+      ],
+      "distance": [
+        0.9334,
+        1.0028
+      ]
+    },
+    "options": {
+      "assigned": 148,
+      "complete": 138,
+      "censored": 10,
+      "assignmentCounts": {
+        "incumbent": 82,
+        "option-a": 37,
+        "option-b": 29
+      },
+      "modifiedCommandTicks": 683,
+      "actualMovingTicksWithModifiedCommand": 683,
+      "distanceMetersWhileModifiedCommand": 49.808,
+      "stalledMotorTicksWithinOption": 90,
+      "momentumTravelMetersWithinOption": 8.29,
+      "interruptedOffers": 66,
+      "byWeapon": {
+        "aa12": {
+          "offers": 16,
+          "modifiedCommandTicks": 59,
+          "actualMovingTicksWithModifiedCommand": 59,
+          "travelMetersWhileModifiedCommand": 4.013,
+          "interruptions": 4
+        },
+        "hk_sl8": {
+          "offers": 25,
+          "modifiedCommandTicks": 60,
+          "actualMovingTicksWithModifiedCommand": 60,
+          "travelMetersWhileModifiedCommand": 4.023,
+          "interruptions": 13
+        },
+        "l115a3": {
+          "offers": 26,
+          "modifiedCommandTicks": 149,
+          "actualMovingTicksWithModifiedCommand": 149,
+          "travelMetersWhileModifiedCommand": 8.068,
+          "interruptions": 14
+        },
+        "m4a1": {
+          "offers": 29,
+          "modifiedCommandTicks": 65,
+          "actualMovingTicksWithModifiedCommand": 65,
+          "travelMetersWhileModifiedCommand": 4.581,
+          "interruptions": 11
+        },
+        "mp5sd": {
+          "offers": 26,
+          "modifiedCommandTicks": 126,
+          "actualMovingTicksWithModifiedCommand": 126,
+          "travelMetersWhileModifiedCommand": 9.873,
+          "interruptions": 12
+        },
+        "uzi": {
+          "offers": 26,
+          "modifiedCommandTicks": 224,
+          "actualMovingTicksWithModifiedCommand": 224,
+          "travelMetersWhileModifiedCommand": 19.25,
+          "interruptions": 12
+        }
+      }
+    },
+    "notes": [
+      "Physical motion is post-assignment mediator, not the randomized treatment; do NOT condition IPS on changed/moved/stalled.",
+      "Option-level results include interruptions under original assignment (ITT).",
+      "Matched seeds do not imply identical future trajectories after randomized options.",
+      "Completed window estimates are exploratory; end-game right censoring reported, not zero-filled."
+    ]
+  },
+  "replayCompatibility": {
+    "schema": "fpsarena-c35ai-compatibility-v1",
+    "fourPriorTracesByteIdentical": true,
+    "c35ahOptionTraceByteIdentical": true,
+    "normalizedGameResultsIdentical": true,
+    "fiveModes": {
+      "tdm": 0,
+      "snd": 0,
+      "hp": 0,
+      "br": 0,
+      "zm": 0
+    },
+    "allModesZeroErrors": true,
+    "source": "replayed actual headless Game.step"
+  },
+  "productionPageAgentSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+  "invalidCohortsExcluded": [
+    "v1",
+    "v2",
+    "v3",
+    "v4"
+  ],
+  "decision": "No credible combat improvement. Leave neural/tactical controller offline-only. Physical displacement is an observed mediator, not a randomized effect."
+}

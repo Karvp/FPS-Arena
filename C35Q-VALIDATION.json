@@ -1,0 +1,52 @@
+{
+  "C21AssignmentMismatches": 0,
+  "C21OffersVerified": 29,
+  "C36Unlocked": false,
+  "checkpoint": "C35-Q",
+  "engine": {
+    "failed": 0,
+    "passed": 733
+  },
+  "externalIDHeadReliable": false,
+  "fireModified": 0,
+  "firstPreRegFailed": "275ms > existing C35 research 250ms guard; rejected cohort quarantined",
+  "foamInNatural": 0,
+  "hitModelExternalImprovesPooledBrier": true,
+  "matches": 12,
+  "node": {
+    "failed": 0,
+    "passed": 1168
+  },
+  "originalTDM": {
+    "agentErrors": 0,
+    "deaths": 7,
+    "hits": 68,
+    "kills": 12,
+    "meters": 3565.87,
+    "shots": 133
+  },
+  "pairedOriginalMatches": 12,
+  "parentProductionSHA256": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+  "pellets": 899,
+  "preregisteredSetupCount": 6,
+  "productionPromoted": false,
+  "python": {
+    "failed": 0,
+    "passed": 96,
+    "skippedHistorical": 5
+  },
+  "researchTDM": {
+    "agentErrors": 0,
+    "deaths": 6,
+    "hits": 146,
+    "kills": 23,
+    "meters": 3684.65,
+    "shots": 239
+  },
+  "schema": "fpsarena-c35q-validation-v1",
+  "shotInformativeSetupCount": 5,
+  "shots": 239,
+  "smokeModes": 5,
+  "sourcePreregSHA256": "c4c50da9e0a4b6f5f29df96705476d78ea89dc12bff114c44961572489303a4f",
+  "targetIDGate": false
+}
