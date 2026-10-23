@@ -1,0 +1,91 @@
+{
+  "actionContextStrictModelGatePassed": false,
+  "groupCount": 9,
+  "limitations": [
+    "No full-match policy trial",
+    "tiny independent set; outcomes may share RNG",
+    "only a feature acquisition study, not neural policy",
+    "no hyperparameter selection on holdouts",
+    "Ridge is linear, not a new trained MLP"
+  ],
+  "models": {
+    "constant": {
+      "hazardBrier": 0.181640625,
+      "observedPolicyGainVsKeep": 0.0,
+      "observedPolicyHazardDifference": 0.0,
+      "selectedNonKeep": 0,
+      "utilityMSE": 0.8235110725308642
+    },
+    "context-action": {
+      "hazardBrier": 0.20448214471183968,
+      "observedPolicyGainVsKeep": 0.0,
+      "observedPolicyHazardDifference": 0.0,
+      "selectedNonKeep": 0,
+      "utilityMSE": 0.8223055695965227
+    },
+    "context-state": {
+      "hazardBrier": 0.19337661814848567,
+      "observedPolicyGainVsKeep": 0.0,
+      "observedPolicyHazardDifference": 0.0,
+      "selectedNonKeep": 0,
+      "utilityMSE": 0.8721438734270884
+    },
+    "old-action": {
+      "hazardBrier": 0.1899847543267611,
+      "observedPolicyGainVsKeep": -0.031111111111111114,
+      "observedPolicyHazardDifference": 0.1111111111111111,
+      "selectedNonKeep": 1,
+      "utilityMSE": 1.029282670620105
+    },
+    "old-state": {
+      "hazardBrier": 0.1877897838180927,
+      "observedPolicyGainVsKeep": 0.0,
+      "observedPolicyHazardDifference": 0.0,
+      "selectedNonKeep": 0,
+      "utilityMSE": 1.0593007909002463
+    }
+  },
+  "notTriggered": [
+    "v64-aim-arena-mp5sd-02",
+    "v64-aim-arena-mp5sd-03",
+    "v64-fire-neon-m4a1-12"
+  ],
+  "pairedSeedBootstrap": {
+    "hazardBrier": {
+      "overConstant": {
+        "CI95": [
+          -0.05301915561941745,
+          0.0056245981387100736
+        ],
+        "meanImprovement": -0.02284151971183967
+      },
+      "overOldAction": {
+        "CI95": [
+          -0.04338255519689774,
+          0.009957319536668431
+        ],
+        "meanImprovement": -0.014497390385078603
+      }
+    },
+    "utilityMSE": {
+      "overConstant": {
+        "CI95": [
+          -0.22031468130135587,
+          0.21605092650132393
+        ],
+        "meanImprovement": 0.0012055029343414749
+      },
+      "overOldAction": {
+        "CI95": [
+          -0.048775389293226716,
+          0.4487648427888982
+        ],
+        "meanImprovement": 0.20697710102358235
+      }
+    }
+  },
+  "positiveHazardArms": 7,
+  "promotionAllowed": false,
+  "sampleCount": 36,
+  "schema": "fpsarena-v64-public-tactics-seed-loocv-v1"
+}

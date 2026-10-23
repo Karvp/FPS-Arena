@@ -1,3 +1,17 @@
+# Latest persistent checkpoint — V64 public tactical context research
+
+- Parent research commit f4ded97, tag research-v63-prospective-shadow.
+- New V64 code is a separate researcher runner on original C35AJ baseline, NOT a falsely reconstructed full v57-v59 release.
+- 12 fresh four-arm seed groups (48 replay JSONs), 12/12 independent audit PASS, 9 triggered, 7 with combat/risk events.
+- Static LOS, cover, teammates and target motion captured from public client before intervention.
+- Research Ridge context model trained/evaluated on 9 independent triggered groups, 36 outcomes. Utility MSE 0.822306 vs constant 0.823511 but hazard Brier 0.204482 vs constant 0.181641. Model gate FAIL, no promotion.
+- Python/JS reference inference 32 scores agree; keep-arm parity 105/105 metrics.
+- JavaScript suite 1352/1353 PASS; one historical Windows C:\C:\Users path failure.
+- Frozen registration research/tdm-v64-frozen-registry.json; manifest research/tdm-v64-locked-manifest.json; report V64-PERSISTENT-STATUS.md.
+- Sealed holdouts from V60/V61/V62/V64 remain untouched; research-only, no extension/production/weights updates.
+- Retain one Git codebase, do not create redundant source ZIPs. V64 trial raw JSONs are tracked with Git.
+
+---
 # Current checkpoint — V63: frozen prospective model rejected
 
 - Canonical Git tag after release: research-v63-prospective-shadow

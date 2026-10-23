@@ -1,0 +1,176 @@
+{
+  "actorHasNoPrivateState": true,
+  "arms": [
+    "keep",
+    "close",
+    "strafe",
+    "withdraw"
+  ],
+  "baseFeatures": 18,
+  "baseline": "C35AJ not full v57-v59",
+  "cases": [
+    {
+      "id": "v64-aim-arena-mp5sd-01",
+      "map": "arena",
+      "seed": 640101,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v64-aim-arena-mp5sd-02",
+      "map": "arena",
+      "seed": 640102,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v64-aim-arena-mp5sd-03",
+      "map": "arena",
+      "seed": 640103,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v64-aim-arena-mp5sd-04",
+      "map": "arena",
+      "seed": 640104,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v64-aim-foundry-uzi-05",
+      "map": "foundry",
+      "seed": 640105,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v64-aim-foundry-uzi-06",
+      "map": "foundry",
+      "seed": 640106,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v64-aim-foundry-uzi-07",
+      "map": "foundry",
+      "seed": 640107,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v64-aim-foundry-uzi-08",
+      "map": "foundry",
+      "seed": 640108,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v64-fire-foundry-uzi-09",
+      "map": "foundry",
+      "seed": 640109,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v64-fire-foundry-uzi-10",
+      "map": "foundry",
+      "seed": 640110,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v64-aim-arena-uzi-11",
+      "map": "arena",
+      "seed": 640111,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v64-fire-neon-m4a1-12",
+      "map": "neon",
+      "seed": 640112,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "v64-hold-arena-mp5sd-13",
+      "map": "arena",
+      "seed": 640113,
+      "split": "holdout",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v64-hold-foundry-uzi-14",
+      "map": "foundry",
+      "seed": 640114,
+      "split": "holdout",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v64-hold-neon-m4a1-15",
+      "map": "neon",
+      "seed": 640115,
+      "split": "holdout",
+      "stratum": "post-fire",
+      "weapon": "m4a1"
+    }
+  ],
+  "holdoutsBlocked": true,
+  "limitations": [
+    "client.map static geometry supplied by headless simulator",
+    "headless client opponents are bots, not real humans",
+    "snapshot map/visibility approximates public game client, no renderer",
+    "delayed teammate/target samples; future RNG can diverge"
+  ],
+  "modelDesign": "Compare constant, state-only ridge, old-action ridge vs action ridge with V64 public-context; grouped leave-one-seed-out; no promotion.",
+  "modelSelection": "Fixed alpha=48 for all candidates before prospective discovery; not tuned on holdouts.",
+  "newPublicFeatures": 12,
+  "outcomeTicks": 480,
+  "parentRegistryHashes": {
+    "tdm-v60-frozen-registry.json": "235a31d15a2602fd02816c774857b7d12d126e44f0642bf00c8aaf0c3fbcc939",
+    "tdm-v61-frozen-registry.json": "acfb1841939aa36e1e18014cb50ad4bafe6077c2918dcd214e4f12ab194773f4",
+    "tdm-v62-frozen-registry.json": "08887eb588ed6c66ad54b74ff986d566331ffe37e5cd284a2165c8b87cd4b846",
+    "tdm-v63-prospective-registry.json": "9a6046f27c373ff434c3c32006e560f0de0c42fe435b92c00494d8aaea6e507f"
+  },
+  "protectedHashes": {
+    "lab/arena/source-main/server/bot.js": "651c0bb573865c27fe7cbdf9bc7329decfdb02d55c7c8a6432ab134fa9791024",
+    "lab/arena/source-main/server/game.js": "c000e00ba7d5333b7add0ee3014346c6e38dc89bdc46a12073cb2d23e523b625",
+    "lab/arena/tdm-engagement-trigger-v61.mjs": "df86e1311ef5791f3d564f0eeb5ae605e887773f2096cd3d909505e5b7d35d08",
+    "lab/arena/tdm-stratified-replay-v60.mjs": "fad99f4058e29e266036b3d7daaa7db7bbd1ee5a997099385f6df6815d229c05",
+    "lab/arena/train-main-v61.mjs": "195eddbf1c3389e7a375539679addceaecb4abc41c139f7ac54f18ee7bb61657",
+    "page-agent.js": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+    "research/tdm-v62-shadow-neural-critic.json": "4f54a1b28263e896688dbe9aced37bc57b8be4cee292a606a3d838aed7ed9167",
+    "research/tdm-v63-contrast-model.json": "6c9d43e2f76de6b64a7134abcad66e17401b77d17dd399754ab12746b946dc5c",
+    "research/tdm-v63-prospective-registry.json": "9a6046f27c373ff434c3c32006e560f0de0c42fe435b92c00494d8aaea6e507f"
+  },
+  "ridgeAlphas": [
+    24,
+    48,
+    96
+  ],
+  "schema": "fpsarena-v64-public-context-preregistered-cohort-v1",
+  "sourceHashes": {
+    "lab/arena/tdm-context-trial-v64.mjs": "70391a6e06a4fa37778bfc2d4f30b2a5d67ef8f70d866565cc4fdc674ce13978",
+    "lab/arena/tdm-public-tactics-v64.mjs": "f7fdb5686d82f820ae650141be1b63089b1df5f439dd3a5ad72dcbe4a2c95651",
+    "lab/arena/train-main-v64.mjs": "283e30ac4f132dce8425a1f83a6a1e7d1fafe7751b978947b3c50ce960ff2526",
+    "scripts/tdm_v64_protocol.py": "e0c71176f03f965b940a8ea2aec3693c97b5c57f6b536ffc0a6a41bdc3b0a2c2",
+    "tests/tdm-v64-public-tactics.test.mjs": "5d03dbd5913e3e077b8aa78548a367e63e9413595cedef9bbdefe7be5c0498f8"
+  },
+  "treatmentTicks": 150,
+  "unit": "one independent four-arm branch group, outcome window 480 ticks"
+}
