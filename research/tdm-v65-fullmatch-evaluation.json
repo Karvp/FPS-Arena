@@ -1,0 +1,129 @@
+{
+  "allDiscoveryGroupCount": 6,
+  "allSealedHoldoutsUntouched": true,
+  "caveats": [
+    "Server natural end is to 50 team kills; 600 second guard is censoring",
+    "Changing WASD 150 ticks can lead to divergent server RNG and other agent paths",
+    "Six discovery groups are insufficient to meet minimum independent-group gate",
+    "Only authoritative simulator bots, not human opponents"
+  ],
+  "censoredGroupCount": 0,
+  "eligibleGroupCount": 6,
+  "gate": {
+    "CIOfDeathsAndDamageVsKeepNonPositiveRequired": true,
+    "CIOfNetKillsVsKeepStrictPositiveRequired": true,
+    "allProspectiveHumanOrRepresentativeOpponentsNotTested": true,
+    "minimum12IndependentNaturalGroups": false,
+    "qualifiedForPromotion": false,
+    "strictStatisticalGatePassed": false
+  },
+  "naturalFourArmGroupCount": 6,
+  "noNeuralTrainingOrPromotion": true,
+  "registrySHA256": "f0f3508f54be3a15c8b03ce4a107d00b541652d54701026400789fd6734114a0",
+  "schema": "fpsarena-v65-natural-fullmatch-seed-group-bootstrap-v1",
+  "summary": {
+    "close": {
+      "damageTaken": {
+        "ci95": [
+          2.5,
+          95.83333333333333
+        ],
+        "groupN": 6,
+        "mean": 49.333333333333336
+      },
+      "deaths": {
+        "ci95": [
+          -0.3333333333333333,
+          0.6666666666666666
+        ],
+        "groupN": 6,
+        "mean": 0.16666666666666666
+      },
+      "kills": {
+        "ci95": [
+          -4.333333333333333,
+          4.666666666666667
+        ],
+        "groupN": 6,
+        "mean": 0.16666666666666666
+      },
+      "netKills": {
+        "ci95": [
+          -4.0,
+          4.5
+        ],
+        "groupN": 6,
+        "mean": 0.0
+      }
+    },
+    "strafe": {
+      "damageTaken": {
+        "ci95": [
+          -102.00416666666666,
+          117.5
+        ],
+        "groupN": 6,
+        "mean": 2.6666666666666665
+      },
+      "deaths": {
+        "ci95": [
+          -0.6666666666666666,
+          0.3333333333333333
+        ],
+        "groupN": 6,
+        "mean": -0.16666666666666666
+      },
+      "kills": {
+        "ci95": [
+          -3.8333333333333335,
+          4.333333333333333
+        ],
+        "groupN": 6,
+        "mean": 0.16666666666666666
+      },
+      "netKills": {
+        "ci95": [
+          -3.3416666666666592,
+          4.333333333333333
+        ],
+        "groupN": 6,
+        "mean": 0.3333333333333333
+      }
+    },
+    "withdraw": {
+      "damageTaken": {
+        "ci95": [
+          -123.83333333333333,
+          116.16666666666667
+        ],
+        "groupN": 6,
+        "mean": -4.166666666666667
+      },
+      "deaths": {
+        "ci95": [
+          -1.0,
+          0.6666666666666666
+        ],
+        "groupN": 6,
+        "mean": -0.16666666666666666
+      },
+      "kills": {
+        "ci95": [
+          -3.5,
+          5.166666666666667
+        ],
+        "groupN": 6,
+        "mean": 1.5
+      },
+      "netKills": {
+        "ci95": [
+          -3.6666666666666665,
+          6.0
+        ],
+        "groupN": 6,
+        "mean": 1.6666666666666667
+      }
+    }
+  },
+  "untreatedGroupsExcludedFromCausalComparison": []
+}

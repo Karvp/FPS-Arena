@@ -1,3 +1,19 @@
+# Current persistent checkpoint — V65 natural TDM paired survival research
+
+- Source baseline remains C35AJ, with v57–v59 research source NOT fully reimported.
+- V65 uses frozen V64 public-only research arms, NO learned model promotion or production modifications.
+- Six new matched independent seeds, four arms each: 24 natural server-terminated full 4v4 TDM matches, all 24 reached genuine score-50 termination, none censored.
+- Audit 6/6 matching pre-action server + RNG + public snapshot, command prefix, original motor-only constraint.
+- Trainee team had 23/24 team wins against official bots; NOT proof of arm effectiveness.
+- Paired net kills mean vs Keep: close +0.000, strafe +0.333, withdraw +1.667. Every net-kills 95% CI includes zero, and damage/deaths risk gates do not pass; no promotion.
+- Frozen registry: research/tdm-v65-fullmatch-frozen-registry.json, SHA256 f0f3508f54be3a15c8b03ce4a107d00b541652d54701026400789fd6734114a0.
+- Raw 24 match JSON outputs, preregistration, natural-end audit, bootstrap evaluation, and original source checksums are stored in the SAME persistent Git repo.
+- Focus tests 34/34; historical suite 1356/1357 (one longstanding Windows malformed path).
+- V65 report: V65-PERSISTENT-STATUS.md, manifest: research/tdm-v65-locked-manifest.json.
+- Two new V65 holdout groups and all legacy holdouts remain unopened. Continue with new preregistered seeds only.
+- **Research-only.** Classic LibreWolf extension, official engine, and original neural production expert weights untouched.
+
+---
 # Latest persistent checkpoint — V64 public tactical context research
 
 - Parent research commit f4ded97, tag research-v63-prospective-shadow.

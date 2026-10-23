@@ -1,0 +1,116 @@
+{
+  "allCases": [
+    {
+      "id": "v65-arena-mp5sd-01",
+      "map": "arena",
+      "seed": 650101,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v65-arena-mp5sd-02",
+      "map": "arena",
+      "seed": 650102,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v65-foundry-uzi-03",
+      "map": "foundry",
+      "seed": 650103,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v65-foundry-uzi-04",
+      "map": "foundry",
+      "seed": 650104,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v65-arena-uzi-05",
+      "map": "arena",
+      "seed": 650105,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v65-arena-uzi-06",
+      "map": "arena",
+      "seed": 650106,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v65-holdout-foundry-m4a1-07",
+      "map": "foundry",
+      "seed": 650107,
+      "split": "holdout",
+      "stratum": "post-fire",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "v65-holdout-neon-aa12-08",
+      "map": "neon",
+      "seed": 650108,
+      "split": "holdout",
+      "stratum": "post-fire",
+      "weapon": "aa12"
+    }
+  ],
+  "analysisUnit": "independent seed group, four arms matched prestate",
+  "arms": [
+    "keep",
+    "close",
+    "strafe",
+    "withdraw"
+  ],
+  "dataPolicy": {
+    "groupEligibleForPairedEffect": "all four arms finishedNaturally with phase results and same public prestate, valid PRNG witness, trigger reached",
+    "notTriggered": "keep in match-level descriptive stats; exclude from arm treatment effect",
+    "rightCensored": "not counted as naturally completed win; keep raw trial"
+  },
+  "design": "exact same-seed four-arm replay; original V64 150-tick WASD-only pulse; NOT production policy",
+  "noModelTrainingOrTuning": true,
+  "noProductionPromotion": true,
+  "oldSealedHoldouts": "unopened, all V60-V64 existing holdouts remain protected",
+  "promoteOnlyIf": {
+    "alsoRequireProspectiveRepresentativeOpponentValidation": true,
+    "meanDamageTakenVsKeepBootstrapUpper95AtMostZero": true,
+    "meanDeathsVsKeepBootstrapUpper95AtMostZero": true,
+    "meanNetKillsVsKeepBootstrapLower95GreaterThanZero": true,
+    "minIndependentTriggeredNaturalGroups": 12,
+    "twoUnopenedHoldoutsRequired": true
+  },
+  "schema": "fpsarena-v65-preregistered-authoritative-natural-tdm-v1",
+  "simulation": {
+    "botCount": 8,
+    "fullMatch": true,
+    "lagMs": 45,
+    "matchCapSeconds": 600,
+    "modes": "tdm",
+    "opponents": "official",
+    "scoreTarget": 50
+  },
+  "sourceBaseline": "C35AJ simulator, NOT V57",
+  "sourceSHA256": {
+    "lab/arena/source-main/server/bot.js": "651c0bb573865c27fe7cbdf9bc7329decfdb02d55c7c8a6432ab134fa9791024",
+    "lab/arena/source-main/server/game.js": "c000e00ba7d5333b7add0ee3014346c6e38dc89bdc46a12073cb2d23e523b625",
+    "lab/arena/tdm-context-trial-v64.mjs": "70391a6e06a4fa37778bfc2d4f30b2a5d67ef8f70d866565cc4fdc674ce13978",
+    "lab/arena/tdm-engagement-trigger-v61.mjs": "df86e1311ef5791f3d564f0eeb5ae605e887773f2096cd3d909505e5b7d35d08",
+    "lab/arena/tdm-public-tactics-v64.mjs": "f7fdb5686d82f820ae650141be1b63089b1df5f439dd3a5ad72dcbe4a2c95651",
+    "lab/arena/tdm-stratified-replay-v60.mjs": "fad99f4058e29e266036b3d7daaa7db7bbd1ee5a997099385f6df6815d229c05",
+    "lab/arena/train-main-v64.mjs": "283e30ac4f132dce8425a1f83a6a1e7d1fafe7751b978947b3c50ce960ff2526",
+    "page-agent.js": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+    "research/tdm-v64-frozen-registry.json": "1de3b84622556e6b01af95c1b5e3a61c897425f9d9b4470efe6e7f5c11328735",
+    "research/tdm-v64-public-context-shadow-model.json": "66886dff792aa1237254fc09b0f57823cfe31d729ec3f3cd42634fb15acfc7fb",
+    "scripts/tdm_v65_fullmatch.py": "60616fa17d4f338edfd583d35a136dd57dc8239944a8088bafdc2e3b9f61637e"
+  }
+}
