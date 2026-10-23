@@ -1,3 +1,16 @@
+# Current checkpoint — V63: frozen prospective model rejected
+
+- Canonical Git tag after release: research-v63-prospective-shadow
+- The source baseline remains C35AJ. Older v57–v59 complete source is NOT present.
+- V63 retrospective: trained regularized paired-arm contrast model on 23 independent V61/V62 seed groups (92 observations). Historical action-conditioned MSE 1.1075 vs constant 1.0933; hazard Brier 0.1694 vs constant 0.1588.
+- V63 prospective: 14 fresh seed groups / 56 branches, frozen beforehand and audited 14/14 PASS. Utility MSE 0.5968 vs constant 0.6228; hazard Brier 0.1743 vs constant 0.1692. Average hazard increase 0.0714; CIs do not support improved utility. No promotion.
+- 56 raw V63 trial JSON added to Git. All parent v60–v62 hashes still valid.
+- Four old sealed holdout groups remain unused.
+- Latest report: V63-PERSISTENT-STATUS.md
+- Latest preregistration: research/tdm-v63-prospective-registry.json (SHA 9a6046f27c373ff434c3c32006e560f0de0c42fe435b92c00494d8aaea6e507f).
+- Next: V64 new public cover/LOS/teammate context features with fresh seeds; no training on the frozen V63 prospective evaluation labels without a separate clearly marked discovery split.
+
+---
 # Current persistent checkpoint — v62
 
 - Git tag: research-v62-discovery-shadow (created after final commit verification)

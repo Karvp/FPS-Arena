@@ -1,0 +1,124 @@
+{
+  "automaticPromotion": false,
+  "evaluationMethod": "leave-one-entire-seed-group-out; four paired arms",
+  "exploratoryHistoricalData": true,
+  "groupBootstrapComparisonsOfArmContext": {
+    "armOnly": {
+      "hazardBrier": {
+        "CI95": [
+          -0.013788880673526087,
+          0.0009783548945980964
+        ],
+        "mean": -0.005593882522911458
+      },
+      "utilityMSE": {
+        "CI95": [
+          -0.02800263894527534,
+          0.012065887788305063
+        ],
+        "mean": -0.008220018511274718
+      }
+    },
+    "constant": {
+      "hazardBrier": {
+        "CI95": [
+          -0.019606492507502408,
+          -0.0017445637696945945
+        ],
+        "mean": -0.01058860055930253
+      },
+      "utilityMSE": {
+        "CI95": [
+          -0.1545842200458846,
+          0.1232476973489514
+        ],
+        "mean": -0.014241179809520476
+      }
+    },
+    "state": {
+      "hazardBrier": {
+        "CI95": [
+          -0.006956173996358528,
+          0.005569774853697867
+        ],
+        "mean": -0.000772952959337861
+      },
+      "utilityMSE": {
+        "CI95": [
+          -0.03279248198932864,
+          0.008132582204140787
+        ],
+        "mean": -0.012337484242807154
+      }
+    }
+  },
+  "modelSha256": "6c9d43e2f76de6b64a7134abcad66e17401b77d17dd399754ab12746b946dc5c",
+  "models": {
+    "armContext": {
+      "groupCount": 23,
+      "hazardBrier": 0.1694212451874017,
+      "meanBestArmRegret": 0.5095652173913043,
+      "meanObservedGainVsKeep": 0.010434782608695651,
+      "meanObservedHazardChangeVsKeep": 0.08695652173913043,
+      "proposedNonKeepCount": 5,
+      "sampleCount": 92,
+      "utilityMSE": 1.1075347219502958,
+      "variant": "armContext"
+    },
+    "armOnly": {
+      "groupCount": 23,
+      "hazardBrier": 0.16382736266449024,
+      "meanBestArmRegret": 0.5199999999999999,
+      "meanObservedGainVsKeep": 0.0,
+      "meanObservedHazardChangeVsKeep": 0.0,
+      "proposedNonKeepCount": 0,
+      "sampleCount": 92,
+      "utilityMSE": 1.0993147034390214,
+      "variant": "armOnly"
+    },
+    "constant": {
+      "groupCount": 23,
+      "hazardBrier": 0.15883264462809918,
+      "meanBestArmRegret": 0.5199999999999999,
+      "meanObservedGainVsKeep": 0.0,
+      "meanObservedHazardChangeVsKeep": 0.0,
+      "proposedNonKeepCount": 0,
+      "sampleCount": 92,
+      "utilityMSE": 1.0932935421407755,
+      "variant": "constant"
+    },
+    "state": {
+      "groupCount": 23,
+      "hazardBrier": 0.16864829222806385,
+      "meanBestArmRegret": 0.5199999999999999,
+      "meanObservedGainVsKeep": 0.0,
+      "meanObservedHazardChangeVsKeep": 0.0,
+      "proposedNonKeepCount": 0,
+      "sampleCount": 92,
+      "utilityMSE": 1.0951972377074886,
+      "variant": "state"
+    }
+  },
+  "neverTuneProspectiveOnHistoricalHoldouts": true,
+  "priorV62MLP": {
+    "action": {
+      "hazardBrier": 0.2745308896608516,
+      "hazardRate": 0.18478260869565216,
+      "sampleCount": 92,
+      "utilityMSE": 2.7217127385162345
+    },
+    "constant": {
+      "hazardBrier": 0.15883264411943576,
+      "hazardRate": 0.18478260869565216,
+      "sampleCount": 92,
+      "utilityMSE": 1.09329352768652
+    },
+    "state": {
+      "hazardBrier": 0.2979872592568527,
+      "hazardRate": 0.18478260869565216,
+      "sampleCount": 92,
+      "utilityMSE": 3.2384338840886575
+    }
+  },
+  "schema": "fpsarena-v63-retrospective-seed-group-loocv-v1"
+}

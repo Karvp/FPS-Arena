@@ -1,0 +1,1954 @@
+{
+  "allPredictions": {
+    "armContext": {
+      "hazardBrier": 0.17425777211083457,
+      "hazardDeltaVsKeep": 0.07142857142857142,
+      "matchedSeedRows": [
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-01",
+          "hazardBrier": 0.026805936366365614,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.15429948623349526,
+            0.27816741655764915,
+            0.01952905019989873,
+            0.07521248950456955
+          ],
+          "predictedUtility": [
+            0.5516858238090855,
+            0.7801186890510434,
+            0.69894151474415,
+            0.46604301535940507
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 2.0,
+            "strafe": 0.0,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 1.0898384170593591
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-02",
+          "hazardBrier": 0.2652697222908556,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.11787960376604606,
+            0.21758807843989708,
+            0.001,
+            0.04286859340141019
+          ],
+          "predictedUtility": [
+            0.45533163583917136,
+            0.8195571483571558,
+            0.52375394798687,
+            0.30894281718932526
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": -0.28,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.40511672280416144
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-03",
+          "hazardBrier": 0.26484537431062866,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 1.2800000000000002,
+          "policyHazardDelta": 1.0,
+          "predictedHazard": [
+            0.16253273057327966,
+            0.2891333936753421,
+            0.02915906413671207,
+            0.08267022830973225
+          ],
+          "predictedUtility": [
+            0.5780891570846842,
+            0.8085421310112924,
+            0.7565655496120631,
+            0.5114217178667138
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 2.2800000000000002,
+            "withdraw": 1.0
+          },
+          "selectedArm": "strafe",
+          "utilityMSE": 0.6935565343420795
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-04",
+          "hazardBrier": 0.27099543755329547,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.1401066075364046,
+            0.25978851811586,
+            0.0035180788215670306,
+            0.06233454385432273
+          ],
+          "predictedUtility": [
+            0.5053600520506074,
+            0.7245700128388084,
+            0.5964934066633876,
+            0.3860944110151474
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": -0.6266666666666667,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.4914299537852273
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-05",
+          "hazardBrier": 0.024752199440261233,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.13478178098172433,
+            0.21250984680277818,
+            0.13636295773643947,
+            0.1307186981486168
+          ],
+          "predictedUtility": [
+            0.8426869680324476,
+            0.6453305336966448,
+            0.5701072244249127,
+            0.48667370561191325
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.4221115917221062
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-06",
+          "hazardBrier": 0.4949900230728197,
+          "hazardByArm": {
+            "close": 1.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.14272380695709122,
+            0.23228900161631189,
+            0.21597604693839242,
+            0.13079561022431277
+          ],
+          "predictedUtility": [
+            1.1139341818624957,
+            0.899355247640004,
+            0.9164871070757956,
+            0.8555782642057922
+          ],
+          "rewardByArm": {
+            "close": -0.3466666666666667,
+            "keep": 0.0,
+            "strafe": -1.0,
+            "withdraw": -0.30666666666666664
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 1.9542890208451518
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-07",
+          "hazardBrier": 0.5392115939597855,
+          "hazardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.20111651261744937,
+            0.3463628355545258,
+            0.3170336686233152,
+            0.2094641077799257
+          ],
+          "predictedUtility": [
+            1.2949668955735525,
+            1.0260290542459911,
+            1.3252996969216584,
+            1.0913041623603041
+          ],
+          "rewardByArm": {
+            "close": 0.8133333333333332,
+            "keep": 0.8133333333333332,
+            "strafe": 0.8133333333333332,
+            "withdraw": 0.8133333333333332
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.15414692430163826
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-08",
+          "hazardBrier": 0.01943478736017348,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.1219071411487161,
+            0.1885827092585894,
+            0.1142544255113048,
+            0.11941644106827576
+          ],
+          "predictedUtility": [
+            0.8128428704326517,
+            0.6933531143983414,
+            0.5246028238745059,
+            0.44013735006721955
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.402595270750093
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-fire-09",
+          "hazardBrier": 0.03388909056018295,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.1460479992304172,
+            0.15446893372569437,
+            0.2285751835500506,
+            0.19524107697979842
+          ],
+          "predictedUtility": [
+            0.708986263180441,
+            0.8756098230720399,
+            0.6360199994203254,
+            0.6301610309810668
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 2.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "selectedArm": "close",
+          "utilityMSE": 0.8000580106139648
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-foundry-fire-10",
+          "hazardBrier": 0.08664491995630741,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.23551173196345637,
+            0.2975905191553777,
+            0.3570147793987271,
+            0.2740332719443275
+          ],
+          "predictedUtility": [
+            0.9479385079547022,
+            0.832477986762598,
+            1.0872693928218378,
+            1.0276601187061174
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 2.0,
+            "withdraw": 2.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.4523240074768783
+        },
+        {
+          "bestArmRegret": 0.5333333333333332,
+          "group": "v63-pro-arena-uzi-11",
+          "hazardBrier": 0.17586376667766765,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.09199362776946088,
+            0.22247615932784887,
+            0.2003585567531978,
+            0.07791123111198578
+          ],
+          "predictedUtility": [
+            0.8743481774313211,
+            0.9689729813744754,
+            0.8940552918580843,
+            0.7157543686471989
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 1.5333333333333332,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.1265557624138005
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-uzi-12",
+          "hazardBrier": 0.015106679767451935,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.09421292789579144,
+            0.1965198666388152,
+            0.09114782069308153,
+            0.06799014697935495
+          ],
+          "predictedUtility": [
+            0.5158963272150601,
+            0.5267745963847109,
+            0.40642869450080077,
+            0.289263824484854
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.19812458492487328
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-neon-m4a1-13",
+          "hazardBrier": 0.1866884788056525,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.15488636856480603,
+            0.05594861451401255,
+            0.10667501250890171,
+            0.15842152932979256
+          ],
+          "predictedUtility": [
+            0.5770624003006543,
+            0.4152873587908159,
+            0.4981738274476318,
+            0.6901126423409514
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 1.0,
+            "strafe": 1.0,
+            "withdraw": 0.64
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.736132788207146
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-foundry-aa12-14",
+          "hazardBrier": 0.0351107994302361,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.17963470149822616,
+            0.26014031229305024,
+            0.14155434240019626,
+            0.1430522904615997
+          ],
+          "predictedUtility": [
+            1.0068968211093683,
+            0.8978107378024194,
+            0.9646201396438938,
+            0.830095923555947
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.4286487076229138
+        }
+      ],
+      "nonKeepActions": 2,
+      "policyGainVsKeep": 0.09142857142857144,
+      "utilityMSE": 0.5967805926335281
+    },
+    "armOnly": {
+      "hazardBrier": 0.16752369900839073,
+      "hazardDeltaVsKeep": 0.0,
+      "matchedSeedRows": [
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-01",
+          "hazardBrier": 0.019720144033543947,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.10520636594305212,
+            0.21158934466645635,
+            0.12648296168773296,
+            0.08392977019837126
+          ],
+          "predictedUtility": [
+            0.6476724380458855,
+            0.6593036437196443,
+            0.655615700457233,
+            0.534197260740921
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 2.0,
+            "strafe": 0.0,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 1.068265173287868
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-02",
+          "hazardBrier": 0.21950639751423204,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.05909212741156393,
+            0.1654751061349682,
+            0.08036872315624478,
+            0.037815531666883076
+          ],
+          "predictedUtility": [
+            0.5503715646480951,
+            0.562002770321854,
+            0.5583148270594427,
+            0.43689638734313063
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": -0.28,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.3781015438909533
+        },
+        {
+          "bestArmRegret": 1.2800000000000002,
+          "group": "v63-pro-arena-mp5sd-03",
+          "hazardBrier": 0.20441643783960184,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.11427810949291546,
+            0.2206610882163197,
+            0.1355547052375963,
+            0.09300151374823461
+          ],
+          "predictedUtility": [
+            0.6871298161986529,
+            0.6987610218724117,
+            0.6950730786100004,
+            0.5736546388936884
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 2.2800000000000002,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.720599096734724
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-04",
+          "hazardBrier": 0.21034701391274077,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.08984119240118753,
+            0.19622417112459178,
+            0.11111778814586838,
+            0.06856459665650667
+          ],
+          "predictedUtility": [
+            0.5766046479469522,
+            0.5882358536207111,
+            0.5845479103582998,
+            0.46312947064198773
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": -0.6266666666666667,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.5075857486396212
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-05",
+          "hazardBrier": 0.025939255899060595,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.12699757623653862,
+            0.23338055495994287,
+            0.14827417198121948,
+            0.10572098049185778
+          ],
+          "predictedUtility": [
+            0.6596747852464441,
+            0.6713059909202029,
+            0.6676180476577916,
+            0.5461996079414796
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.4074676062522813
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-06",
+          "hazardBrier": 0.5009421016132847,
+          "hazardByArm": {
+            "close": 1.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.153850371753176,
+            0.26023335047658025,
+            0.17512696749785686,
+            0.13257377600849518
+          ],
+          "predictedUtility": [
+            0.9698138775009864,
+            0.9814450831747452,
+            0.9777571399123339,
+            0.8563387001960219
+          ],
+          "rewardByArm": {
+            "close": -0.3466666666666667,
+            "keep": 0.0,
+            "strafe": -1.0,
+            "withdraw": -0.30666666666666664
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 1.9921311412214866
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-07",
+          "hazardBrier": 0.5374489643879483,
+          "hazardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.24189853646295295,
+            0.3482815151863572,
+            0.26317513220763383,
+            0.22062194071827212
+          ],
+          "predictedUtility": [
+            1.2078751295803412,
+            1.2195063352541,
+            1.2158183919916885,
+            1.0943999522753765
+          ],
+          "rewardByArm": {
+            "close": 0.8133333333333332,
+            "keep": 0.8133333333333332,
+            "strafe": 0.8133333333333332,
+            "withdraw": 0.8133333333333332
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.14040810080046853
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-08",
+          "hazardBrier": 0.020855278038108455,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.10944443456587045,
+            0.21582741328927468,
+            0.1307210303105513,
+            0.0881678388211896
+          ],
+          "predictedUtility": [
+            0.6412092169981441,
+            0.652840422671903,
+            0.6491524794094917,
+            0.5277340396931797
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.3843130089030438
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-fire-09",
+          "hazardBrier": 0.03513950861772647,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.1544875536906391,
+            0.26087053241404334,
+            0.17576414943531993,
+            0.13321095794595822
+          ],
+          "predictedUtility": [
+            0.7361694564684328,
+            0.7478006621421917,
+            0.7441127188797804,
+            0.6226942791634683
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 2.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.8432771830274759
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-foundry-fire-10",
+          "hazardBrier": 0.08705121808876001,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.2644418309346211,
+            0.37082480965802533,
+            0.285718426679302,
+            0.24316523518994027
+          ],
+          "predictedUtility": [
+            0.9973116788662784,
+            1.0089428845400372,
+            1.005254941277626,
+            0.8838365015613139
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 2.0,
+            "withdraw": 2.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.5588564723384701
+        },
+        {
+          "bestArmRegret": 0.5333333333333332,
+          "group": "v63-pro-arena-uzi-11",
+          "hazardBrier": 0.2028742379993216,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.12158914905977226,
+            0.2279721277831765,
+            0.1428657448044531,
+            0.10031255331509141
+          ],
+          "predictedUtility": [
+            0.8867578821327344,
+            0.8983890878064933,
+            0.894701144544082,
+            0.77328270482777
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 1.5333333333333332,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.12060008980595552
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-uzi-12",
+          "hazardBrier": 0.01499732908667496,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.08587194587090972,
+            0.19225492459431398,
+            0.10714854161559058,
+            0.06459535012622887
+          ],
+          "predictedUtility": [
+            0.45806603795132095,
+            0.4696972436250798,
+            0.46600930036266847,
+            0.34459086064635647
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.19158688126472975
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-neon-m4a1-13",
+          "hazardBrier": 0.23095000329234952,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.09238713654852715,
+            0.1987701152719314,
+            0.113663732293208,
+            0.0711105408038463
+          ],
+          "predictedUtility": [
+            0.5686342345249779,
+            0.5802654401987367,
+            0.5765774969363254,
+            0.4551590572200134
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 1.0,
+            "strafe": 1.0,
+            "withdraw": 0.64
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.60379385853661
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-foundry-aa12-14",
+          "hazardBrier": 0.03514389579411687,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.15449966698241702,
+            0.26088264570582126,
+            0.17577626272709787,
+            0.1332230712377362
+          ],
+          "predictedUtility": [
+            0.9483310828328716,
+            0.9599622885066305,
+            0.9562743452442192,
+            0.8348559055279071
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.39995779422180916
+        }
+      ],
+      "nonKeepActions": 0,
+      "policyGainVsKeep": 0.0,
+      "utilityMSE": 0.594067407066107
+    },
+    "constant": {
+      "hazardBrier": 0.16923778017823385,
+      "hazardDeltaVsKeep": 0.0,
+      "matchedSeedRows": [
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-01",
+          "hazardBrier": 0.0341446124763705,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 2.0,
+            "strafe": 0.0,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.9145729678638944
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-02",
+          "hazardBrier": 0.19175330812854444,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": -0.28,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.7261555765595461
+        },
+        {
+          "bestArmRegret": 1.2800000000000002,
+          "group": "v63-pro-arena-mp5sd-03",
+          "hazardBrier": 0.19175330812854444,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 2.2800000000000002,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.6058860113421555
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-04",
+          "hazardBrier": 0.19175330812854444,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": -0.6266666666666667,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.6653246586851501
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-05",
+          "hazardBrier": 0.0341446124763705,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.5982686200378069
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-06",
+          "hazardBrier": 0.5069706994328923,
+          "hazardByArm": {
+            "close": 1.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": -0.3466666666666667,
+            "keep": 0.0,
+            "strafe": -1.0,
+            "withdraw": -0.30666666666666664
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 1.541232871245536
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-07",
+          "hazardBrier": 0.6645793950850662,
+          "hazardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 0.8133333333333332,
+            "keep": 0.8133333333333332,
+            "strafe": 0.8133333333333332,
+            "withdraw": 0.8133333333333332
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.0015884268010922127
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-08",
+          "hazardBrier": 0.0341446124763705,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.5982686200378069
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-fire-09",
+          "hazardBrier": 0.0341446124763705,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 2.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.7778338374291119
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-foundry-fire-10",
+          "hazardBrier": 0.0341446124763705,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 2.0,
+            "withdraw": 2.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.7778338374291118
+        },
+        {
+          "bestArmRegret": 0.5333333333333332,
+          "group": "v63-pro-arena-uzi-11",
+          "hazardBrier": 0.19175330812854444,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 1.5333333333333332,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.1828290065112372
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-uzi-12",
+          "hazardBrier": 0.0341446124763705,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.5982686200378069
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-neon-m4a1-13",
+          "hazardBrier": 0.19175330812854444,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 1.0,
+            "strafe": 1.0,
+            "withdraw": 0.64
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.406199054820416
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-foundry-aa12-14",
+          "hazardBrier": 0.0341446124763705,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216,
+            0.18478260869565216
+          ],
+          "predictedUtility": [
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651,
+            0.7734782608695651
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.32479035916824184
+        }
+      ],
+      "nonKeepActions": 0,
+      "policyGainVsKeep": 0.0,
+      "utilityMSE": 0.6227894619977796
+    },
+    "state": {
+      "hazardBrier": 0.16365559450085662,
+      "hazardDeltaVsKeep": 0.0,
+      "matchedSeedRows": [
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-01",
+          "hazardBrier": 0.01737179636491561,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.13180211062390318,
+            0.13180211062390318,
+            0.13180211062390318,
+            0.13180211062390318
+          ],
+          "predictedUtility": [
+            0.624197260740921,
+            0.624197260740921,
+            0.624197260740921,
+            0.624197260740921
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 2.0,
+            "strafe": 0.0,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 1.0791290684641668
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-02",
+          "hazardBrier": 0.21449847537751854,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.08568787209241499,
+            0.08568787209241499,
+            0.08568787209241499,
+            0.08568787209241499
+          ],
+          "predictedUtility": [
+            0.5268963873431306,
+            0.5268963873431306,
+            0.5268963873431306,
+            0.5268963873431306
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": -0.28,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.3709852972232806
+        },
+        {
+          "bestArmRegret": 1.2800000000000002,
+          "group": "v63-pro-arena-mp5sd-03",
+          "hazardBrier": 0.19940851570288837,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.14087385417376652,
+            0.14087385417376652,
+            0.14087385417376652,
+            0.14087385417376652
+          ],
+          "predictedUtility": [
+            0.6636546388936884,
+            0.6636546388936884,
+            0.6636546388936884,
+            0.6636546388936884
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 2.2800000000000002,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.7379892330457748
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-mp5sd-04",
+          "hazardBrier": 0.2053390917760273,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.11643693708203859,
+            0.11643693708203859,
+            0.11643693708203859,
+            0.11643693708203859
+          ],
+          "predictedUtility": [
+            0.5531294706419877,
+            0.5531294706419877,
+            0.5531294706419877,
+            0.5531294706419877
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": -0.6266666666666667,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.5243144192296317
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-05",
+          "hazardBrier": 0.02359090823043226,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.1535933209173897,
+            0.1535933209173897,
+            0.1535933209173897,
+            0.1535933209173897
+          ],
+          "predictedUtility": [
+            0.6361996079414796,
+            0.6361996079414796,
+            0.6361996079414796,
+            0.6361996079414796
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.4047499411448923
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-06",
+          "hazardBrier": 0.5118916262850819,
+          "hazardByArm": {
+            "close": 1.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18044611643402708,
+            0.18044611643402708,
+            0.18044611643402708,
+            0.18044611643402708
+          ],
+          "predictedUtility": [
+            0.9463387001960218,
+            0.9463387001960218,
+            0.9463387001960218,
+            0.9463387001960218
+          ],
+          "rewardByArm": {
+            "close": -0.3466666666666667,
+            "keep": 0.0,
+            "strafe": -1.0,
+            "withdraw": -0.30666666666666664
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 1.9814191498729634
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-07",
+          "hazardBrier": 0.5351006167193201,
+          "hazardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.268494281143804,
+            0.268494281143804,
+            0.268494281143804,
+            0.268494281143804
+          ],
+          "predictedUtility": [
+            1.1843999522753765,
+            1.1843999522753765,
+            1.1843999522753765,
+            1.1843999522753765
+          ],
+          "rewardByArm": {
+            "close": 0.8133333333333332,
+            "keep": 0.8133333333333332,
+            "strafe": 0.8133333333333332,
+            "withdraw": 0.8133333333333332
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.13769043569307957
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-uzi-08",
+          "hazardBrier": 0.018506930369480118,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.13604017924672152,
+            0.13604017924672152,
+            0.13604017924672152,
+            0.13604017924672152
+          ],
+          "predictedUtility": [
+            0.6177340396931796,
+            0.6177340396931796,
+            0.6177340396931796,
+            0.6177340396931796
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.38159534379565485
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-foundry-fire-09",
+          "hazardBrier": 0.032791160949098126,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.18108329837149015,
+            0.18108329837149015,
+            0.18108329837149015,
+            0.18108329837149015
+          ],
+          "predictedUtility": [
+            0.7126942791634683,
+            0.7126942791634683,
+            0.7126942791634683,
+            0.7126942791634683
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 2.0,
+            "strafe": 1.0,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.8698502980619308
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-foundry-fire-10",
+          "hazardBrier": 0.08470287042013168,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.29103757561547217,
+            0.29103757561547217,
+            0.29103757561547217,
+            0.29103757561547217
+          ],
+          "predictedUtility": [
+            0.9738365015613138,
+            0.9738365015613138,
+            0.9738365015613138,
+            0.9738365015613138
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 2.0,
+            "withdraw": 2.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.5268480270892375
+        },
+        {
+          "bestArmRegret": 0.5333333333333332,
+          "group": "v63-pro-arena-uzi-11",
+          "hazardBrier": 0.19786631586260814,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.14818489374062332,
+            0.14818489374062332,
+            0.14818489374062332,
+            0.14818489374062332
+          ],
+          "predictedUtility": [
+            0.8632827048277699,
+            0.8632827048277699,
+            0.8632827048277699,
+            0.8632827048277699
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 1.0,
+            "strafe": 1.5333333333333332,
+            "withdraw": 1.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.12626067528958312
+        },
+        {
+          "bestArmRegret": 0.0,
+          "group": "v63-pro-arena-uzi-12",
+          "hazardBrier": 0.012648981418046622,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.11246769055176079,
+            0.11246769055176079,
+            0.11246769055176079,
+            0.11246769055176079
+          ],
+          "predictedUtility": [
+            0.43459086064635644,
+            0.43459086064635644,
+            0.43459086064635644,
+            0.43459086064635644
+          ],
+          "rewardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.18886921615734079
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-neon-m4a1-13",
+          "hazardBrier": 0.20466548541095525,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 1.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.11898288122937821,
+            0.11898288122937821,
+            0.11898288122937821,
+            0.11898288122937821
+          ],
+          "predictedUtility": [
+            0.5451590572200133,
+            0.5451590572200133,
+            0.5451590572200133,
+            0.5451590572200133
+          ],
+          "rewardByArm": {
+            "close": 2.0,
+            "keep": 1.0,
+            "strafe": 1.0,
+            "withdraw": 0.64
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.6348293849185828
+        },
+        {
+          "bestArmRegret": 1.0,
+          "group": "v63-pro-foundry-aa12-14",
+          "hazardBrier": 0.03279554812548854,
+          "hazardByArm": {
+            "close": 0.0,
+            "keep": 0.0,
+            "strafe": 0.0,
+            "withdraw": 0.0
+          },
+          "policyGain": 0.0,
+          "policyHazardDelta": 0.0,
+          "predictedHazard": [
+            0.1810954116632681,
+            0.1810954116632681,
+            0.1810954116632681,
+            0.1810954116632681
+          ],
+          "predictedUtility": [
+            0.9248559055279071,
+            0.9248559055279071,
+            0.9248559055279071,
+            0.9248559055279071
+          ],
+          "rewardByArm": {
+            "close": 1.0,
+            "keep": 0.0,
+            "strafe": 1.0,
+            "withdraw": 0.0
+          },
+          "selectedArm": "keep",
+          "utilityMSE": 0.4305025404619379
+        }
+      ],
+      "nonKeepActions": 0,
+      "policyGainVsKeep": 0.0,
+      "utilityMSE": 0.5996452164605754
+    }
+  },
+  "armContextMeanObservedHazardChange": 0.07142857142857142,
+  "armContextObservedPolicyGain95CI": [
+    0.0,
+    0.27428571428571435
+  ],
+  "candidateWasFittedBeforeData": true,
+  "independentGroups": true,
+  "limitations": [
+    "short-window simulator counterfactuals, not natural full TDM match",
+    "small number of independent groups and shared simulation stochasticity"
+  ],
+  "modelSha256": "6c9d43e2f76de6b64a7134abcad66e17401b77d17dd399754ab12746b946dc5c",
+  "models": {
+    "armContext": {
+      "hazardBrier": 0.17425777211083457,
+      "hazardDeltaVsKeep": 0.07142857142857142,
+      "nonKeepActions": 2,
+      "policyGainVsKeep": 0.09142857142857144,
+      "utilityMSE": 0.5967805926335281
+    },
+    "armOnly": {
+      "hazardBrier": 0.16752369900839073,
+      "hazardDeltaVsKeep": 0.0,
+      "nonKeepActions": 0,
+      "policyGainVsKeep": 0.0,
+      "utilityMSE": 0.594067407066107
+    },
+    "constant": {
+      "hazardBrier": 0.16923778017823385,
+      "hazardDeltaVsKeep": 0.0,
+      "nonKeepActions": 0,
+      "policyGainVsKeep": 0.0,
+      "utilityMSE": 0.6227894619977796
+    },
+    "state": {
+      "hazardBrier": 0.16365559450085662,
+      "hazardDeltaVsKeep": 0.0,
+      "nonKeepActions": 0,
+      "policyGainVsKeep": 0.0,
+      "utilityMSE": 0.5996452164605754
+    }
+  },
+  "oldHoldoutsUntouched": true,
+  "pairedImprovementArmContextVsConstant": {
+    "hazardBrier": {
+      "CI95": [
+        -0.030140449313949772,
+        0.022004869166988395
+      ],
+      "mean": -0.005019991932600679
+    },
+    "utilityMSE": {
+      "CI95": [
+        -0.10289582921941194,
+        0.15105259920785008
+      ],
+      "mean": 0.026008869364251477
+    }
+  },
+  "productionPromotionAllowed": false,
+  "registrySha256": "9a6046f27c373ff434c3c32006e560f0de0c42fe435b92c00494d8aaea6e507f",
+  "schema": "fpsarena-v63-prospective-frozen-model-test-v1",
+  "seedGroupCount": 14,
+  "strictProspectiveModelGatePassed": false,
+  "trainedOnProspectiveData": false,
+  "untriggeredGroups": []
+}

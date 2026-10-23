@@ -1,0 +1,191 @@
+{
+  "modelSha256": "6c9d43e2f76de6b64a7134abcad66e17401b77d17dd399754ab12746b946dc5c",
+  "references": [
+    {
+      "expectedHazard": [
+        0.15926030094980925,
+        0.24604302530585448,
+        0.165919421092056,
+        0.15283656820801345
+      ],
+      "expectedUtility": [
+        0.9195460417334415,
+        0.7165758805892386,
+        0.7349894711424798,
+        0.6180804487972297
+      ],
+      "id": "v61-train-foundry-uzi-aim",
+      "map": "foundry",
+      "origin": "v61",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": null,
+        "aimAlignment": 0.9753,
+        "cue": "aim-lock",
+        "distance": 40.6002,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 24,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 9.321,
+          "z": 3.05
+        },
+        "valid": true
+      },
+      "weapon": "uzi"
+    },
+    {
+      "expectedHazard": [
+        0.1510376926292918,
+        0.2704699592799651,
+        0.038114245391946536,
+        0.06481634875824072
+      ],
+      "expectedUtility": [
+        0.644751650303345,
+        0.8852815715562835,
+        0.8005909462852234,
+        0.5997508757839669
+      ],
+      "id": "v61-train-arena-mp5sd-aim",
+      "map": "arena",
+      "origin": "v61",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": null,
+        "aimAlignment": 0.9912,
+        "cue": "aim-lock",
+        "distance": 37.9659,
+        "hp": 100,
+        "maxRange": 120,
+        "publicAimTicks": 28,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot3",
+        "targetPos": {
+          "x": -3.182,
+          "z": -2.4
+        },
+        "valid": true
+      },
+      "weapon": "mp5sd"
+    },
+    {
+      "expectedHazard": [
+        0.16689094601027185,
+        0.29251662370121967,
+        0.05758557118438838,
+        0.07912153209126557
+      ],
+      "expectedUtility": [
+        0.6939504856214657,
+        0.9267522420506586,
+        0.9051083048636946,
+        0.6836191011140639
+      ],
+      "id": "v62-a-mp5sd-aim-01",
+      "map": "arena",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 177,
+        "aimAlignment": 0.9903,
+        "cue": "aim-lock",
+        "distance": 30.1488,
+        "hp": 100,
+        "maxRange": 120,
+        "publicAimTicks": 24,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot3",
+        "targetPos": {
+          "x": 1.348,
+          "z": -13.029
+        },
+        "valid": true
+      },
+      "weapon": "mp5sd"
+    },
+    {
+      "expectedHazard": [
+        0.18280300500766836,
+        0.2253390404060884,
+        0.2933764457701774,
+        0.22641708051463225
+      ],
+      "expectedUtility": [
+        0.7826070615592714,
+        0.6804097175379012,
+        0.7329372424517084,
+        0.7450702655829116
+      ],
+      "id": "v62-f-uzi-fire-09",
+      "map": "foundry",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": 818,
+        "ageSinceLastFire": 5,
+        "aimAlignment": 0.9999,
+        "cue": "post-fire",
+        "distance": 38.7407,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 21,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 0.061,
+          "z": -7.056
+        },
+        "valid": true
+      },
+      "weapon": "uzi"
+    },
+    {
+      "expectedHazard": [
+        0.1579138804280695,
+        0.08614137691883991,
+        0.15370370090231342,
+        0.175330984208887
+      ],
+      "expectedUtility": [
+        0.6611309150234047,
+        0.4503314359891697,
+        0.6122718467239401,
+        0.7555708169740126
+      ],
+      "id": "v62-n-m4a1-fire-16",
+      "map": "neon",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 27,
+        "aimAlignment": 0.9949,
+        "cue": "post-fire",
+        "distance": 53.2576,
+        "hp": 100,
+        "maxRange": 200,
+        "publicAimTicks": 0,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": -2.489,
+          "z": -4.861
+        },
+        "valid": true
+      },
+      "weapon": "m4a1"
+    }
+  ],
+  "source": "frozen sklearn ridge weights"
+}

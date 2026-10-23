@@ -1,0 +1,881 @@
+{
+  "allPass": true,
+  "completedGroups": 14,
+  "eventPositiveGroups": 11,
+  "frozenModelSha256": "6c9d43e2f76de6b64a7134abcad66e17401b77d17dd399754ab12746b946dc5c",
+  "groups": [
+    {
+      "arms": {
+        "close": {
+          "changed": 85,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 11,
+            "kills": 2,
+            "shots": 16
+          },
+          "sha256": "f34e7f77285f67bc762f2c7db0761a6caaaab22b4e55c6eea37994a6d3843b7f"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 9,
+            "kills": 2,
+            "shots": 9
+          },
+          "sha256": "cda8c1dc0ac20769a6cdc4c819875a6b8064d52d97a24974facf1ba881934576"
+        },
+        "strafe": {
+          "changed": 118,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 5
+          },
+          "sha256": "e77bb57e6d0b4ce0ae03e9c564993c0b65f1ff4530f59e01ee984a4b42e83ade"
+        },
+        "withdraw": {
+          "changed": 150,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 1,
+            "shots": 6
+          },
+          "sha256": "fa6a36ea28fa7f77266ef5cfcc51f87b4af08338e948ed95656e5e9e3edb75d0"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-arena-mp5sd-01",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 3846
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 150,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 0,
+            "shots": 1
+          },
+          "sha256": "b3be294a553a523a456f97c87ceee4b61ed71de3ed2ce71c15ade2b0950fefba"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 6,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "be3fb36e38a3127a808caa6f0be4c17bf8384a34ba7d0b9d08a22df492c1b42d"
+        },
+        "strafe": {
+          "changed": 122,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 21,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "4fb0db188fd4fdd6f26136379b153147fb1df058092c875e92da31e77df00ead"
+        },
+        "withdraw": {
+          "changed": 108,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "b19f95c8c86dc26a8aa4afc536d625b85ea48e92bb1ec80e6fa75ace8f1635dd"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-arena-mp5sd-02",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1272
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 87,
+          "finalDeaths": 0,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 10,
+            "kills": 1,
+            "shots": 12
+          },
+          "sha256": "13a54c139a3d4efd70622503ed0172c97e9a67fa16a58e70ace2c14fa3900eaa"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 7,
+            "kills": 1,
+            "shots": 8
+          },
+          "sha256": "e45b2d0e60443367acb9fa91366dd4ad28fb4bb0fa221c66b9245a68adf944c3"
+        },
+        "strafe": {
+          "changed": 101,
+          "finalDeaths": 0,
+          "finalKills": 8,
+          "outcome": {
+            "damageTaken": 54,
+            "deaths": 0,
+            "hits": 15,
+            "kills": 3,
+            "shots": 19
+          },
+          "sha256": "7e91ece35d6a0d99c68d4c5d2bdf0b79c2e7ff76d6ff705a11cd2df333efd912"
+        },
+        "withdraw": {
+          "changed": 136,
+          "finalDeaths": 1,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 7,
+            "kills": 1,
+            "shots": 16
+          },
+          "sha256": "2ad29c223e76ee00cba47acba77a89036b738b3c90d6a52fe4c0f7cfc25b76c2"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-arena-mp5sd-03",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1194
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 81,
+          "finalDeaths": 0,
+          "finalKills": 6,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 1,
+            "shots": 4
+          },
+          "sha256": "8769d58a47bbb7ea4d419620f7d36c4de163d00b644556e0bd04077f16e7a341"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 1,
+            "shots": 4
+          },
+          "sha256": "48ed67b1428213bd736a130cf00d57b0bcb49576827dacdf71cb2ebdd6e3d199"
+        },
+        "strafe": {
+          "changed": 89,
+          "finalDeaths": 0,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 47,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "344a2bf5ff0e61bbc346a4b7d30f742acafece13411f409f263b60b7afe1f0ab"
+        },
+        "withdraw": {
+          "changed": 122,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "6bd5c7f239533e750da2bb6dbc706bc139d12354c61742cfeac2631e1a8646ee"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-arena-mp5sd-04",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1830
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 4,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 1
+          },
+          "sha256": "a1946edb615671f2f41011d1204acdd0e4f7290e1bb5fe515c56ea1544b688f0"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 0,
+            "shots": 1
+          },
+          "sha256": "441565b666cbe749ffa6b6c57c7d9afbeffd339b7cb011c5dd6aec96767304bd"
+        },
+        "strafe": {
+          "changed": 4,
+          "finalDeaths": 0,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 0,
+            "shots": 1
+          },
+          "sha256": "fcfdf2ef6ad859b1583dea70b4eb6f1b296af106365d619603674161df17099e"
+        },
+        "withdraw": {
+          "changed": 4,
+          "finalDeaths": 0,
+          "finalKills": 8,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 0,
+            "shots": 3
+          },
+          "sha256": "6db668a16b4597d5b63605d77f42edd1aac70f74e75d775deb0e0100d1170219"
+        }
+      },
+      "changedArms": 3,
+      "event": false,
+      "id": "v63-pro-foundry-uzi-05",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1380
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 72,
+          "finalDeaths": 1,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 101,
+            "deaths": 0,
+            "hits": 8,
+            "kills": 1,
+            "shots": 11
+          },
+          "sha256": "109230297adfa07bb69a867fbfd29317ec4f6ae9d2fe70b70a8b17334befe823"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 4,
+            "kills": 0,
+            "shots": 5
+          },
+          "sha256": "f43a02f2510a9d81948cfef0f840faf3f5fea25727cbaeceab223fd72c676be3"
+        },
+        "strafe": {
+          "changed": 36,
+          "finalDeaths": 1,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 75,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "549d86b2d85b1c7a782416317f3c0ca62c2e9a4703b164fbcca67f8888f99f5d"
+        },
+        "withdraw": {
+          "changed": 25,
+          "finalDeaths": 0,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 23,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 0,
+            "shots": 3
+          },
+          "sha256": "b60fd9f46211512b9f8b936cd4f6fb5d85b962fd01a8110d17d3ea75df90001e"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-foundry-uzi-06",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 2484
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 6,
+          "outcome": {
+            "damageTaken": 89,
+            "deaths": 0,
+            "hits": 12,
+            "kills": 2,
+            "shots": 15
+          },
+          "sha256": "3a589ae0233189770d921a8698d7848f5702ccf1ac1314a2ccc408258ee1f69a"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 6,
+          "outcome": {
+            "damageTaken": 89,
+            "deaths": 0,
+            "hits": 12,
+            "kills": 2,
+            "shots": 15
+          },
+          "sha256": "f86f6b3cd40b8f8167021c3166e7c86a5d450c8e1fb391f7f2726b130765138f"
+        },
+        "strafe": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 6,
+          "outcome": {
+            "damageTaken": 89,
+            "deaths": 0,
+            "hits": 12,
+            "kills": 2,
+            "shots": 15
+          },
+          "sha256": "311f26079f07da7c51d8bc29f57ef73cf361586f6efb8fce671f3bb4547eee41"
+        },
+        "withdraw": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 6,
+          "outcome": {
+            "damageTaken": 89,
+            "deaths": 0,
+            "hits": 12,
+            "kills": 2,
+            "shots": 15
+          },
+          "sha256": "c937f459ae1f87d50a385c972689c8324f490bbbed92d87b8f9f5a970721ecc0"
+        }
+      },
+      "changedArms": 0,
+      "event": true,
+      "id": "v63-pro-foundry-uzi-07",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1326
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 4,
+          "finalDeaths": 1,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "4097831b687c4d44028e5b600de290a290009ed1b549871869bac5916058be93"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "f86cae7c7d706343c0f406b96904d25033a75377755de889d2c11b4f44efa8a4"
+        },
+        "strafe": {
+          "changed": 2,
+          "finalDeaths": 1,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "48d855b44601e49006712e3416a8ddf814cf16d5fd4b1614b0307e8b9fa84752"
+        },
+        "withdraw": {
+          "changed": 2,
+          "finalDeaths": 1,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "662ac8ecc2fda489f76f0701878d25c89bfc9f965bddb22573a5cef0469f91a0"
+        }
+      },
+      "changedArms": 3,
+      "event": false,
+      "id": "v63-pro-foundry-uzi-08",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 3582
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 48,
+          "finalDeaths": 0,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 6,
+            "kills": 2,
+            "shots": 6
+          },
+          "sha256": "0554de35a313839af365a06924e1c290db9a311d00c4e73ff40ccc0e19db0918"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 6,
+            "kills": 2,
+            "shots": 6
+          },
+          "sha256": "148a52202667ce9009437761758f3f46007e0aca724920abddc3630c10920c6b"
+        },
+        "strafe": {
+          "changed": 118,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 1,
+            "shots": 1
+          },
+          "sha256": "49a17a66754cbbf7167159d0ff9040d230d0f50746b4c74d538ad1bead856eba"
+        },
+        "withdraw": {
+          "changed": 90,
+          "finalDeaths": 0,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 1,
+            "shots": 1
+          },
+          "sha256": "1a78fb5eabd5d4e158ceaa1a394133819ff912d6331c17f3abc5f3bfef58c792"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-foundry-fire-09",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1344
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 91,
+          "finalDeaths": 1,
+          "finalKills": 6,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 11,
+            "kills": 1,
+            "shots": 14
+          },
+          "sha256": "184e7a70bcce59e12965fcf0699a139203f1282015205e7476ec6a7770ba1d46"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 6,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 1,
+            "shots": 3
+          },
+          "sha256": "8a86a51fef9b1276934ea40e1dfe3f40853fd6ab2604a847b8ecdacdbd627d90"
+        },
+        "strafe": {
+          "changed": 129,
+          "finalDeaths": 1,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 6,
+            "kills": 2,
+            "shots": 7
+          },
+          "sha256": "ca6920cf8ce8068c82b6242b33d6c7930ad818463a49d4a33acc4e597d6513a4"
+        },
+        "withdraw": {
+          "changed": 149,
+          "finalDeaths": 1,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 9,
+            "kills": 2,
+            "shots": 12
+          },
+          "sha256": "ad94fae1366070b55109aa558d37a700d4c19078d5c273ebdbdb2b340031756d"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-foundry-fire-10",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1266
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 112,
+          "finalDeaths": 0,
+          "finalKills": 17,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 1,
+            "shots": 1
+          },
+          "sha256": "399a25a3edfbc47a80a9fb4480959f844b864a72c3683753252376ca840bdd07"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 12,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 1,
+            "shots": 1
+          },
+          "sha256": "1f51f6a492cecf525eb21a7687ae357482ccb517d9529e6e73885f4a3077d0b6"
+        },
+        "strafe": {
+          "changed": 106,
+          "finalDeaths": 1,
+          "finalKills": 11,
+          "outcome": {
+            "damageTaken": 35,
+            "deaths": 0,
+            "hits": 4,
+            "kills": 2,
+            "shots": 5
+          },
+          "sha256": "97e73f971744f708d137700b4270465a854c7a53181d9467b20c1727ad68a351"
+        },
+        "withdraw": {
+          "changed": 149,
+          "finalDeaths": 0,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 1,
+            "shots": 1
+          },
+          "sha256": "036a9651a391e5c59e36c4422bb14519846e99c9769eae942449568686beb6d8"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-arena-uzi-11",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1194
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 119,
+          "finalDeaths": 0,
+          "finalKills": 10,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "e68b64f50ebecb023e0e0f10582b3410b61217d8f0794c710cd62b00784eba7c"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "61e678f81565ba75d812cc941c845281ad3475438846914ec5a3e8210f8c6c45"
+        },
+        "strafe": {
+          "changed": 43,
+          "finalDeaths": 0,
+          "finalKills": 6,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "16c019444caa70e5c1ec644d85b7575d2c1051ea4620058e724a4bacdaa120f8"
+        },
+        "withdraw": {
+          "changed": 61,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "db434c436421d611a8f9dfca922c88e5be948a38b7bd55125a09cb6fd4b5399d"
+        }
+      },
+      "changedArms": 3,
+      "event": false,
+      "id": "v63-pro-arena-uzi-12",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1296
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 26,
+          "finalDeaths": 0,
+          "finalKills": 11,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 2,
+            "shots": 4
+          },
+          "sha256": "6e70a60ccaf39a81b3b7cecf9fac5b83c9490a99d8e99e283c6416238afcfd69"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 11,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 4,
+            "kills": 1,
+            "shots": 7
+          },
+          "sha256": "bab2987f6ff026599dcc6285e6d3f0d628a645194883ce9720f0178d8b621ad5"
+        },
+        "strafe": {
+          "changed": 26,
+          "finalDeaths": 0,
+          "finalKills": 11,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 1,
+            "shots": 3
+          },
+          "sha256": "4fbae3089828a3889a6ab43bb9b04c1e1bbccecc89dcecbd440a4731c3694f7d"
+        },
+        "withdraw": {
+          "changed": 26,
+          "finalDeaths": 0,
+          "finalKills": 15,
+          "outcome": {
+            "damageTaken": 27,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 1,
+            "shots": 3
+          },
+          "sha256": "0a409dc4fd67f9f23fcc421a2a3d164b2a322bffde8c6356777d11ff4c745cec"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-neon-m4a1-13",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 2688
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 67,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 1,
+            "shots": 3
+          },
+          "sha256": "b57a0e759041296c7ddda384ad1dfa60fee5325b2407d7e1ac9d8e5c6fb1e1dd"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 0,
+            "shots": 1
+          },
+          "sha256": "7852250f17e906f89f30312388bfd0dbad256413119902a9835957f003499485"
+        },
+        "strafe": {
+          "changed": 140,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 1,
+            "shots": 2
+          },
+          "sha256": "976886151417d5e9a900f2830f61c84a0d5cfc807b4651dc288edbae40b50a01"
+        },
+        "withdraw": {
+          "changed": 136,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "c33ac9bec55a2a5498b1c19e116fac637658ea1176cfa106e73685cfcbb824d5"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v63-pro-foundry-aa12-14",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 3882
+    }
+  ],
+  "productionPromotion": false,
+  "registrySha256": "9a6046f27c373ff434c3c32006e560f0de0c42fe435b92c00494d8aaea6e507f",
+  "schema": "fpsarena-v63-prospective-four-arm-audit-v1",
+  "triggeredGroups": 14,
+  "untouchedOldHoldouts": true
+}

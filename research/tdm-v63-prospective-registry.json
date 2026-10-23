@@ -1,0 +1,160 @@
+{
+  "arms": [
+    "keep",
+    "close",
+    "strafe",
+    "withdraw"
+  ],
+  "cases": [
+    {
+      "id": "v63-pro-arena-mp5sd-01",
+      "map": "arena",
+      "seed": 630101,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v63-pro-arena-mp5sd-02",
+      "map": "arena",
+      "seed": 630102,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v63-pro-arena-mp5sd-03",
+      "map": "arena",
+      "seed": 630103,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v63-pro-arena-mp5sd-04",
+      "map": "arena",
+      "seed": 630104,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v63-pro-foundry-uzi-05",
+      "map": "foundry",
+      "seed": 630105,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v63-pro-foundry-uzi-06",
+      "map": "foundry",
+      "seed": 630106,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v63-pro-foundry-uzi-07",
+      "map": "foundry",
+      "seed": 630107,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v63-pro-foundry-uzi-08",
+      "map": "foundry",
+      "seed": 630108,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v63-pro-foundry-fire-09",
+      "map": "foundry",
+      "seed": 630109,
+      "split": "prospective-discovery",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v63-pro-foundry-fire-10",
+      "map": "foundry",
+      "seed": 630110,
+      "split": "prospective-discovery",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v63-pro-arena-uzi-11",
+      "map": "arena",
+      "seed": 630111,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v63-pro-arena-uzi-12",
+      "map": "arena",
+      "seed": 630112,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v63-pro-neon-m4a1-13",
+      "map": "neon",
+      "seed": 630113,
+      "split": "prospective-discovery",
+      "stratum": "post-fire",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "v63-pro-foundry-aa12-14",
+      "map": "foundry",
+      "seed": 630114,
+      "split": "prospective-discovery",
+      "stratum": "aim-lock",
+      "weapon": "aa12"
+    }
+  ],
+  "frozenContrastModelSHA256": "6c9d43e2f76de6b64a7134abcad66e17401b77d17dd399754ab12746b946dc5c",
+  "hypotheses": {
+    "actionContrastBeatsConstantOnUtilityMSE": true,
+    "actionContrastNotWorseThanConstantOnHazardBrier": true,
+    "noObservedHazardIncrease": true,
+    "policyPairedUtilityGainVsKeepPositiveWithCI": true
+  },
+  "modelTraining": "ALREADY_FIT on 23 independent historical groups ONLY; no retraining on these seeds",
+  "oldSealedHoldouts": "never touched; all 14 new seeds are prospective discovery verification only",
+  "outcomeMetrics": [
+    "utilityMSE",
+    "hazardBrier",
+    "pairedObservedUtilityGainVsKeep",
+    "pairedObservedHazardDeltaVsKeep"
+  ],
+  "outcomeTicks": 480,
+  "parentV61RegistrySHA256": "acfb1841939aa36e1e18014cb50ad4bafe6077c2918dcd214e4f12ab194773f4",
+  "parentV62RegistrySHA256": "08887eb588ed6c66ad54b74ff986d566331ffe37e5cd284a2165c8b87cd4b846",
+  "protectedSHA256": {
+    "lab/arena/source-main/server/bot.js": "651c0bb573865c27fe7cbdf9bc7329decfdb02d55c7c8a6432ab134fa9791024",
+    "lab/arena/source-main/server/game.js": "c000e00ba7d5333b7add0ee3014346c6e38dc89bdc46a12073cb2d23e523b625",
+    "lab/arena/tdm-engagement-trigger-v61.mjs": "df86e1311ef5791f3d564f0eeb5ae605e887773f2096cd3d909505e5b7d35d08",
+    "lab/arena/tdm-stratified-replay-v60.mjs": "fad99f4058e29e266036b3d7daaa7db7bbd1ee5a997099385f6df6815d229c05",
+    "lab/arena/train-main-v61.mjs": "195eddbf1c3389e7a375539679addceaecb4abc41c139f7ac54f18ee7bb61657",
+    "page-agent.js": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+    "research/tdm-v63-contrast-model.json": "6c9d43e2f76de6b64a7134abcad66e17401b77d17dd399754ab12746b946dc5c",
+    "research/tdm-v63-retrospective-evaluation.json": "4f066f4fb51ebb95d7aa5bd6ceca515f558086a180232b49169eb737d286a821",
+    "scripts/tdm_v61_protocol.py": "d4af76d915127e44fcd4acc56d5126a069150f56708dfddb1c1139f635815042",
+    "scripts/tdm_v62_cohort.py": "8d6a9e8a90ea63731d3d9ed1e0c28738dca9763f41b8c0e589bc097d08abf6d5",
+    "scripts/tdm_v62_train_shadow.py": "0cf118df5315c043d0f026267c6f58f8bb72b5d8284af41cd88f2016110a8a98",
+    "scripts/tdm_v63_contrastive.py": "34115f34a728646b3ca9fb93d471753c0ea7c7c3d470e99aa4a75b607234b03e",
+    "scripts/tdm_v63_prospective.py": "4b1bcd96d0fb98e62856ea7006d8cebddd0fbf2c571f9b530138d1fe2a2e149e"
+  },
+  "rightCensoredHandling": "exclude incomplete outcome windows; report count; do not drop silent/no-trigger groups",
+  "schema": "fpsarena-v63-prospective-independent-seed-assessment-v1",
+  "selectionGate": "no automatic promotion even if all hypotheses hold",
+  "status": "preregistered before the first prospective v63 Game.step run",
+  "unit": "independent matched four-arm seed group, no tick pseudoreplication"
+}
