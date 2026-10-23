@@ -1,3 +1,18 @@
+# Latest persistent checkpoint — V69 active public cover routing (REJECTED)
+
+- Parent tag research-v68-public-exposure-guard, commit ce0adc1; underlying C35AJ headless research simulator, not a complete recovered v57-v59.
+- V69 separate research-only pathfinding actor: public static wall shadow, bounded A* path to occlusion, safe swept direction away, anti-stall fallback, and max 620 changed WASD ticks. Original fire/aim/skills and production neural weights unchanged.
+- Frozen registry research/tdm-v69-cover-frozen-registry.json SHA256 b5c65d0c547ba97e0cd2f0bf1e211cd5567c8dc72f976aa89e33b63c59e89294.
+- 12 independent new discovery groups x4 arms = 48 real TDM matches, 12/12 independent prestate/RNG/public-prefix audit PASS, 12/12 trigger. 46 natural score-50 endings and 2 censored Cover arms at 600s in v69-n-aa12-02; only 11 eligible natural matched groups.
+- Cover Escape avg 6.50 kills / 1.33 deaths / 289.8 damage; Keep 5.42 / 0.58 / 134.5; Route 8.83 / 1.58 / 352.75; Cover Support 6.33 / 1.50 / 295.3.
+- Relative Keep, Cover Escape deaths +0.818 and damage +168.36 (both 95% paired-seed CIs strictly worse). Relative Route, Cover Escape net kills -2.091 CI95 [-4.000,-0.182] and damage -65.0 CI95 includes zero. Promotion REJECTED.
+- Calibration seed 441109 excluded, two uninstrumented Keep parity full matches 105/105 fields match.
+- Focus v69 tests 12/12 PASS; full JS 1397/1398 PASS, one historical Windows C:\C:\Users path issue.
+- V69 raw JSON 48 discovery +4 calibration +2 uninstrumented =54 committed to one Git repo, with manifest research/tdm-v69-locked-manifest.json, V69-PERSISTENT-STATUS.md and scripts/tdm_v69_study.py.
+- All v60-v69 sealed holdout cohorts unopened. No production Classic LibreWolf, engine, or trained Passive/Aggressive model change.
+- V70 should research CONDITIONAL ABSTENTION/opportunity predictor, not unconditional forced aggression; still require net kills positive and death/damage non-inferiority across independent held-out matches.
+
+---
 # Latest persistent checkpoint — V68 survival-aware acquisition research (REJECTED)
 
 - Parent Git tag research-v67-public-acquisition; simulator baseline C35AJ, full v57-v59 NOT reimported.

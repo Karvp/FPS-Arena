@@ -1,0 +1,277 @@
+{
+  "calibrationExcluded": true,
+  "censoredMatches": 2,
+  "descriptive": {
+    "cover-escape": {
+      "meanCoverPlans": 4.5,
+      "meanDamageTaken": 289.8333333333333,
+      "meanDeaths": 1.3333333333333333,
+      "meanEscapeTicks": 94.91666666666667,
+      "meanKills": 6.5,
+      "meanShots": 39.083333333333336,
+      "natural": 11,
+      "teamWins": 9
+    },
+    "cover-support": {
+      "meanCoverPlans": 5.0,
+      "meanDamageTaken": 295.25,
+      "meanDeaths": 1.5,
+      "meanEscapeTicks": 101.41666666666667,
+      "meanKills": 6.333333333333333,
+      "meanShots": 37.833333333333336,
+      "natural": 11,
+      "teamWins": 9
+    },
+    "keep": {
+      "meanCoverPlans": 0.0,
+      "meanDamageTaken": 134.5,
+      "meanDeaths": 0.5833333333333334,
+      "meanEscapeTicks": 0.0,
+      "meanKills": 5.416666666666667,
+      "meanShots": 34.25,
+      "natural": 12,
+      "teamWins": 11
+    },
+    "route": {
+      "meanCoverPlans": 0.0,
+      "meanDamageTaken": 352.75,
+      "meanDeaths": 1.5833333333333333,
+      "meanEscapeTicks": 0.0,
+      "meanKills": 8.833333333333334,
+      "meanShots": 50.666666666666664,
+      "natural": 12,
+      "teamWins": 7
+    }
+  },
+  "groupsRegistered": 12,
+  "holdoutsSealed": true,
+  "limitations": [
+    "Only official simulator bots",
+    "Exogenous RNG streams can diverge after branch",
+    "Natural score-50 games have varying durations",
+    "Public 3D LOS static geometry approximates rather than guarantees cover",
+    "Stopping after a motor budget may leave actor with bad baseline positioning"
+  ],
+  "matchedEligibleGroups": 11,
+  "naturalMatches": 46,
+  "paired": {
+    "cover-escape_vs_keep": {
+      "damageTaken": {
+        "CI95": [
+          85.45227272727273,
+          246.54545454545453
+        ],
+        "mean": 168.36363636363637,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          0.2727272727272727,
+          1.2727272727272727
+        ],
+        "mean": 0.8181818181818182,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          -1.2727272727272727,
+          3.5454545454545454
+        ],
+        "mean": 1.1818181818181819,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -1.8181818181818181,
+          2.5454545454545454
+        ],
+        "mean": 0.36363636363636365,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          -8.0,
+          21.54772727272724
+        ],
+        "mean": 5.2727272727272725,
+        "nGroups": 11
+      }
+    },
+    "cover-escape_vs_route": {
+      "damageTaken": {
+        "CI95": [
+          -154.0909090909091,
+          30.093181818181783
+        ],
+        "mean": -65.0,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          -0.8181818181818182,
+          0.36363636363636365
+        ],
+        "mean": -0.2727272727272727,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          -4.090909090909091,
+          -0.7272727272727273
+        ],
+        "mean": -2.3636363636363638,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -4.0,
+          -0.18181818181818182
+        ],
+        "mean": -2.090909090909091,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          -20.727272727272727,
+          -3.272727272727273
+        ],
+        "mean": -11.727272727272727,
+        "nGroups": 11
+      }
+    },
+    "cover-support_vs_keep": {
+      "damageTaken": {
+        "CI95": [
+          107.27045454545454,
+          234.27272727272728
+        ],
+        "mean": 174.27272727272728,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          0.6363636363636364,
+          1.3636363636363635
+        ],
+        "mean": 1.0,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          -1.3636363636363635,
+          3.272727272727273
+        ],
+        "mean": 1.0,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -2.272727272727273,
+          2.272727272727273
+        ],
+        "mean": 0.0,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          -9.545454545454545,
+          20.181818181818183
+        ],
+        "mean": 3.909090909090909,
+        "nGroups": 11
+      }
+    },
+    "cover-support_vs_route": {
+      "damageTaken": {
+        "CI95": [
+          -137.0,
+          16.09090909090909
+        ],
+        "mean": -59.09090909090909,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          -0.5454545454545454,
+          0.45454545454545453
+        ],
+        "mean": -0.09090909090909091,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          -4.2727272727272725,
+          -1.0
+        ],
+        "mean": -2.5454545454545454,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -4.2727272727272725,
+          -0.7272727272727273
+        ],
+        "mean": -2.4545454545454546,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          -22.272727272727273,
+          -4.090909090909091
+        ],
+        "mean": -13.090909090909092,
+        "nGroups": 11
+      }
+    },
+    "route_vs_keep": {
+      "damageTaken": {
+        "CI95": [
+          154.54545454545453,
+          317.0
+        ],
+        "mean": 233.36363636363637,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          0.7272727272727273,
+          1.4545454545454546
+        ],
+        "mean": 1.0909090909090908,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          0.5454545454545454,
+          6.2727272727272725
+        ],
+        "mean": 3.5454545454545454,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -0.6363636363636364,
+          5.2727272727272725
+        ],
+        "mean": 2.4545454545454546,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          4.545454545454546,
+          30.818181818181817
+        ],
+        "mean": 17.0,
+        "nGroups": 11
+      }
+    }
+  },
+  "promotionAllowed": false,
+  "registrySHA256": "b5c65d0c547ba97e0cd2f0bf1e211cd5567c8dc72f976aa89e33b63c59e89294",
+  "schema": "fpsarena-v69-public-cover-natural-grouped-bootstrap-v1",
+  "strictSafetyGate": {
+    "cover-escape": false,
+    "cover-support": false,
+    "route": false
+  }
+}
