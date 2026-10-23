@@ -1,0 +1,70 @@
+{
+  "cvDesign": "Leave one entire independent seed group out, 4 arms per test group",
+  "decision": {
+    "actionCriticStrictGatePassed": false,
+    "groupDataGatePassed": true,
+    "historicalHoldoutsOpened": false,
+    "promotionAllowed": false,
+    "reason": "shadow candidate only; no prospective full-match safety trial"
+  },
+  "limitations": [
+    "small observationally-selected contexts, not human or production matches",
+    "post-branch RNG stream may diverge",
+    "model cannot identify causal effects out of distribution",
+    "model hyperparameters chosen for exploratory demonstration after first cohort results were visible"
+  ],
+  "metrics": {
+    "action": {
+      "hazardBrier": 0.2745308896608516,
+      "hazardRate": 0.18478260869565216,
+      "sampleCount": 92,
+      "utilityMSE": 2.7217127385162345
+    },
+    "constant": {
+      "hazardBrier": 0.15883264411943576,
+      "hazardRate": 0.18478260869565216,
+      "sampleCount": 92,
+      "utilityMSE": 1.09329352768652
+    },
+    "state": {
+      "hazardBrier": 0.2979872592568527,
+      "hazardRate": 0.18478260869565216,
+      "sampleCount": 92,
+      "utilityMSE": 3.2384338840886575
+    }
+  },
+  "modelCodeSha256": "0cf118df5315c043d0f026267c6f58f8bb72b5d8284af41cd88f2016110a8a98",
+  "noPromotion": true,
+  "pairedSeedBootstrap": {
+    "hazardBrier": {
+      "meanImprovementVsStateOnly": 0.023456369596001215,
+      "pairedGroupBootstrap95CI": [
+        -0.03195338499793609,
+        0.08439782070394176
+      ],
+      "positiveGroupFraction": 0.4782608695652174
+    },
+    "utilityMSE": {
+      "meanImprovementVsStateOnly": 0.5167211455724224,
+      "pairedGroupBootstrap95CI": [
+        -0.28212458108433147,
+        1.4787029972564263
+      ],
+      "positiveGroupFraction": 0.43478260869565216
+    }
+  },
+  "registrySha256": [
+    "acfb1841939aa36e1e18014cb50ad4bafe6077c2918dcd214e4f12ab194773f4",
+    "08887eb588ed6c66ad54b74ff986d566331ffe37e5cd284a2165c8b87cd4b846"
+  ],
+  "schema": "fpsarena-v62-neural-group-loocv-v1",
+  "training": {
+    "allFourActionsIncludedEvenWhenNotActuated": true,
+    "armsPerGroup": 4,
+    "groups": 23,
+    "positiveEventGroups": 19,
+    "positiveHazardArms": 17,
+    "rightCensoredNotIncludedInFitting": true,
+    "samples": 92
+  }
+}

@@ -1,3 +1,18 @@
+# Current persistent checkpoint — v62
+
+- Git tag: research-v62-discovery-shadow (created after final commit verification)
+- Base: C35AJ; older v57–v59 is not imported.
+- New v62 18 seed groups / 72 branch replays, independently audited PASS.
+- Pool V61+V62: 23 triggered independent groups, 19 event-positive, 92 arm samples.
+- PyTorch action-conditioned MLP trained; JS parity 16/16. Strict policy gate FAIL; constant baseline beats both MLPs.
+- Production/Classic LibreWolf and original Passive/Aggressive expert weights unchanged. V60/V61 registries frozen.
+- Frozen registry SHA256: 08887eb588ed6c66ad54b74ff986d566331ffe37e5cd284a2165c8b87cd4b846
+- Full research status: V62-PERSISTENT-STATUS.md
+- Durable evidence includes 108 selected raw match JSON files tracked in Git (no gigabyte report history).
+- All 4 sealed holdouts (2 V61 and 2 V62) are untouched.
+- Development continues in this SAME codebase. Do not create parallel source trees or many ZIPs.
+
+---
 # FPS Arena TDM Neural — Persistent Codebase
 
 **Canonical Windows path:** `C:\Users\admin\Codes\FPS-Arena-TDM-Neural`

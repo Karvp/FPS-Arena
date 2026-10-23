@@ -1,0 +1,207 @@
+{
+  "arms": [
+    "keep",
+    "close",
+    "strafe",
+    "withdraw"
+  ],
+  "cases": [
+    {
+      "id": "v62-a-mp5sd-aim-01",
+      "map": "arena",
+      "seed": 620101,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v62-a-mp5sd-aim-02",
+      "map": "arena",
+      "seed": 620102,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v62-a-mp5sd-aim-03",
+      "map": "arena",
+      "seed": 620103,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v62-a-mp5sd-aim-04",
+      "map": "arena",
+      "seed": 620104,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v62-f-uzi-aim-05",
+      "map": "foundry",
+      "seed": 620105,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v62-f-uzi-aim-06",
+      "map": "foundry",
+      "seed": 620106,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v62-f-uzi-aim-07",
+      "map": "foundry",
+      "seed": 620107,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v62-f-uzi-aim-08",
+      "map": "foundry",
+      "seed": 620108,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v62-f-uzi-fire-09",
+      "map": "foundry",
+      "seed": 620109,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v62-f-uzi-fire-10",
+      "map": "foundry",
+      "seed": 620110,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v62-f-uzi-fire-11",
+      "map": "foundry",
+      "seed": 620111,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v62-a-uzi-aim-12",
+      "map": "arena",
+      "seed": 620112,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v62-a-uzi-aim-13",
+      "map": "arena",
+      "seed": 620113,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v62-a-mp5sd-fire-14",
+      "map": "arena",
+      "seed": 620114,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v62-a-mp5sd-fire-15",
+      "map": "arena",
+      "seed": 620115,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v62-n-m4a1-fire-16",
+      "map": "neon",
+      "seed": 620116,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "v62-n-aa12-fire-17",
+      "map": "neon",
+      "seed": 620117,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v62-f-m4a1-damage-18",
+      "map": "foundry",
+      "seed": 620118,
+      "split": "discovery",
+      "stratum": "post-damage",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "v62-h-a-mp5sd-19",
+      "map": "arena",
+      "seed": 620119,
+      "split": "holdout",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v62-h-f-uzi-20",
+      "map": "foundry",
+      "seed": 620120,
+      "split": "holdout",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    }
+  ],
+  "criteria": {
+    "candidateOnlyIfGroupCVBeatsStateOnly": true,
+    "minHazardOrRewardPositiveGroups": 8,
+    "minTriggeredIndependentGroups": 16,
+    "promotionForbiddenWithoutSeparateHoldoutFullMatches": true
+  },
+  "holdoutPolicy": "no holdout run command implemented; no read of holdout results",
+  "immutableSourceSHA256": {
+    "lab/arena/source-main/server/bot.js": "651c0bb573865c27fe7cbdf9bc7329decfdb02d55c7c8a6432ab134fa9791024",
+    "lab/arena/source-main/server/game.js": "c000e00ba7d5333b7add0ee3014346c6e38dc89bdc46a12073cb2d23e523b625",
+    "lab/arena/tdm-engagement-trigger-v61.mjs": "df86e1311ef5791f3d564f0eeb5ae605e887773f2096cd3d909505e5b7d35d08",
+    "lab/arena/tdm-stratified-replay-v60.mjs": "fad99f4058e29e266036b3d7daaa7db7bbd1ee5a997099385f6df6815d229c05",
+    "lab/arena/train-main-v61.mjs": "195eddbf1c3389e7a375539679addceaecb4abc41c139f7ac54f18ee7bb61657",
+    "page-agent.js": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+    "scripts/tdm_v61_protocol.py": "d4af76d915127e44fcd4acc56d5126a069150f56708dfddb1c1139f635815042",
+    "scripts/tdm_v62_cohort.py": "8d6a9e8a90ea63731d3d9ed1e0c28738dca9763f41b8c0e589bc097d08abf6d5"
+  },
+  "limitations": [
+    "Engine C35AJ baseline is not v57-v59",
+    "state hash is selected-server-fields witness, not clone",
+    "post-window full match K/D not a valid short-window label",
+    "actor receives only public pre-step features"
+  ],
+  "noReuse": [
+    441108,
+    441109
+  ],
+  "outputDir": "data/v62",
+  "rightCensored": "keep and exclude from complete outcome models",
+  "schema": "fpsarena-v62-preregistered-additional-public-cue-cohort-v1",
+  "unit": "independent seed group; not correlated ticks or arms",
+  "v60RegistrySha256": "235a31d15a2602fd02816c774857b7d12d126e44f0642bf00c8aaf0c3fbcc939",
+  "v61RegistrySha256": "acfb1841939aa36e1e18014cb50ad4bafe6077c2918dcd214e4f12ab194773f4",
+  "windowTicks": {
+    "outcome": 480,
+    "treatment": 150
+  }
+}

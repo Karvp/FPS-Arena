@@ -1,0 +1,471 @@
+{
+  "modelSha256": "4f54a1b28263e896688dbe9aced37bc57b8be4cee292a606a3d838aed7ed9167",
+  "probes": [
+    {
+      "arm": "keep",
+      "expectedRisk": 0.04061932489275932,
+      "expectedUtility": 0.19801145792007446,
+      "group": "v61-train-foundry-uzi-aim",
+      "map": "foundry",
+      "origin": "v61",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": null,
+        "aimAlignment": 0.9753,
+        "cue": "aim-lock",
+        "distance": 40.6002,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 24,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 9.321,
+          "z": 3.05
+        },
+        "valid": true
+      },
+      "rawInputSha256": "53748349f70fe338e6e2b4feaa9ec945977eec66e0849f72c4ae055bb382d68a",
+      "weapon": "uzi"
+    },
+    {
+      "arm": "close",
+      "expectedRisk": 0.32151710987091064,
+      "expectedUtility": 0.3076631426811218,
+      "group": "v61-train-foundry-uzi-aim",
+      "map": "foundry",
+      "origin": "v61",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": null,
+        "aimAlignment": 0.9753,
+        "cue": "aim-lock",
+        "distance": 40.6002,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 24,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 9.321,
+          "z": 3.05
+        },
+        "valid": true
+      },
+      "rawInputSha256": "53748349f70fe338e6e2b4feaa9ec945977eec66e0849f72c4ae055bb382d68a",
+      "weapon": "uzi"
+    },
+    {
+      "arm": "strafe",
+      "expectedRisk": 0.04762955382466316,
+      "expectedUtility": 0.3300464153289795,
+      "group": "v61-train-foundry-uzi-aim",
+      "map": "foundry",
+      "origin": "v61",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": null,
+        "aimAlignment": 0.9753,
+        "cue": "aim-lock",
+        "distance": 40.6002,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 24,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 9.321,
+          "z": 3.05
+        },
+        "valid": true
+      },
+      "rawInputSha256": "53748349f70fe338e6e2b4feaa9ec945977eec66e0849f72c4ae055bb382d68a",
+      "weapon": "uzi"
+    },
+    {
+      "arm": "withdraw",
+      "expectedRisk": 0.02451223134994507,
+      "expectedUtility": -0.008761882781982422,
+      "group": "v61-train-foundry-uzi-aim",
+      "map": "foundry",
+      "origin": "v61",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": null,
+        "aimAlignment": 0.9753,
+        "cue": "aim-lock",
+        "distance": 40.6002,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 24,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 9.321,
+          "z": 3.05
+        },
+        "valid": true
+      },
+      "rawInputSha256": "53748349f70fe338e6e2b4feaa9ec945977eec66e0849f72c4ae055bb382d68a",
+      "weapon": "uzi"
+    },
+    {
+      "arm": "keep",
+      "expectedRisk": 0.09788032621145248,
+      "expectedUtility": 0.22236421704292297,
+      "group": "v62-a-mp5sd-aim-01",
+      "map": "arena",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 177,
+        "aimAlignment": 0.9903,
+        "cue": "aim-lock",
+        "distance": 30.1488,
+        "hp": 100,
+        "maxRange": 120,
+        "publicAimTicks": 24,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot3",
+        "targetPos": {
+          "x": 1.348,
+          "z": -13.029
+        },
+        "valid": true
+      },
+      "rawInputSha256": "011b976d54e28badbdabf53a9e782dfae4979edc2089d0826e42332f938ba7f9",
+      "weapon": "mp5sd"
+    },
+    {
+      "arm": "close",
+      "expectedRisk": 0.3387370705604553,
+      "expectedUtility": 0.663048267364502,
+      "group": "v62-a-mp5sd-aim-01",
+      "map": "arena",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 177,
+        "aimAlignment": 0.9903,
+        "cue": "aim-lock",
+        "distance": 30.1488,
+        "hp": 100,
+        "maxRange": 120,
+        "publicAimTicks": 24,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot3",
+        "targetPos": {
+          "x": 1.348,
+          "z": -13.029
+        },
+        "valid": true
+      },
+      "rawInputSha256": "011b976d54e28badbdabf53a9e782dfae4979edc2089d0826e42332f938ba7f9",
+      "weapon": "mp5sd"
+    },
+    {
+      "arm": "strafe",
+      "expectedRisk": 0.050239089876413345,
+      "expectedUtility": 0.5753234624862671,
+      "group": "v62-a-mp5sd-aim-01",
+      "map": "arena",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 177,
+        "aimAlignment": 0.9903,
+        "cue": "aim-lock",
+        "distance": 30.1488,
+        "hp": 100,
+        "maxRange": 120,
+        "publicAimTicks": 24,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot3",
+        "targetPos": {
+          "x": 1.348,
+          "z": -13.029
+        },
+        "valid": true
+      },
+      "rawInputSha256": "011b976d54e28badbdabf53a9e782dfae4979edc2089d0826e42332f938ba7f9",
+      "weapon": "mp5sd"
+    },
+    {
+      "arm": "withdraw",
+      "expectedRisk": 0.004681804683059454,
+      "expectedUtility": -0.17641830444335938,
+      "group": "v62-a-mp5sd-aim-01",
+      "map": "arena",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 177,
+        "aimAlignment": 0.9903,
+        "cue": "aim-lock",
+        "distance": 30.1488,
+        "hp": 100,
+        "maxRange": 120,
+        "publicAimTicks": 24,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot3",
+        "targetPos": {
+          "x": 1.348,
+          "z": -13.029
+        },
+        "valid": true
+      },
+      "rawInputSha256": "011b976d54e28badbdabf53a9e782dfae4979edc2089d0826e42332f938ba7f9",
+      "weapon": "mp5sd"
+    },
+    {
+      "arm": "keep",
+      "expectedRisk": 0.5595688819885254,
+      "expectedUtility": -0.5002784132957458,
+      "group": "v62-f-uzi-fire-09",
+      "map": "foundry",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": 818,
+        "ageSinceLastFire": 5,
+        "aimAlignment": 0.9999,
+        "cue": "post-fire",
+        "distance": 38.7407,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 21,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 0.061,
+          "z": -7.056
+        },
+        "valid": true
+      },
+      "rawInputSha256": "876f3dd55538c4260288260b79fe205e36dcd07ab470af8efe0cc23ad7196e13",
+      "weapon": "uzi"
+    },
+    {
+      "arm": "close",
+      "expectedRisk": 0.9810991883277893,
+      "expectedUtility": 0.054650723934173584,
+      "group": "v62-f-uzi-fire-09",
+      "map": "foundry",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": 818,
+        "ageSinceLastFire": 5,
+        "aimAlignment": 0.9999,
+        "cue": "post-fire",
+        "distance": 38.7407,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 21,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 0.061,
+          "z": -7.056
+        },
+        "valid": true
+      },
+      "rawInputSha256": "876f3dd55538c4260288260b79fe205e36dcd07ab470af8efe0cc23ad7196e13",
+      "weapon": "uzi"
+    },
+    {
+      "arm": "strafe",
+      "expectedRisk": 0.8203270435333252,
+      "expectedUtility": -0.178300142288208,
+      "group": "v62-f-uzi-fire-09",
+      "map": "foundry",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": 818,
+        "ageSinceLastFire": 5,
+        "aimAlignment": 0.9999,
+        "cue": "post-fire",
+        "distance": 38.7407,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 21,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 0.061,
+          "z": -7.056
+        },
+        "valid": true
+      },
+      "rawInputSha256": "876f3dd55538c4260288260b79fe205e36dcd07ab470af8efe0cc23ad7196e13",
+      "weapon": "uzi"
+    },
+    {
+      "arm": "withdraw",
+      "expectedRisk": 0.8099926710128784,
+      "expectedUtility": -0.591350793838501,
+      "group": "v62-f-uzi-fire-09",
+      "map": "foundry",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": 818,
+        "ageSinceLastFire": 5,
+        "aimAlignment": 0.9999,
+        "cue": "post-fire",
+        "distance": 38.7407,
+        "hp": 100,
+        "maxRange": 130,
+        "publicAimTicks": 21,
+        "publicHostiles": 4,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": 0.061,
+          "z": -7.056
+        },
+        "valid": true
+      },
+      "rawInputSha256": "876f3dd55538c4260288260b79fe205e36dcd07ab470af8efe0cc23ad7196e13",
+      "weapon": "uzi"
+    },
+    {
+      "arm": "keep",
+      "expectedRisk": 0.018857905641198158,
+      "expectedUtility": 1.0581709146499634,
+      "group": "v62-n-m4a1-fire-16",
+      "map": "neon",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 27,
+        "aimAlignment": 0.9949,
+        "cue": "post-fire",
+        "distance": 53.2576,
+        "hp": 100,
+        "maxRange": 200,
+        "publicAimTicks": 0,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": -2.489,
+          "z": -4.861
+        },
+        "valid": true
+      },
+      "rawInputSha256": "7e67b51acfa8a2a639cc3150680e98e3e7eee354c5967b54a36acb453c31d10d",
+      "weapon": "m4a1"
+    },
+    {
+      "arm": "close",
+      "expectedRisk": 0.03357050195336342,
+      "expectedUtility": -0.04358440637588501,
+      "group": "v62-n-m4a1-fire-16",
+      "map": "neon",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 27,
+        "aimAlignment": 0.9949,
+        "cue": "post-fire",
+        "distance": 53.2576,
+        "hp": 100,
+        "maxRange": 200,
+        "publicAimTicks": 0,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": -2.489,
+          "z": -4.861
+        },
+        "valid": true
+      },
+      "rawInputSha256": "7e67b51acfa8a2a639cc3150680e98e3e7eee354c5967b54a36acb453c31d10d",
+      "weapon": "m4a1"
+    },
+    {
+      "arm": "strafe",
+      "expectedRisk": 0.013023284263908863,
+      "expectedUtility": 0.8665790557861328,
+      "group": "v62-n-m4a1-fire-16",
+      "map": "neon",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 27,
+        "aimAlignment": 0.9949,
+        "cue": "post-fire",
+        "distance": 53.2576,
+        "hp": 100,
+        "maxRange": 200,
+        "publicAimTicks": 0,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": -2.489,
+          "z": -4.861
+        },
+        "valid": true
+      },
+      "rawInputSha256": "7e67b51acfa8a2a639cc3150680e98e3e7eee354c5967b54a36acb453c31d10d",
+      "weapon": "m4a1"
+    },
+    {
+      "arm": "withdraw",
+      "expectedRisk": 0.010861617513000965,
+      "expectedUtility": 1.0506863594055176,
+      "group": "v62-n-m4a1-fire-16",
+      "map": "neon",
+      "origin": "v62",
+      "publicState": {
+        "ageSinceLastDamage": null,
+        "ageSinceLastFire": 27,
+        "aimAlignment": 0.9949,
+        "cue": "post-fire",
+        "distance": 53.2576,
+        "hp": 100,
+        "maxRange": 200,
+        "publicAimTicks": 0,
+        "publicHostiles": 3,
+        "reason": "eligible",
+        "stratum": "contact",
+        "targetId": "bot5",
+        "targetPos": {
+          "x": -2.489,
+          "z": -4.861
+        },
+        "valid": true
+      },
+      "rawInputSha256": "7e67b51acfa8a2a639cc3150680e98e3e7eee354c5967b54a36acb453c31d10d",
+      "weapon": "m4a1"
+    }
+  ],
+  "referencesCalculatedWith": "PyTorch nn.functional.linear + tanh/sigmoid, saved model weights, no training",
+  "schema": "fpsarena-v62-independent-inference-parity-v1"
+}
