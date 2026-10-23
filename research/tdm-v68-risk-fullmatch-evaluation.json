@@ -1,0 +1,376 @@
+{
+  "calibrationSeedExcluded": true,
+  "descriptiveArms": {
+    "guarded-flank": {
+      "meanChangedTicks": 516.5833333333334,
+      "meanDamageTaken": 267.1666666666667,
+      "meanDeaths": 1.25,
+      "meanKills": 5.416666666666667,
+      "meanRiskGuardedTicks": 70.16666666666667,
+      "meanShots": 34.833333333333336,
+      "natural": 11,
+      "teamWins": 9
+    },
+    "guarded-route": {
+      "meanChangedTicks": 516.5833333333334,
+      "meanDamageTaken": 251.16666666666666,
+      "meanDeaths": 1.1666666666666667,
+      "meanKills": 5.833333333333333,
+      "meanRiskGuardedTicks": 51.333333333333336,
+      "meanShots": 38.166666666666664,
+      "natural": 11,
+      "teamWins": 9
+    },
+    "keep": {
+      "meanChangedTicks": 0.0,
+      "meanDamageTaken": 113.5,
+      "meanDeaths": 0.3333333333333333,
+      "meanKills": 7.5,
+      "meanRiskGuardedTicks": 0.0,
+      "meanShots": 32.166666666666664,
+      "natural": 12,
+      "teamWins": 10
+    },
+    "route": {
+      "meanChangedTicks": 605.8333333333334,
+      "meanDamageTaken": 333.5,
+      "meanDeaths": 1.5,
+      "meanKills": 6.083333333333333,
+      "meanRiskGuardedTicks": 0.0,
+      "meanShots": 39.5,
+      "natural": 12,
+      "teamWins": 8
+    }
+  },
+  "discoveryGroups": 12,
+  "limitations": [
+    "bot opponents not representative of human PvP",
+    "server dynamics and PRNG diverge after branch treatment",
+    "natural finish times are different across arms",
+    "guarding LOS with neutral WASD can still result in deaths",
+    "12 seed groups not sufficient for broad generalization"
+  ],
+  "naturalMatchCount": 46,
+  "oldAndNewHoldoutsUntouched": true,
+  "paired": {
+    "guarded-flank_vs_keep": {
+      "damageTaken": {
+        "CI95": [
+          96.36363636363636,
+          215.27272727272728
+        ],
+        "max": 334.0,
+        "mean": 153.45454545454547,
+        "min": 22.0,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          0.45454545454545453,
+          1.3636363636363635
+        ],
+        "max": 2.0,
+        "mean": 0.9090909090909091,
+        "min": 0.0,
+        "nGroups": 11
+      },
+      "hits": {
+        "CI95": [
+          -8.181818181818182,
+          7.545454545454546
+        ],
+        "max": 23.0,
+        "mean": -0.2727272727272727,
+        "min": -24.0,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          -4.545454545454546,
+          -0.18181818181818182
+        ],
+        "max": 3.0,
+        "mean": -2.272727272727273,
+        "min": -9.0,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -5.090909090909091,
+          -1.3636363636363635
+        ],
+        "max": 1.0,
+        "mean": -3.1818181818181817,
+        "min": -9.0,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          -5.818181818181818,
+          13.909090909090908
+        ],
+        "max": 47.0,
+        "mean": 3.090909090909091,
+        "min": -20.0,
+        "nGroups": 11
+      }
+    },
+    "guarded-flank_vs_route": {
+      "damageTaken": {
+        "CI95": [
+          -138.82045454545454,
+          0.7272727272727273
+        ],
+        "max": 87.0,
+        "mean": -66.27272727272727,
+        "min": -313.0,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          -0.8181818181818182,
+          0.18181818181818182
+        ],
+        "max": 1.0,
+        "mean": -0.2727272727272727,
+        "min": -2.0,
+        "nGroups": 11
+      },
+      "hits": {
+        "CI95": [
+          -11.363636363636363,
+          3.5454545454545454
+        ],
+        "max": 17.0,
+        "mean": -3.5454545454545454,
+        "min": -26.0,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          -2.909090909090909,
+          1.6363636363636365
+        ],
+        "max": 7.0,
+        "mean": -0.6363636363636364,
+        "min": -7.0,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -2.727272727272727,
+          2.1818181818181817
+        ],
+        "max": 8.0,
+        "mean": -0.36363636363636365,
+        "min": -7.0,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          -12.454545454545455,
+          3.3636363636363638
+        ],
+        "max": 18.0,
+        "mean": -4.2727272727272725,
+        "min": -27.0,
+        "nGroups": 11
+      }
+    },
+    "guarded-route_vs_keep": {
+      "damageTaken": {
+        "CI95": [
+          64.18181818181819,
+          210.0931818181818
+        ],
+        "max": 397.0,
+        "mean": 136.0,
+        "min": -77.0,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          0.36363636363636365,
+          1.2727272727272727
+        ],
+        "max": 2.0,
+        "mean": 0.8181818181818182,
+        "min": 0.0,
+        "nGroups": 11
+      },
+      "hits": {
+        "CI95": [
+          -6.729545454545453,
+          14.365909090909058
+        ],
+        "max": 46.0,
+        "mean": 3.090909090909091,
+        "min": -24.0,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          -4.363636363636363,
+          1.0
+        ],
+        "max": 9.0,
+        "mean": -1.8181818181818181,
+        "min": -9.0,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -5.093181818181816,
+          0.09090909090909091
+        ],
+        "max": 8.0,
+        "mean": -2.6363636363636362,
+        "min": -9.0,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          -4.2727272727272725,
+          19.456818181818146
+        ],
+        "max": 47.0,
+        "mean": 6.7272727272727275,
+        "min": -20.0,
+        "nGroups": 11
+      }
+    },
+    "guarded-route_vs_route": {
+      "damageTaken": {
+        "CI95": [
+          -178.63863636363635,
+          -3.909090909090909
+        ],
+        "max": 87.0,
+        "mean": -83.72727272727273,
+        "min": -454.0,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          -1.0,
+          0.18181818181818182
+        ],
+        "max": 1.0,
+        "mean": -0.36363636363636365,
+        "min": -2.0,
+        "nGroups": 11
+      },
+      "hits": {
+        "CI95": [
+          -9.636363636363637,
+          9.454545454545455
+        ],
+        "max": 32.0,
+        "mean": -0.18181818181818182,
+        "min": -26.0,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          -2.5454545454545454,
+          2.4545454545454546
+        ],
+        "max": 10.0,
+        "mean": -0.18181818181818182,
+        "min": -7.0,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -2.3636363636363638,
+          3.1818181818181817
+        ],
+        "max": 12.0,
+        "mean": 0.18181818181818182,
+        "min": -7.0,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          -10.363636363636363,
+          8.818181818181818
+        ],
+        "max": 27.0,
+        "mean": -0.6363636363636364,
+        "min": -27.0,
+        "nGroups": 11
+      }
+    },
+    "route_vs_keep": {
+      "damageTaken": {
+        "CI95": [
+          148.9090909090909,
+          290.72727272727275
+        ],
+        "max": 413.0,
+        "mean": 219.72727272727272,
+        "min": 32.0,
+        "nGroups": 11
+      },
+      "deaths": {
+        "CI95": [
+          0.5454545454545454,
+          1.8181818181818181
+        ],
+        "max": 3.0,
+        "mean": 1.1818181818181819,
+        "min": 0.0,
+        "nGroups": 11
+      },
+      "hits": {
+        "CI95": [
+          -3.727272727272727,
+          9.727272727272727
+        ],
+        "max": 23.0,
+        "mean": 3.272727272727273,
+        "min": -22.0,
+        "nGroups": 11
+      },
+      "kills": {
+        "CI95": [
+          -3.727272727272727,
+          0.36363636363636365
+        ],
+        "max": 4.0,
+        "mean": -1.6363636363636365,
+        "min": -9.0,
+        "nGroups": 11
+      },
+      "netKills": {
+        "CI95": [
+          -4.909090909090909,
+          -0.8181818181818182
+        ],
+        "max": 2.0,
+        "mean": -2.8181818181818183,
+        "min": -9.0,
+        "nGroups": 11
+      },
+      "shots": {
+        "CI95": [
+          -1.0,
+          17.363636363636363
+        ],
+        "max": 47.0,
+        "mean": 7.363636363636363,
+        "min": -14.0,
+        "nGroups": 11
+      }
+    }
+  },
+  "pairedGroups": 11,
+  "promotionAllowed": false,
+  "registrySHA256": "63568e23fa679c962b957b73b31a5b5d3ef93be8a143c6073de6b20575a978cd",
+  "schema": "fpsarena-v68-predeclared-seed-group-natural-survival-evaluation-v1",
+  "strictSafetyGate": {
+    "guarded-flank": false,
+    "guarded-route": false,
+    "route": false
+  }
+}

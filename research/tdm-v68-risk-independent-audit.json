@@ -1,0 +1,1214 @@
+{
+  "eligibleGroups": 11,
+  "failedGroups": [],
+  "groups": [
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 248,
+          "changedTicks": 520,
+          "damageTaken": 371,
+          "deaths": 2,
+          "duration": 176.02,
+          "guardedTicks": 20,
+          "hits": 0,
+          "kills": 0,
+          "natural": true,
+          "netKills": -2,
+          "riskSamples": 864,
+          "routePlans": 49,
+          "safetyStopChanged": 20,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "bfef55b5e5478d0b1a5161d6d8cbd58a7b9b27a41350a4a4eb420a4572c4e311",
+          "shots": 0,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 248,
+          "changedTicks": 520,
+          "damageTaken": 371,
+          "deaths": 2,
+          "duration": 176.02,
+          "guardedTicks": 20,
+          "hits": 0,
+          "kills": 0,
+          "natural": true,
+          "netKills": -2,
+          "riskSamples": 864,
+          "routePlans": 49,
+          "safetyStopChanged": 20,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "44fb887aacbb8d6df7ab24f7edcd1070e6de3e0067f2521b0a0a42b0d696de6f",
+          "shots": 0,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 69,
+          "deaths": 0,
+          "duration": 163.93,
+          "guardedTicks": 0,
+          "hits": 0,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "5b8093b89c2087fab05ae1a436bc71c8ea032ebba0f3650957a13e2c2891d462",
+          "shots": 0,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 598,
+          "damageTaken": 284,
+          "deaths": 1,
+          "duration": 162.07,
+          "guardedTicks": 0,
+          "hits": 1,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "riskSamples": 0,
+          "routePlans": 206,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 46,
+            "red": 50
+          },
+          "sha256": "12c3019a6dda61dbf3bcb9de68b795ddb077773523522774ea909c5fc794b7fb",
+          "shots": 0,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-n-aa12-01",
+      "map": "neon",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 854,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 334,
+          "changedTicks": 520,
+          "damageTaken": 190,
+          "deaths": 1,
+          "duration": 600,
+          "guardedTicks": 175,
+          "hits": 1,
+          "kills": 0,
+          "natural": false,
+          "netKills": -1,
+          "riskSamples": 870,
+          "routePlans": 7,
+          "safetyStopChanged": 175,
+          "scores": {
+            "blue": 37,
+            "red": 39
+          },
+          "sha256": "ae0847d5e6181cfbdd990c3d4aa553307b3997580e5c941097f0927e78cdae02",
+          "shots": 0,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 334,
+          "changedTicks": 520,
+          "damageTaken": 190,
+          "deaths": 1,
+          "duration": 600,
+          "guardedTicks": 175,
+          "hits": 1,
+          "kills": 0,
+          "natural": false,
+          "netKills": -1,
+          "riskSamples": 870,
+          "routePlans": 7,
+          "safetyStopChanged": 175,
+          "scores": {
+            "blue": 37,
+            "red": 39
+          },
+          "sha256": "077b5c3230f31e06eea8114d9ba9020497386da8613ab60d6d5e876b6642cd65",
+          "shots": 0,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 34,
+          "deaths": 0,
+          "duration": 171.28,
+          "guardedTicks": 0,
+          "hits": 2,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "ba8ace542ea004000fb1f09d501b1eb9efce09ee14b3c3fecc0ce9c01eba3e1b",
+          "shots": 2,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 400,
+          "damageTaken": 257,
+          "deaths": 1,
+          "duration": 170.25,
+          "guardedTicks": 0,
+          "hits": 9,
+          "kills": 1,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 0,
+          "routePlans": 7,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 50,
+            "red": 49
+          },
+          "sha256": "835fc62777be5649bd1aa4aec1421d52d6890ce9a62ae1322b9193357ec60f5c",
+          "shots": 9,
+          "team": "red"
+        }
+      },
+      "eligible": false,
+      "id": "v68-n-aa12-02",
+      "map": "neon",
+      "naturalFour": false,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 860,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 65,
+          "changedTicks": 520,
+          "damageTaken": 222,
+          "deaths": 1,
+          "duration": 161.63,
+          "guardedTicks": 87,
+          "hits": 0,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "riskSamples": 870,
+          "routePlans": 220,
+          "safetyStopChanged": 87,
+          "scores": {
+            "blue": 46,
+            "red": 50
+          },
+          "sha256": "8985ad3fb2d35603faf650f1c44d7916f3b27614e171ac36eab357472eac1e79",
+          "shots": 0,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 65,
+          "changedTicks": 520,
+          "damageTaken": 222,
+          "deaths": 1,
+          "duration": 161.63,
+          "guardedTicks": 87,
+          "hits": 0,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "riskSamples": 870,
+          "routePlans": 220,
+          "safetyStopChanged": 87,
+          "scores": {
+            "blue": 46,
+            "red": 50
+          },
+          "sha256": "fef5c5dab644db2637a8be058d25c1fad8603cda3f804e1becaa7f3dc5aa8826",
+          "shots": 0,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 200,
+          "deaths": 1,
+          "duration": 162.88,
+          "guardedTicks": 0,
+          "hits": 24,
+          "kills": 5,
+          "natural": true,
+          "netKills": 4,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 46,
+            "red": 50
+          },
+          "sha256": "d01d1a31686165cb85d457f63721f914c7f70bf8e1a03eb883493395a2b3af13",
+          "shots": 20,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 391,
+          "damageTaken": 372,
+          "deaths": 1,
+          "duration": 163.55,
+          "guardedTicks": 0,
+          "hits": 26,
+          "kills": 7,
+          "natural": true,
+          "netKills": 6,
+          "riskSamples": 0,
+          "routePlans": 219,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 47,
+            "red": 50
+          },
+          "sha256": "c230fb10cb74fe36e84b0da258495692be966df375cec0cc045f18359d1b08ed",
+          "shots": 27,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-n-aa12-03",
+      "map": "neon",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 866,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 285,
+          "changedTicks": 520,
+          "damageTaken": 187,
+          "deaths": 1,
+          "duration": 168.15,
+          "guardedTicks": 36,
+          "hits": 2,
+          "kills": 1,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 870,
+          "routePlans": 39,
+          "safetyStopChanged": 36,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "967f9bf5b224125786d1e11abc626cbaf3868c6571871cf2748011ff2d52f62e",
+          "shots": 1,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 285,
+          "changedTicks": 520,
+          "damageTaken": 187,
+          "deaths": 1,
+          "duration": 168.15,
+          "guardedTicks": 36,
+          "hits": 2,
+          "kills": 1,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 870,
+          "routePlans": 39,
+          "safetyStopChanged": 36,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "e844939c45cb643694f3edb2ee1dbe75b074bf0a5b5a5e49dbb54558bab6058d",
+          "shots": 1,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 27,
+          "deaths": 0,
+          "duration": 171.27,
+          "guardedTicks": 0,
+          "hits": 0,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 48,
+            "red": 50
+          },
+          "sha256": "c9252a7c6549af4774307bd07de6b8267657805a4632eea2daa438c873522540",
+          "shots": 0,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 744,
+          "damageTaken": 388,
+          "deaths": 2,
+          "duration": 156.77,
+          "guardedTicks": 0,
+          "hits": 1,
+          "kills": 0,
+          "natural": true,
+          "netKills": -2,
+          "riskSamples": 0,
+          "routePlans": 75,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 50,
+            "red": 48
+          },
+          "sha256": "4c8367368af52f000798be67d3723272a32f7244c347f2e54731a0906b495485",
+          "shots": 0,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-n-aa12-04",
+      "map": "neon",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 872,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 439,
+          "changedTicks": 520,
+          "damageTaken": 150,
+          "deaths": 1,
+          "duration": 160.45,
+          "guardedTicks": 79,
+          "hits": 9,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "riskSamples": 870,
+          "routePlans": 68,
+          "safetyStopChanged": 79,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "0ea99cb0872c399ed21bb7b7e60164fe5c3f68c4b26f4e1dfb770d05b8ce8ae4",
+          "shots": 9,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 439,
+          "changedTicks": 520,
+          "damageTaken": 198,
+          "deaths": 1,
+          "duration": 174.8,
+          "guardedTicks": 79,
+          "hits": 10,
+          "kills": 1,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 870,
+          "routePlans": 68,
+          "safetyStopChanged": 79,
+          "scores": {
+            "blue": 50,
+            "red": 47
+          },
+          "sha256": "f47c753ba99c883b89881b0d48475690101f8aefb34b342ea373faba8b8a8f49",
+          "shots": 10,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 42,
+          "deaths": 0,
+          "duration": 168.58,
+          "guardedTicks": 0,
+          "hits": 0,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 50,
+            "red": 49
+          },
+          "sha256": "2df42a68792acd441d2dd0f90cb844cc25e3bb2d393232d76bf4dad8fc53f5d1",
+          "shots": 0,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 697,
+          "damageTaken": 186,
+          "deaths": 1,
+          "duration": 164.92,
+          "guardedTicks": 0,
+          "hits": 4,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "riskSamples": 0,
+          "routePlans": 112,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "0f7654caa159e0638f7fc8ccf3a5d33b9fd2a44ea422ca5e6c26d9ea91aa0f6c",
+          "shots": 4,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-n-aa12-05",
+      "map": "neon",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 878,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 195,
+          "changedTicks": 520,
+          "damageTaken": 178,
+          "deaths": 1,
+          "duration": 162.72,
+          "guardedTicks": 70,
+          "hits": 1,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "riskSamples": 900,
+          "routePlans": 297,
+          "safetyStopChanged": 70,
+          "scores": {
+            "blue": 45,
+            "red": 50
+          },
+          "sha256": "1188f6838edf6ddf719027d2a47ef1e5ba7b8d03e82c0ba8cfa35e4de160d2c6",
+          "shots": 1,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 195,
+          "changedTicks": 520,
+          "damageTaken": 178,
+          "deaths": 1,
+          "duration": 162.72,
+          "guardedTicks": 70,
+          "hits": 1,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "riskSamples": 900,
+          "routePlans": 297,
+          "safetyStopChanged": 70,
+          "scores": {
+            "blue": 45,
+            "red": 50
+          },
+          "sha256": "fbb8ee0ef830719806261c8c6a164a8a3d1f16b58dd9a15b6c2b73bd045d6686",
+          "shots": 1,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 27,
+          "deaths": 0,
+          "duration": 171.17,
+          "guardedTicks": 0,
+          "hits": 5,
+          "kills": 1,
+          "natural": true,
+          "netKills": 1,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "d800ad7f8d21283e59ce0389b88a4220050c46a2b87aa6f5dfe97e9eb6e0693d",
+          "shots": 5,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 527,
+          "damageTaken": 199,
+          "deaths": 1,
+          "duration": 162.97,
+          "guardedTicks": 0,
+          "hits": 0,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "riskSamples": 0,
+          "routePlans": 219,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 47,
+            "red": 50
+          },
+          "sha256": "2381d5afb0eedc7b6bccc87ea8b6ddc45830f2dcaf5d227f55d5ea0cea10d82b",
+          "shots": 0,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-n-aa12-06",
+      "map": "neon",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 884,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 262,
+          "changedTicks": 520,
+          "damageTaken": 450,
+          "deaths": 2,
+          "duration": 167.15,
+          "guardedTicks": 53,
+          "hits": 33,
+          "kills": 4,
+          "natural": true,
+          "netKills": 2,
+          "riskSamples": 869,
+          "routePlans": 9,
+          "safetyStopChanged": 53,
+          "scores": {
+            "blue": 50,
+            "red": 47
+          },
+          "sha256": "aba9ece0f1651fbd67dab0d60b03cab533cf3fa5e30313cdea9a2cd95569cfea",
+          "shots": 37,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 304,
+          "changedTicks": 520,
+          "damageTaken": 417,
+          "deaths": 2,
+          "duration": 178.47,
+          "guardedTicks": 24,
+          "hits": 38,
+          "kills": 7,
+          "natural": true,
+          "netKills": 5,
+          "riskSamples": 870,
+          "routePlans": 10,
+          "safetyStopChanged": 24,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "ece7d1f7dca40decbe4bc8045396aaa2ca8a12ca5a7f98803e27799bb50b6870",
+          "shots": 42,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 353,
+          "deaths": 2,
+          "duration": 151.97,
+          "guardedTicks": 0,
+          "hits": 49,
+          "kills": 10,
+          "natural": true,
+          "netKills": 8,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 39,
+            "red": 50
+          },
+          "sha256": "9ec7c05740a93b5e38e3ac45f318fdb290eb6c07ec755196f2df976f7497b47b",
+          "shots": 45,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 638,
+          "damageTaken": 502,
+          "deaths": 2,
+          "duration": 171,
+          "guardedTicks": 0,
+          "hits": 27,
+          "kills": 6,
+          "natural": true,
+          "netKills": 4,
+          "riskSamples": 0,
+          "routePlans": 12,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 50,
+            "red": 46
+          },
+          "sha256": "5b9a23e21b649e576f76b34277eab8dfe8a57c209c0b16911ffd9e799c13047d",
+          "shots": 31,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-a-aa12-07",
+      "map": "arena",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 1010,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 504,
+          "changedTicks": 520,
+          "damageTaken": 370,
+          "deaths": 2,
+          "duration": 164.88,
+          "guardedTicks": 50,
+          "hits": 19,
+          "kills": 8,
+          "natural": true,
+          "netKills": 6,
+          "riskSamples": 870,
+          "routePlans": 10,
+          "safetyStopChanged": 50,
+          "scores": {
+            "blue": 45,
+            "red": 50
+          },
+          "sha256": "aa232f1bb007cdf36897b0c02f1c46f71b815adf65faf71a99df50d69e0d7601",
+          "shots": 19,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 446,
+          "changedTicks": 520,
+          "damageTaken": 502,
+          "deaths": 1,
+          "duration": 155.55,
+          "guardedTicks": 21,
+          "hits": 53,
+          "kills": 14,
+          "natural": true,
+          "netKills": 13,
+          "riskSamples": 870,
+          "routePlans": 12,
+          "safetyStopChanged": 21,
+          "scores": {
+            "blue": 38,
+            "red": 50
+          },
+          "sha256": "30feb7125ecdf2855c72f5d12d53d10b9ebcb0a3b22e78801ed380ef044ba0d9",
+          "shots": 53,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 105,
+          "deaths": 0,
+          "duration": 178.02,
+          "guardedTicks": 0,
+          "hits": 7,
+          "kills": 5,
+          "natural": true,
+          "netKills": 5,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 46,
+            "red": 50
+          },
+          "sha256": "b60af0b85abf90e84c78cf66f584f551bfe825d1eb9fd3b1a87a9ac1afbf0187",
+          "shots": 7,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 724,
+          "damageTaken": 518,
+          "deaths": 3,
+          "duration": 170.33,
+          "guardedTicks": 0,
+          "hits": 21,
+          "kills": 4,
+          "natural": true,
+          "netKills": 1,
+          "riskSamples": 0,
+          "routePlans": 17,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 50,
+            "red": 49
+          },
+          "sha256": "289c89848d9f4b1f37568a45eb3c68f97f6ec74a11cd98a146f1870b720afca7",
+          "shots": 26,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-a-aa12-08",
+      "map": "arena",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 896,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 272,
+          "changedTicks": 520,
+          "damageTaken": 296,
+          "deaths": 1,
+          "duration": 172.03,
+          "guardedTicks": 202,
+          "hits": 0,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "riskSamples": 870,
+          "routePlans": 54,
+          "safetyStopChanged": 198,
+          "scores": {
+            "blue": 50,
+            "red": 49
+          },
+          "sha256": "e44879c62307412bc084d064f70ff8cd8e4309f774f10d8133e65ec5ccf9d8bd",
+          "shots": 0,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 463,
+          "changedTicks": 520,
+          "damageTaken": 155,
+          "deaths": 1,
+          "duration": 182.63,
+          "guardedTicks": 47,
+          "hits": 1,
+          "kills": 1,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 870,
+          "routePlans": 57,
+          "safetyStopChanged": 47,
+          "scores": {
+            "blue": 50,
+            "red": 48
+          },
+          "sha256": "e544efe1f290a1aeb48aa9f39f00162af3d1c1bbddbb71fdbf4dbac980df9859",
+          "shots": 1,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 232,
+          "deaths": 1,
+          "duration": 173.4,
+          "guardedTicks": 0,
+          "hits": 12,
+          "kills": 2,
+          "natural": true,
+          "netKills": 1,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 50,
+            "red": 49
+          },
+          "sha256": "59829b3267a4cff184b2d189da0276b59503e529f5bce03c6a0b0abd68c32eb6",
+          "shots": 13,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 702,
+          "damageTaken": 609,
+          "deaths": 3,
+          "duration": 167.58,
+          "guardedTicks": 0,
+          "hits": 25,
+          "kills": 6,
+          "natural": true,
+          "netKills": 3,
+          "riskSamples": 0,
+          "routePlans": 62,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "9addd7fcdd5e6ae3e10ef95ca22eb79bbe0e020359098c927a2be206a0140e34",
+          "shots": 26,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-f-aa12-09",
+      "map": "foundry",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 902,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 456,
+          "changedTicks": 520,
+          "damageTaken": 535,
+          "deaths": 2,
+          "duration": 157.62,
+          "guardedTicks": 70,
+          "hits": 32,
+          "kills": 10,
+          "natural": true,
+          "netKills": 8,
+          "riskSamples": 1050,
+          "routePlans": 9,
+          "safetyStopChanged": 70,
+          "scores": {
+            "blue": 42,
+            "red": 50
+          },
+          "sha256": "425a5df3ea0f8f82b54732c07068b8e8e2938c6eaae9fc21498e3490b4f5b145",
+          "shots": 34,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 470,
+          "changedTicks": 520,
+          "damageTaken": 337,
+          "deaths": 2,
+          "duration": 166.88,
+          "guardedTicks": 57,
+          "hits": 28,
+          "kills": 4,
+          "natural": true,
+          "netKills": 2,
+          "riskSamples": 1050,
+          "routePlans": 10,
+          "safetyStopChanged": 57,
+          "scores": {
+            "blue": 47,
+            "red": 50
+          },
+          "sha256": "1a719c059f445cc5ef22bcd9b857820320dcd61c298c1f0ac6a669c02fb042d8",
+          "shots": 33,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 201,
+          "deaths": 0,
+          "duration": 164.82,
+          "guardedTicks": 0,
+          "hits": 19,
+          "kills": 9,
+          "natural": true,
+          "netKills": 9,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 41,
+            "red": 50
+          },
+          "sha256": "1a5259a49445c41cc71d7d9e1e4ddceb9bb762ae39ec60a28770fe44e13a8d0c",
+          "shots": 22,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 752,
+          "damageTaken": 507,
+          "deaths": 3,
+          "duration": 165.57,
+          "guardedTicks": 0,
+          "hits": 15,
+          "kills": 3,
+          "natural": true,
+          "netKills": 0,
+          "riskSamples": 0,
+          "routePlans": 23,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 45,
+            "red": 50
+          },
+          "sha256": "e741a8d856f30226d77469c3b269f25927f0f61bb006eed5ab6f662c9eeab097",
+          "shots": 16,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-f-aa12-10",
+      "map": "foundry",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 908,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 197,
+          "changedTicks": 520,
+          "damageTaken": 153,
+          "deaths": 1,
+          "duration": 146.47,
+          "guardedTicks": 0,
+          "hits": 110,
+          "kills": 20,
+          "natural": true,
+          "netKills": 19,
+          "riskSamples": 1050,
+          "routePlans": 280,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 44,
+            "red": 50
+          },
+          "sha256": "c3c7e90646d1dc4853e3a711c88f6b2dc42fc82cf92aa50059350e5c378ca4db",
+          "shots": 134,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 197,
+          "changedTicks": 520,
+          "damageTaken": 153,
+          "deaths": 1,
+          "duration": 146.47,
+          "guardedTicks": 0,
+          "hits": 110,
+          "kills": 20,
+          "natural": true,
+          "netKills": 19,
+          "riskSamples": 1050,
+          "routePlans": 280,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 44,
+            "red": 50
+          },
+          "sha256": "9b5d7fbbca2f1469e872e32af1450b5f1e9c2b502713043c061964552d481b1e",
+          "shots": 134,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 133.95,
+          "guardedTicks": 0,
+          "hits": 116,
+          "kills": 27,
+          "natural": true,
+          "netKills": 27,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 39,
+            "red": 50
+          },
+          "sha256": "7d70e61cab2de107accf7d95e484459b6e9805c391e696770a4b7f1c5102b08a",
+          "shots": 136,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 618,
+          "damageTaken": 76,
+          "deaths": 0,
+          "duration": 123.42,
+          "guardedTicks": 0,
+          "hits": 125,
+          "kills": 24,
+          "natural": true,
+          "netKills": 24,
+          "riskSamples": 0,
+          "routePlans": 376,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 34,
+            "red": 50
+          },
+          "sha256": "03f02cad93425ddfd716575d8877afc8d9326497c100ee625a741d7c73309211",
+          "shots": 152,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-n-m4a1-11",
+      "map": "neon",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 914,
+      "weapon": "m4a1"
+    },
+    {
+      "arms": {
+        "guarded-flank": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 479,
+          "damageTaken": 104,
+          "deaths": 0,
+          "duration": 129.12,
+          "guardedTicks": 0,
+          "hits": 138,
+          "kills": 22,
+          "natural": true,
+          "netKills": 22,
+          "riskSamples": 1050,
+          "routePlans": 484,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 36,
+            "red": 50
+          },
+          "sha256": "ed59aac6d373c85811a67eb357d395cbc86b30954c333ef68ab8de305e160345",
+          "shots": 183,
+          "team": "red"
+        },
+        "guarded-route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 479,
+          "damageTaken": 104,
+          "deaths": 0,
+          "duration": 129.12,
+          "guardedTicks": 0,
+          "hits": 138,
+          "kills": 22,
+          "natural": true,
+          "netKills": 22,
+          "riskSamples": 1050,
+          "routePlans": 484,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 36,
+            "red": 50
+          },
+          "sha256": "ad5ffb2ffd66d907b992e9c42bb5822a123a43f6fdfd5786ca25947f049f38d4",
+          "shots": 183,
+          "team": "red"
+        },
+        "keep": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 0,
+          "damageTaken": 72,
+          "deaths": 0,
+          "duration": 134.03,
+          "guardedTicks": 0,
+          "hits": 115,
+          "kills": 31,
+          "natural": true,
+          "netKills": 31,
+          "riskSamples": 0,
+          "routePlans": 0,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 37,
+            "red": 50
+          },
+          "sha256": "57d73b217ffd8b01c14622967c0da58629a958fc0869b1f157416c9ec85fcb1e",
+          "shots": 136,
+          "team": "red"
+        },
+        "route": {
+          "budgetExhaustedTicks": 0,
+          "changedTicks": 479,
+          "damageTaken": 104,
+          "deaths": 0,
+          "duration": 129.12,
+          "guardedTicks": 0,
+          "hits": 138,
+          "kills": 22,
+          "natural": true,
+          "netKills": 22,
+          "riskSamples": 0,
+          "routePlans": 484,
+          "safetyStopChanged": 0,
+          "scores": {
+            "blue": 36,
+            "red": 50
+          },
+          "sha256": "ff6ba5fd718d8e6fa7bc9a9b5a495c70fdf490d04c113d82a6d2aff208b24d1e",
+          "shots": 183,
+          "team": "red"
+        }
+      },
+      "eligible": true,
+      "id": "v68-n-m4a1-12",
+      "map": "neon",
+      "naturalFour": true,
+      "problems": [],
+      "status": "PASS",
+      "trigger": 956,
+      "weapon": "m4a1"
+    }
+  ],
+  "missingGroups": [],
+  "naturalFourArmGroups": 11,
+  "oldAndNewSealedHoldoutsOpened": false,
+  "passGroups": 12,
+  "promotionAllowed": false,
+  "registrySHA256": "63568e23fa679c962b957b73b31a5b5d3ef93be8a143c6073de6b20575a978cd",
+  "schema": "fpsarena-v68-independent-natural-matched-risk-audit-v1",
+  "triggeredGroups": 12
+}

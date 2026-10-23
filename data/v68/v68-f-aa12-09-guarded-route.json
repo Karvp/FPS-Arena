@@ -1,0 +1,448 @@
+{
+  "format": "fpsarena-authoritative-training-v1",
+  "created": "2026-10-23T18:09:51.602Z",
+  "seed": 680109,
+  "episodes": 1,
+  "seconds": 600,
+  "modeSelection": [
+    "tdm"
+  ],
+  "classicMaps": [
+    "foundry"
+  ],
+  "traineePrimary": "aa12",
+  "profile": "release",
+  "opponentPolicy": "official",
+  "zombiePose": "original",
+  "traineeSkill": "random",
+  "autoSkillsEnabled": true,
+  "fullMatch": true,
+  "snapshotLagMs": 45,
+  "opponentPolicyDescription": "Game.addBot => BotBrain.think; no key restrictions, all engine capabilities remain available",
+  "knownLimits": [
+    "Headless client surface: no Three.js renderer",
+    "Network snapshots delayed without real browser interpolation",
+    "No real human opponents, variable packet loss or server hosting latency",
+    "Aim profile comparison is not proof of performance on human opponents"
+  ],
+  "aggregate": {
+    "rounds": 1,
+    "shots": 1,
+    "hits": 1,
+    "headHits": 1,
+    "kills": 1,
+    "deaths": 1,
+    "accuracy": 100,
+    "headshotOfHits": 100,
+    "meters": 1052.62,
+    "reversals": 168,
+    "worldTurns": 261,
+    "worldReversals": 224,
+    "skillCommands": 0,
+    "skillsActivated": 0,
+    "agentErrors": 0,
+    "aimedEnemyShots": 27,
+    "enemyHitShots": 6,
+    "enemyShotDodgeRate": 77.78
+  },
+  "results": [
+    {
+      "mode": "tdm",
+      "seed": 680109,
+      "profile": "release",
+      "directorEpisodeAssignment": null,
+      "opponentPolicy": "official",
+      "seconds": 600,
+      "primaryLoadout": "aa12",
+      "skillLoadout": "random",
+      "throwLoadout": "frag",
+      "skillCommands": 0,
+      "skillsActivated": 0,
+      "skillEvents": {},
+      "gameCode": "authoritative-server",
+      "agentCode": "bundled-page-agent",
+      "firstShotAt": 21.433,
+      "firstHitAt": 21.433,
+      "shots": 1,
+      "hits": 1,
+      "headHits": 1,
+      "adsShots": 1,
+      "hipShots": 0,
+      "adsTicks": 83,
+      "hipCombatTicks": 0,
+      "throwablesUsed": 2,
+      "throwableTypes": {
+        "frag": 2
+      },
+      "receivedShots": 2230,
+      "aimedEnemyShots": 27,
+      "enemyHitShots": 6,
+      "enemyShotDodgeRate": 77.78,
+      "damageDealt": 31,
+      "damageTaken": 155,
+      "deathCount": 1,
+      "ownKills": 1,
+      "zombieKills": 0,
+      "distance": 1052.62,
+      "reversals": 168,
+      "worldTurns": 261,
+      "worldReversals": 224,
+      "routeSamples": 0,
+      "activeTicks": 10957,
+      "fireInputTicks": 1,
+      "lootInteractions": 0,
+      "ringDamage": 0,
+      "reloads": 0,
+      "switches": 0,
+      "allyKills": 47,
+      "teamNearbyTicks": 1282,
+      "crossfireTicks": 975,
+      "objectiveTicks": 0,
+      "ringOutsideTicks": 0,
+      "errors": 0,
+      "glideTicks": 0,
+      "heliTicks": 0,
+      "mapGeometryBoxes": 54,
+      "finishedNaturally": true,
+      "termination": "results",
+      "c19NaturalTrial": null,
+      "c20MatchedSeedTrial": null,
+      "duration": 182.63,
+      "finalHp": 100,
+      "finalArmor": 50,
+      "alive": true,
+      "kills": 1,
+      "deaths": 1,
+      "modeState": {
+        "type": "tdm",
+        "scores": {
+          "red": 48,
+          "blue": 50
+        },
+        "target": 50
+      },
+      "team": "red",
+      "zoneTimeObserved": 0,
+      "teamObjectiveScore": null,
+      "teamRoundWins": null,
+      "weapon": "aa12",
+      "equippedSkill": null,
+      "map": "foundry",
+      "bots": 8,
+      "allies": 4,
+      "accuracy": 100,
+      "headshotOfHits": 100,
+      "directorCandidateAudit": {
+        "searches": 0
+      },
+      "directorExplorationAssignments": [],
+      "directorExplorationOffers": 0,
+      "directorExplorationDropped": 0,
+      "directorExplorationAssigned": 0,
+      "directorPlanWindows": [],
+      "directorPlanSelectionCount": 0,
+      "directorOutcomeWindows": [],
+      "directorOutcomeDropped": 0,
+      "firstGeometricFiringWindowAt": null,
+      "firstShotAfterGeometricWindowSeconds": null,
+      "firstVisibleFiringWindowAt": null,
+      "firstShotAfterWindowSeconds": null,
+      "directorDiagnosticCounts": {},
+      "directorDiagnosticSamples": [],
+      "goalDiagnosticCounts": {},
+      "goalDiagnosticSamples": [],
+      "macroDiagnosticCounts": {},
+      "macroDiagnosticExamples": [],
+      "macroOptionTotals": {},
+      "macroOptionLoopCandidates": 0,
+      "macroOptionCycleClasses": {},
+      "macroOptionCycles": [],
+      "macroOptionTrace": [],
+      "macroOptionServerTotals": {},
+      "macroOptionServerEventAttributed": {
+        "shots": 0,
+        "hits": 0,
+        "kills": 0
+      },
+      "tdmV68": {
+        "schema": "fpsarena-v68-public-exposure-capped-acquisition-v1",
+        "arm": "guarded-route",
+        "stratum": "far-public-target",
+        "weapon": "aa12",
+        "seed": 680109,
+        "triggerTick": 902,
+        "firstEligibleTick": 896,
+        "nextEligibleTick": 896,
+        "treatmentTicks": 1050,
+        "outcomeTicks": 1230,
+        "complete": true,
+        "rightCensored": false,
+        "notTriggered": false,
+        "prestate": {
+          "tick": 902,
+          "serverSHA256": "c420d1991f59388d88f8085a27198b7256443df9bdb91f115cd427fbb06af1e2",
+          "rngState": 812517567,
+          "publicSHA256": "16da3a366ca9819cc4dad3b681dab3f32178137ae3a59c9a8e33a1b69a583d57",
+          "traineeId": "trainee"
+        },
+        "triggerPublicFeatures": {
+          "valid": true,
+          "reason": "far-target",
+          "targetId": "bot5",
+          "targetPos": {
+            "x": -8.651,
+            "z": -25.312
+          },
+          "distance": 67.2884,
+          "effectiveRange": 14.4,
+          "targetRadius": 10.08,
+          "hp": 100,
+          "visibleHostiles": 3,
+          "noPrivilegedState": true
+        },
+        "prefixSHA256": "08f3590f03d1ebb113555d5fa9f9e3da90a4844bd5e2e4f8fa487ae40e6e4f31",
+        "initial": {
+          "shots": 0,
+          "hits": 0,
+          "kills": 0,
+          "deaths": 0,
+          "damageTaken": 46
+        },
+        "terminal": {
+          "shots": 1,
+          "hits": 1,
+          "kills": 1,
+          "deaths": 1,
+          "damageTaken": 155
+        },
+        "outcome": {
+          "shots": 1,
+          "hits": 1,
+          "kills": 1,
+          "deaths": 1,
+          "damageTaken": 109
+        },
+        "changedTicks": 520,
+        "eligibleTicks": 491,
+        "activeTicks": 1050,
+        "commandChecks": 538,
+        "examples": [
+          {
+            "tick": 903,
+            "from": "1010",
+            "to": "0110"
+          },
+          {
+            "tick": 914,
+            "from": "0101",
+            "to": "0110"
+          },
+          {
+            "tick": 915,
+            "from": "0101",
+            "to": "0110"
+          },
+          {
+            "tick": 916,
+            "from": "0100",
+            "to": "0010"
+          },
+          {
+            "tick": 917,
+            "from": "0100",
+            "to": "0010"
+          },
+          {
+            "tick": 918,
+            "from": "0100",
+            "to": "0010"
+          },
+          {
+            "tick": 919,
+            "from": "0100",
+            "to": "0010"
+          },
+          {
+            "tick": 920,
+            "from": "0100",
+            "to": "0010"
+          }
+        ],
+        "rejections": {},
+        "reasons": {},
+        "treatmentStartsAfterTrigger": true,
+        "privilegedWitnessNotActorInput": true,
+        "onlyMovementModified": true,
+        "researchOnly": true,
+        "productionAllowed": false,
+        "triggerCue": null,
+        "publicCueCounts": {},
+        "triggerSource": "only command, local HP, delayed public remote snapshot and camera; no server information",
+        "prebranchOnly": true,
+        "contextV64": null,
+        "contextCapturedBeforeIntervention": false,
+        "targetStatePrivacy": "public delayed snapshots and public static geometry ONLY",
+        "actorMayReadPrivilegedWitness": false,
+        "publicTriggerProvenance": "delayed public hostile + public map + own HP and weapon range",
+        "publicMapPathfinding": true,
+        "router": "bounded-grid-static-2d-Astar-plus-swept-collision",
+        "farPublicTargetCapturedBeforeIntervention": true,
+        "initialFarDistance": 67.2884,
+        "finalDistance": 34.7296,
+        "publicSamples": 2,
+        "routePlans": 57,
+        "routeFound": 57,
+        "inRangeTicks": 0,
+        "stops": {
+          "no-safe-heading": 48,
+          "combat-or-hp": 1,
+          "public-high-risk": 47
+        },
+        "routeWaypointExamples": [
+          {
+            "tick": 903,
+            "to": {
+              "x": -4.75,
+              "z": 42
+            }
+          },
+          {
+            "tick": 904,
+            "to": {
+              "x": -4.75,
+              "z": 42
+            }
+          },
+          {
+            "tick": 905,
+            "to": {
+              "x": -4.75,
+              "z": 42
+            }
+          },
+          {
+            "tick": 906,
+            "to": {
+              "x": -4.75,
+              "z": 42
+            }
+          },
+          {
+            "tick": 907,
+            "to": {
+              "x": -4.75,
+              "z": 42
+            }
+          },
+          {
+            "tick": 908,
+            "to": {
+              "x": -4.75,
+              "z": 42
+            }
+          },
+          {
+            "tick": 909,
+            "to": {
+              "x": -4.75,
+              "z": 42
+            }
+          },
+          {
+            "tick": 910,
+            "to": {
+              "x": -4.75,
+              "z": 42
+            }
+          }
+        ],
+        "acquisitionOnly": true,
+        "fireAimAdsSkillsModified": false,
+        "guarded": true,
+        "baseNavigationArm": "route",
+        "publicExposureProvenance": "publicHostilesC35K + public static map rayWorld + own HP + public teammates",
+        "noPrivilegedActorInput": true,
+        "publicRiskBeforeGameStep": true,
+        "maxChangedTicks": 520,
+        "exposureSamples": 1050,
+        "publicExposureValid": 870,
+        "publicExposureUnavailable": 180,
+        "gatedTicks": 47,
+        "highRiskTicks": 47,
+        "safetyStopChanged": 47,
+        "budgetExhaustedTicks": 463,
+        "maximumObservedRiskScore": 4.7,
+        "highRiskExamples": [
+          {
+            "tick": 1443,
+            "hp": 78.723,
+            "close": 0,
+            "mid": 1,
+            "allies": 3,
+            "score": 1.35
+          },
+          {
+            "tick": 1444,
+            "hp": 78.723,
+            "close": 0,
+            "mid": 1,
+            "allies": 3,
+            "score": 1.35
+          },
+          {
+            "tick": 1445,
+            "hp": 78.723,
+            "close": 0,
+            "mid": 1,
+            "allies": 3,
+            "score": 1.35
+          },
+          {
+            "tick": 1446,
+            "hp": 78.723,
+            "close": 0,
+            "mid": 1,
+            "allies": 3,
+            "score": 1.35
+          },
+          {
+            "tick": 1447,
+            "hp": 78.723,
+            "close": 0,
+            "mid": 1,
+            "allies": 3,
+            "score": 1.35
+          },
+          {
+            "tick": 1448,
+            "hp": 78.723,
+            "close": 0,
+            "mid": 1,
+            "allies": 3,
+            "score": 1.35
+          },
+          {
+            "tick": 1449,
+            "hp": 78.723,
+            "close": 0,
+            "mid": 1,
+            "allies": 3,
+            "score": 1.35
+          },
+          {
+            "tick": 1450,
+            "hp": 78.723,
+            "close": 0,
+            "mid": 1,
+            "allies": 3,
+            "score": 1.35
+          }
+        ],
+        "allNonWASDUnchanged": true
+      },
+      "score": 150,
+      "teamNearbyRate": 70.2,
+      "crossfireRate": 53.4
+    }
+  ]
+}

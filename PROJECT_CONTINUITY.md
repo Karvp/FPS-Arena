@@ -1,3 +1,17 @@
+# Latest persistent checkpoint — V68 survival-aware acquisition research (REJECTED)
+
+- Parent Git tag research-v67-public-acquisition; simulator baseline C35AJ, full v57-v59 NOT reimported.
+- New isolated V68 research public-threat LOS and teammate-support risk guard over frozen V67 A* route, with max 520 modified WASD ticks per guarded arm. No changes to fire/aim/ADS/skills, no production Classic extension or original trained experts.
+- Preregistered 12 fresh four-arm discovery seed groups / 48 full-match Game.step() runs, official bots and 50-score natural termination. Registry SHA256 63568e23fa679c962b957b73b31a5b5d3ef93be8a143c6073de6b20575a978cd.
+- Independent audit 12/12 PASS, all 12 triggered; 46/48 natural completions. Seed v68-n-aa12-02 guarded-route and guarded-flank were censored at 600s; only 11 groups eligible for matched full natural-match statistics.
+- Mean kills/deaths/damage across 12 groups: Keep 7.50/0.33/113.5, Route 6.08/1.50/333.5, Guarded Route 5.83/1.17/251.2, Guarded Flank 5.42/1.25/267.2.
+- Matched Guarded Route minus Route mean damage -83.73, bootstrap CI95 [-178.64,-3.91], but Guarded Route minus Keep damage +136.0, deaths +0.818 (both risk CIs strictly worse); net kills also worse than Keep. No model or policy promotion.
+- Two no-instrument full natural-match parity controls each match 105/105 original metrics vs Keep.
+- Focus tests 12/12, full JS suite 1385/1386 (one historical malformed Windows C:\C:\Users path).
+- V68 full source, frozen registration, 48 experimental + 4 calibration + 2 parity raw JSON, paired survival/censoring audit, exact SHA manifest stored in this SAME Git codebase. No ZIP duplication. All new and old holdouts remain sealed.
+- V68 report V68-PERSISTENT-STATUS.md. Next V69 active escape-to-cover and anti-stall, not freezing WASD under LOS.
+
+---
 # Current persistent checkpoint — V67 public weapon-range map acquisition
 
 - Parent research commit df89929, tag research-v66-diverse-natural-tdm. Simulator baseline still C35AJ; newer v57-v59 original source not fully recovered.

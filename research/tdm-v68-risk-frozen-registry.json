@@ -1,0 +1,222 @@
+{
+  "actor": {
+    "guardPolicy": "V68 public static 3D LOS + public hostile counts + fresh ally support + own HP",
+    "highRiskResponse": "neutralize WASD, leave fire/aim/ADS/reload/skills unchanged",
+    "maxActualChangedTicksGuarded": 520,
+    "maxInterventionTicks": 1050,
+    "navigation": "V67 unchanged bounded grid A-star",
+    "privateServerInput": false,
+    "targetFeatureTiming": "public client before Game.step only",
+    "trigger": "V67 unchanged public far-range target trigger"
+  },
+  "arms": [
+    "keep",
+    "route",
+    "guarded-route",
+    "guarded-flank"
+  ],
+  "bootstrap": {
+    "samples": 15000,
+    "seed": 680068,
+    "unit": "matched group"
+  },
+  "calibrationSeed441109Excluded": true,
+  "cases": [
+    {
+      "id": "v68-n-aa12-01",
+      "map": "neon",
+      "seed": 680101,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-n-aa12-02",
+      "map": "neon",
+      "seed": 680102,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-n-aa12-03",
+      "map": "neon",
+      "seed": 680103,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-n-aa12-04",
+      "map": "neon",
+      "seed": 680104,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-n-aa12-05",
+      "map": "neon",
+      "seed": 680105,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-n-aa12-06",
+      "map": "neon",
+      "seed": 680106,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-a-aa12-07",
+      "map": "arena",
+      "seed": 680107,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-a-aa12-08",
+      "map": "arena",
+      "seed": 680108,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-f-aa12-09",
+      "map": "foundry",
+      "seed": 680109,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-f-aa12-10",
+      "map": "foundry",
+      "seed": 680110,
+      "split": "discovery",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-n-m4a1-11",
+      "map": "neon",
+      "seed": 680111,
+      "split": "discovery",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "v68-n-m4a1-12",
+      "map": "neon",
+      "seed": 680112,
+      "split": "discovery",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "v68-hold-neon-aa12-13",
+      "map": "neon",
+      "seed": 680113,
+      "split": "holdout",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-hold-arena-aa12-14",
+      "map": "arena",
+      "seed": 680114,
+      "split": "holdout",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v68-hold-foundry-aa12-15",
+      "map": "foundry",
+      "seed": 680115,
+      "split": "holdout",
+      "weapon": "aa12"
+    }
+  ],
+  "censoring": "any 600s capped match retained but excluded from natural matched effects",
+  "comparisons": [
+    [
+      "route",
+      "keep"
+    ],
+    [
+      "guarded-route",
+      "keep"
+    ],
+    [
+      "guarded-flank",
+      "keep"
+    ],
+    [
+      "guarded-route",
+      "route"
+    ],
+    [
+      "guarded-flank",
+      "route"
+    ]
+  ],
+  "holdoutRunsForbidden": true,
+  "limitations": [
+    "official bot opponents, not humans",
+    "post-branch RNG can diverge",
+    "natural matches vary in duration",
+    "neutralizing WASD is no guarantee of survival",
+    "public geometric LOS approximates actual combat visibility"
+  ],
+  "parent": "C35AJ, research-v67-public-acquisition",
+  "primarySafety": [
+    "deaths",
+    "damageTaken"
+  ],
+  "primaryUtility": [
+    "fullMatchNetKills"
+  ],
+  "priorRegistrySHA256": {
+    "tdm-v60-frozen-registry.json": "235a31d15a2602fd02816c774857b7d12d126e44f0642bf00c8aaf0c3fbcc939",
+    "tdm-v61-frozen-registry.json": "acfb1841939aa36e1e18014cb50ad4bafe6077c2918dcd214e4f12ab194773f4",
+    "tdm-v62-frozen-registry.json": "08887eb588ed6c66ad54b74ff986d566331ffe37e5cd284a2165c8b87cd4b846",
+    "tdm-v63-prospective-registry.json": "9a6046f27c373ff434c3c32006e560f0de0c42fe435b92c00494d8aaea6e507f",
+    "tdm-v64-frozen-registry.json": "1de3b84622556e6b01af95c1b5e3a61c897425f9d9b4470efe6e7f5c11328735",
+    "tdm-v65-fullmatch-frozen-registry.json": "f0f3508f54be3a15c8b03ce4a107d00b541652d54701026400789fd6734114a0",
+    "tdm-v66-natural-frozen-registry.json": "cabb7472b86f7ae13dd6c01312264e197afb20fa7c4af1bf0098f91b951f1084",
+    "tdm-v67-acquisition-frozen-registry.json": "3b829b193b973a9f71d3d093f763dd1c03fa1106e981b70c7d3f2df4f75f54e4"
+  },
+  "promotionGate": {
+    "damageDeltaUpper95NonPositiveVsKeep": true,
+    "deathsDeltaUpper95NonPositiveVsKeep": true,
+    "minimum12MatchedNaturalGroups": true,
+    "netKillsDeltaLower95StrictPositiveVsKeep": true,
+    "prospectiveUnopenedHoldoutsAndRepresentativeOpponents": true
+  },
+  "promotionNeverAutomatic": true,
+  "researchOnly": true,
+  "schema": "fpsarena-v68-predeclared-public-risk-guard-four-arm-v1",
+  "secondaryAcquisition": [
+    "shots",
+    "hits",
+    "kills",
+    "guardedTicks",
+    "routePlans"
+  ],
+  "simulation": {
+    "bots": 8,
+    "fullMatch": true,
+    "lagMs": 45,
+    "mode": "tdm",
+    "opponents": "official",
+    "secondsCap": 600,
+    "teamKillTarget": 50
+  },
+  "sourceSHA256": {
+    "lab/arena/public-target-los-c35k.mjs": "70536c198249d01b9425359088b72a82d1953e72dfb99a43ef1ece3c37ec0486",
+    "lab/arena/source-main/server/bot.js": "651c0bb573865c27fe7cbdf9bc7329decfdb02d55c7c8a6432ab134fa9791024",
+    "lab/arena/source-main/server/game.js": "c000e00ba7d5333b7add0ee3014346c6e38dc89bdc46a12073cb2d23e523b625",
+    "lab/arena/source-main/shared/geometry.js": "d28afc7874bcb50f0c13c7d9f05e5b7f2047597f169fcefddab07a2137b39cd4",
+    "lab/arena/source-main/shared/weapons.js": "5da6738e207099484a34c3a879d444e490b8010d2c03a128dd9c80ea5ec936bd",
+    "lab/arena/tdm-context-trial-v64.mjs": "70391a6e06a4fa37778bfc2d4f30b2a5d67ef8f70d866565cc4fdc674ce13978",
+    "lab/arena/tdm-engagement-trigger-v61.mjs": "df86e1311ef5791f3d564f0eeb5ae605e887773f2096cd3d909505e5b7d35d08",
+    "lab/arena/tdm-exposure-guard-v68.mjs": "e2988884fe5a4c4e08720ea768005e761fdcf298b8cebe9444fed455bb8cfbec",
+    "lab/arena/tdm-public-acquisition-v67.mjs": "2d29148dec559afe102a27cb4630f48df782fe9e6cbc0b84f9dab5737f6a598d",
+    "lab/arena/tdm-stratified-replay-v60.mjs": "fad99f4058e29e266036b3d7daaa7db7bbd1ee5a997099385f6df6815d229c05",
+    "lab/arena/train-main-v68.mjs": "6dca3d51b6d8ca8b258dc7a4f4477f1fa96ee51b631124217a55d473504f56ac",
+    "page-agent.js": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed",
+    "scripts/tdm_v68_study.py": "3d9d401234ba8eac5f87bce43fa63e8a51a54737914a83906d5929cba9974a9f"
+  },
+  "statisticalUnit": "independent four-arm matched seed group"
+}
