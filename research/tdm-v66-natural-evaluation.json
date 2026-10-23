@@ -1,0 +1,235 @@
+{
+  "allHoldoutsSealed": true,
+  "anyStatisticalGatePass": false,
+  "byArmVsKeep": {
+    "close": {
+      "damageTaken": {
+        "CI95": [
+          -44.4,
+          100.4
+        ],
+        "groups": 10,
+        "max": 168.0,
+        "mean": 35.0,
+        "min": -248.0
+      },
+      "deaths": {
+        "CI95": [
+          -0.6,
+          0.5
+        ],
+        "groups": 10,
+        "max": 1.0,
+        "mean": 0.0,
+        "min": -2.0
+      },
+      "duration": {
+        "CI95": [
+          -8.080999999999994,
+          7.120524999999994
+        ],
+        "groups": 10,
+        "max": 23.0,
+        "mean": -0.7309999999999974,
+        "min": -20.78
+      },
+      "kills": {
+        "CI95": [
+          -2.4,
+          5.0
+        ],
+        "groups": 10,
+        "max": 13.0,
+        "mean": 1.2,
+        "min": -7.0
+      },
+      "netKills": {
+        "CI95": [
+          -2.3,
+          4.9
+        ],
+        "groups": 10,
+        "max": 13.0,
+        "mean": 1.2,
+        "min": -7.0
+      },
+      "teamScoreMargin": {
+        "CI95": [
+          -3.4,
+          1.2
+        ],
+        "groups": 10,
+        "max": 4.0,
+        "mean": -1.1,
+        "min": -8.0
+      }
+    },
+    "strafe": {
+      "damageTaken": {
+        "CI95": [
+          -34.2,
+          84.3
+        ],
+        "groups": 10,
+        "max": 211.0,
+        "mean": 22.6,
+        "min": -116.0
+      },
+      "deaths": {
+        "CI95": [
+          -0.5,
+          0.5
+        ],
+        "groups": 10,
+        "max": 1.0,
+        "mean": 0.0,
+        "min": -1.0
+      },
+      "duration": {
+        "CI95": [
+          -10.310999999999998,
+          10.61605
+        ],
+        "groups": 10,
+        "max": 23.799999999999983,
+        "mean": 1.3289999999999993,
+        "min": -42.59
+      },
+      "kills": {
+        "CI95": [
+          -1.0,
+          5.6
+        ],
+        "groups": 10,
+        "max": 15.0,
+        "mean": 2.0,
+        "min": -4.0
+      },
+      "netKills": {
+        "CI95": [
+          -1.0,
+          5.6
+        ],
+        "groups": 10,
+        "max": 15.0,
+        "mean": 2.0,
+        "min": -4.0
+      },
+      "teamScoreMargin": {
+        "CI95": [
+          -3.8,
+          4.2
+        ],
+        "groups": 10,
+        "max": 15.0,
+        "mean": -0.1,
+        "min": -10.0
+      }
+    },
+    "withdraw": {
+      "damageTaken": {
+        "CI95": [
+          -161.3025,
+          35.507499999999894
+        ],
+        "groups": 10,
+        "max": 218.0,
+        "mean": -68.3,
+        "min": -257.0
+      },
+      "deaths": {
+        "CI95": [
+          -1.1,
+          0.1
+        ],
+        "groups": 10,
+        "max": 1.0,
+        "mean": -0.5,
+        "min": -2.0
+      },
+      "duration": {
+        "CI95": [
+          -10.699549999999993,
+          4.183175000000004
+        ],
+        "groups": 10,
+        "max": 15.72999999999999,
+        "mean": -2.4039999999999964,
+        "min": -33.72
+      },
+      "kills": {
+        "CI95": [
+          -2.7,
+          3.2
+        ],
+        "groups": 10,
+        "max": 9.0,
+        "mean": 0.2,
+        "min": -7.0
+      },
+      "netKills": {
+        "CI95": [
+          -2.2,
+          3.8
+        ],
+        "groups": 10,
+        "max": 10.0,
+        "mean": 0.7,
+        "min": -6.0
+      },
+      "teamScoreMargin": {
+        "CI95": [
+          -1.4,
+          4.1
+        ],
+        "groups": 10,
+        "max": 12.0,
+        "mean": 1.1,
+        "min": -5.0
+      }
+    }
+  },
+  "censoredGroups": 0,
+  "comparability": [
+    "Four arms share pre-action seed/witness but diverge after 150-tick intervention",
+    "Natural-end durations can differ, so total K/D are not fixed-time outcomes",
+    "Official bots only and the same algorithmic incumbent on all arms"
+  ],
+  "descriptive": {
+    "close": {
+      "meanDuration": 155.80124999999998,
+      "nNatural": 16,
+      "traineeTeamWins": 15
+    },
+    "keep": {
+      "meanDuration": 156.258125,
+      "nNatural": 16,
+      "traineeTeamWins": 15
+    },
+    "strafe": {
+      "meanDuration": 157.08875,
+      "nNatural": 16,
+      "traineeTeamWins": 15
+    },
+    "withdraw": {
+      "meanDuration": 154.755625,
+      "nNatural": 16,
+      "traineeTeamWins": 15
+    }
+  },
+  "discoveryGroups": 16,
+  "eligibleGroups": 10,
+  "frozenRegistrySHA256": "cabb7472b86f7ae13dd6c01312264e197afb20fa7c4af1bf0098f91b951f1084",
+  "fullyNaturalGroups": 16,
+  "naturalMatchCount": 64,
+  "promotionAllowed": false,
+  "safetyNote": "Do not treat team win or more kills in mismatched-length natural games as isolated effect of a 150-tick action.",
+  "schema": "fpsarena-v66-independent-natural-match-group-comparison-v1",
+  "statisticalGatePerArm": {
+    "close": false,
+    "strafe": false,
+    "withdraw": false
+  },
+  "totalTraineeTeamWins": 60,
+  "triggeredGroups": 10
+}

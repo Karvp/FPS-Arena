@@ -1,0 +1,1711 @@
+{
+  "completeGroups": 16,
+  "eligiblePairedGroups": 10,
+  "failedGroups": [],
+  "fullyNaturallyEndedGroups": 16,
+  "groups": [
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 95,
+          "damageTaken": 219,
+          "deaths": 1,
+          "duration": 158.38,
+          "fileSHA256": "1e59c631c30c420c636f217a8529a9d322608d0c76d291d0f05b48d57beeded0",
+          "kills": 11,
+          "modeState": {
+            "scores": {
+              "blue": 42,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 10,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 8,
+            "kills": 2,
+            "shots": 14
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 167,
+          "deaths": 1,
+          "duration": 153.63,
+          "fileSHA256": "6ea93a4733988213f3529b09431fa6c95a3810af6fe0a39eb5888a18b039d12c",
+          "kills": 12,
+          "modeState": {
+            "scores": {
+              "blue": 40,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 11,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 1,
+            "shots": 4
+          }
+        },
+        "strafe": {
+          "changedTicks": 97,
+          "damageTaken": 133,
+          "deaths": 0,
+          "duration": 155.67,
+          "fileSHA256": "9185cc57f85441fad6c5d6a3aa74f2893c6e56b5888b4bfa631ddd48d209ddfd",
+          "kills": 10,
+          "modeState": {
+            "scores": {
+              "blue": 38,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 10,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 57,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "withdraw": {
+          "changedTicks": 89,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 157,
+          "fileSHA256": "bdf83d547f501e447ca869dfa729ee334499253fdf47624e979e1bb65ac22a21",
+          "kills": 9,
+          "modeState": {
+            "scores": {
+              "blue": 41,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 9,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 9,
+            "kills": 2,
+            "shots": 14
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-a-mp5-01",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 1314
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 84,
+          "damageTaken": 326,
+          "deaths": 1,
+          "duration": 166.52,
+          "fileSHA256": "6c195e3ee50bc04f37f6157859a8a1fed35fbc2aabfdeaae75d5a835206bb35e",
+          "kills": 8,
+          "modeState": {
+            "scores": {
+              "blue": 45,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 7,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 178,
+          "deaths": 1,
+          "duration": 143.52,
+          "fileSHA256": "54e56e5d55ae637cb8de278f5c4aea52734256db7c7f18ebcd8a80632c74a15f",
+          "kills": 15,
+          "modeState": {
+            "scores": {
+              "blue": 37,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 14,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "strafe": {
+          "changedTicks": 119,
+          "damageTaken": 62,
+          "deaths": 0,
+          "duration": 167.32,
+          "fileSHA256": "5ef1d0875f777a05c45f69c463530d1b4add988c589b97dbbea7a5e5c74cf0ed",
+          "kills": 15,
+          "modeState": {
+            "scores": {
+              "blue": 43,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 15,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "withdraw": {
+          "changedTicks": 82,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 159.25,
+          "fileSHA256": "1cd24abe2424ef5f7117c489d759aa4d46941318e24dd2e32e68f14137445e9b",
+          "kills": 8,
+          "modeState": {
+            "scores": {
+              "blue": 42,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 8,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-a-mp5-02",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 2016
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 97,
+          "damageTaken": 174,
+          "deaths": 1,
+          "duration": 169.02,
+          "fileSHA256": "9008ea0327ff3b4140148e1bf776efbe7d2ba3f7a70956dbb70b7cef9d02f56a",
+          "kills": 19,
+          "modeState": {
+            "scores": {
+              "blue": 49,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 18,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 5,
+            "kills": 1,
+            "shots": 6
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 207,
+          "deaths": 1,
+          "duration": 170.15,
+          "fileSHA256": "43fe86d4acb071d56988408411cad95aeb3029262bfcbb4ac0d039ae08ddb850",
+          "kills": 6,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 5,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 0,
+            "shots": 6
+          }
+        },
+        "strafe": {
+          "changedTicks": 137,
+          "damageTaken": 418,
+          "deaths": 2,
+          "duration": 167.87,
+          "fileSHA256": "3597f4058d265f85b8178e7ff2db06f8f64a7055bb3807e73e4bbacd6663aafb",
+          "kills": 9,
+          "modeState": {
+            "scores": {
+              "blue": 41,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 7,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 9,
+            "kills": 1,
+            "shots": 10
+          }
+        },
+        "withdraw": {
+          "changedTicks": 0,
+          "damageTaken": 207,
+          "deaths": 1,
+          "duration": 170.15,
+          "fileSHA256": "eade1b7d4e0d98aea125acc95754490185f65aaa6d5f369a16c1bcb29094886f",
+          "kills": 6,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 5,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 0,
+            "shots": 6
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-f-uzi-03",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 1128
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 83,
+          "damageTaken": 463,
+          "deaths": 2,
+          "duration": 149.83,
+          "fileSHA256": "6ad36e562d779be2f2f68965aebef0363d84f664ddca6baf41613736dfc16ea2",
+          "kills": 9,
+          "modeState": {
+            "scores": {
+              "blue": 39,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 7,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 71,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 0,
+            "shots": 4
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 339,
+          "deaths": 1,
+          "duration": 157.72,
+          "fileSHA256": "0db82b649d9a9973baa05c03607beea55cfc9278d9d385388d00bfc56e0e60d8",
+          "kills": 5,
+          "modeState": {
+            "scores": {
+              "blue": 39,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 4,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "strafe": {
+          "changedTicks": 112,
+          "damageTaken": 502,
+          "deaths": 2,
+          "duration": 159.68,
+          "fileSHA256": "fcc0ae40800a80841095274084a336d9ec267aac436a241488f39d4aac336fd9",
+          "kills": 10,
+          "modeState": {
+            "scores": {
+              "blue": 44,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 8,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 168,
+            "deaths": 1,
+            "hits": 4,
+            "kills": 0,
+            "shots": 5
+          }
+        },
+        "withdraw": {
+          "changedTicks": 150,
+          "damageTaken": 537,
+          "deaths": 1,
+          "duration": 152.42,
+          "fileSHA256": "b11c74c4ce1f2c96186217f3109d3d05cdffb726fb258610405ebcdaf30e3c4b",
+          "kills": 11,
+          "modeState": {
+            "scores": {
+              "blue": 38,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 10,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 66,
+            "deaths": 0,
+            "hits": 4,
+            "kills": 2,
+            "shots": 7
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-f-uzi-04",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 1314
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 82,
+          "damageTaken": 95,
+          "deaths": 0,
+          "duration": 169.98,
+          "fileSHA256": "c718fb5b95baa7aab9e28cc840796d023d7415ee819824cb84aa5a92f1220bd5",
+          "kills": 5,
+          "modeState": {
+            "scores": {
+              "blue": 45,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 5,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 0,
+            "shots": 3
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 343,
+          "deaths": 2,
+          "duration": 159.68,
+          "fileSHA256": "8f48a84dd6be2f25a6ad6372483ee2742d5e2bb3c875c1f38bfa0b437256ec22",
+          "kills": 12,
+          "modeState": {
+            "scores": {
+              "blue": 44,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 10,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 0,
+            "shots": 5
+          }
+        },
+        "strafe": {
+          "changedTicks": 119,
+          "damageTaken": 380,
+          "deaths": 2,
+          "duration": 163.6,
+          "fileSHA256": "3b6c170a66ba30efd5d095ee772df4823a0a861d6a1ee139d642263df53ff2b8",
+          "kills": 8,
+          "modeState": {
+            "scores": {
+              "blue": 43,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 6,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 24,
+            "deaths": 0,
+            "hits": 20,
+            "kills": 2,
+            "shots": 28
+          }
+        },
+        "withdraw": {
+          "changedTicks": 146,
+          "damageTaken": 86,
+          "deaths": 0,
+          "duration": 156.3,
+          "fileSHA256": "67f90a066ae61cc19f7770183a4c175ca93ec708f6ef05eb3e77c6f196f836b6",
+          "kills": 16,
+          "modeState": {
+            "scores": {
+              "blue": 40,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 16,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 0,
+            "shots": 4
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-a-uzi-05",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 1140
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 76,
+          "damageTaken": 151,
+          "deaths": 1,
+          "duration": 171.18,
+          "fileSHA256": "c707eda6e3e0320f6768f45bf900237eb066c6290f49da660994af787f78f33c",
+          "kills": 14,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 13,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 11,
+            "kills": 2,
+            "shots": 16
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 190,
+          "deaths": 1,
+          "duration": 178.02,
+          "fileSHA256": "e27d6feea5b7f12927ca0e3b904157c7dcf88635bf991784f46c18bb10ebbb43",
+          "kills": 6,
+          "modeState": {
+            "scores": {
+              "blue": 48,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 5,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 10,
+            "kills": 1,
+            "shots": 19
+          }
+        },
+        "strafe": {
+          "changedTicks": 104,
+          "damageTaken": 240,
+          "deaths": 1,
+          "duration": 135.43,
+          "fileSHA256": "2c93c4c7faf24689a6328b4dbcb2b8be8c72bd01349716d5030c518752f74b1d",
+          "kills": 21,
+          "modeState": {
+            "scores": {
+              "blue": 33,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 20,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 12,
+            "kills": 2,
+            "shots": 17
+          }
+        },
+        "withdraw": {
+          "changedTicks": 138,
+          "damageTaken": 54,
+          "deaths": 0,
+          "duration": 144.3,
+          "fileSHA256": "0b3af89695a18900a48206b941a556276bd32a2003ea398ea3f7f66437308fa9",
+          "kills": 15,
+          "modeState": {
+            "scores": {
+              "blue": 36,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 15,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 13,
+            "kills": 2,
+            "shots": 22
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-a-uzi-06",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 1428
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 127.65,
+          "fileSHA256": "4763f79e4177659ffb79d9186084c52a955f576d81c0264353f9f2cbe56a813d",
+          "kills": 26,
+          "modeState": {
+            "scores": {
+              "blue": 34,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 26,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 127.65,
+          "fileSHA256": "ed3c0142ea2a693ef70185fa215170b4d5f867a7adb1697a7b7e5299155b152c",
+          "kills": 26,
+          "modeState": {
+            "scores": {
+              "blue": 34,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 26,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "strafe": {
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 127.65,
+          "fileSHA256": "32399108626d95a9c498968e0464464f019eaf4aa654f263e203a43738d20fcb",
+          "kills": 26,
+          "modeState": {
+            "scores": {
+              "blue": 34,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 26,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "withdraw": {
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 127.65,
+          "fileSHA256": "c8461f10a060f08c016b67fffb87fb6d98ec351050062ca34ca9018ef8a1745b",
+          "kills": 26,
+          "modeState": {
+            "scores": {
+              "blue": 34,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 26,
+          "termination": "results",
+          "windowOutcome": null
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": false,
+      "id": "v66-n-m4a1-07",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": null
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 0,
+          "damageTaken": 48,
+          "deaths": 0,
+          "duration": 116,
+          "fileSHA256": "874772d921bdfe7b5960b92d2aebb951dcf243e5902dca89e3b4be0c0cc0312b",
+          "kills": 35,
+          "modeState": {
+            "scores": {
+              "blue": 30,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 35,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 48,
+          "deaths": 0,
+          "duration": 116,
+          "fileSHA256": "abf85cc15a680c43338e89df07f20a1f2920ef127d68119bf82023abd17f5e03",
+          "kills": 35,
+          "modeState": {
+            "scores": {
+              "blue": 30,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 35,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "strafe": {
+          "changedTicks": 0,
+          "damageTaken": 48,
+          "deaths": 0,
+          "duration": 116,
+          "fileSHA256": "0b04939fb8d4da802dd18b26842c1db25d4f29a2a3542c67598c00ee8ee5174b",
+          "kills": 35,
+          "modeState": {
+            "scores": {
+              "blue": 30,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 35,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "withdraw": {
+          "changedTicks": 0,
+          "damageTaken": 48,
+          "deaths": 0,
+          "duration": 116,
+          "fileSHA256": "9391e0c15f6f745d50b98283f27fd8e86905798e8b6e0d0182445182f1736a83",
+          "kills": 35,
+          "modeState": {
+            "scores": {
+              "blue": 30,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 35,
+          "termination": "results",
+          "windowOutcome": null
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": false,
+      "id": "v66-n-m4a1-08",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": null
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 0,
+          "damageTaken": 83,
+          "deaths": 0,
+          "duration": 166.13,
+          "fileSHA256": "f440304ed95c2717b87fe52674ddc91bcb7c36bca99041931502119b36c5dd6d",
+          "kills": 1,
+          "modeState": {
+            "scores": {
+              "blue": 49,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 1,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 83,
+          "deaths": 0,
+          "duration": 166.13,
+          "fileSHA256": "74959e263f84570fd9ebd90018f93bcc46f5147cb857480d101f756ff39a2d02",
+          "kills": 1,
+          "modeState": {
+            "scores": {
+              "blue": 49,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 1,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "strafe": {
+          "changedTicks": 0,
+          "damageTaken": 83,
+          "deaths": 0,
+          "duration": 166.13,
+          "fileSHA256": "2aff40b7315a077aba330801d1e5d2d0cd418cdc54b4060b2742f41a92c11c36",
+          "kills": 1,
+          "modeState": {
+            "scores": {
+              "blue": 49,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 1,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "withdraw": {
+          "changedTicks": 0,
+          "damageTaken": 83,
+          "deaths": 0,
+          "duration": 166.13,
+          "fileSHA256": "54a10734fbde5f0aa3efc75ef945b3e812b8091b0fd6c88425847281da50d300",
+          "kills": 1,
+          "modeState": {
+            "scores": {
+              "blue": 49,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 1,
+          "termination": "results",
+          "windowOutcome": null
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": false,
+      "id": "v66-n-aa12-09",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": null
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 0,
+          "damageTaken": 47,
+          "deaths": 0,
+          "duration": 165.97,
+          "fileSHA256": "7df7ed300cfcc2a0700863e63c1652b6846f8ca5d79720f95f8c42dc8642b39f",
+          "kills": 1,
+          "modeState": {
+            "scores": {
+              "blue": 50,
+              "red": 49
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 1,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 47,
+          "deaths": 0,
+          "duration": 165.97,
+          "fileSHA256": "d79425a4090f65efebc638a1b24747aa493427abf8b25379aa3b5ddd2d8d0e89",
+          "kills": 1,
+          "modeState": {
+            "scores": {
+              "blue": 50,
+              "red": 49
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 1,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "strafe": {
+          "changedTicks": 0,
+          "damageTaken": 47,
+          "deaths": 0,
+          "duration": 165.97,
+          "fileSHA256": "125b0d93f6f294086e461a832da63d6f02c9b7c9137525a262758a62749b1d96",
+          "kills": 1,
+          "modeState": {
+            "scores": {
+              "blue": 50,
+              "red": 49
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 1,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "withdraw": {
+          "changedTicks": 0,
+          "damageTaken": 47,
+          "deaths": 0,
+          "duration": 165.97,
+          "fileSHA256": "ba46f6bc02a14fdafaaa3fa9967bc1dc9de2f6a6549ee7be9a37672221079759",
+          "kills": 1,
+          "modeState": {
+            "scores": {
+              "blue": 50,
+              "red": 49
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 1,
+          "termination": "results",
+          "windowOutcome": null
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": false,
+      "id": "v66-n-aa12-10",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": null
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 100,
+          "damageTaken": 362,
+          "deaths": 1,
+          "duration": 146.02,
+          "fileSHA256": "3faea67e952cab5f4f0176b58420f40534ac710b635940dd712fcae0c846cd42",
+          "kills": 17,
+          "modeState": {
+            "scores": {
+              "blue": 36,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 16,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 54,
+            "deaths": 0,
+            "hits": 9,
+            "kills": 0,
+            "shots": 15
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 357,
+          "deaths": 2,
+          "duration": 135.2,
+          "fileSHA256": "0cdf057edcf6d504b3eee9d5ca19ef112d3e19814cdfdc3ace949e2a66ed9b21",
+          "kills": 13,
+          "modeState": {
+            "scores": {
+              "blue": 30,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 11,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 4,
+            "kills": 1,
+            "shots": 5
+          }
+        },
+        "strafe": {
+          "changedTicks": 141,
+          "damageTaken": 336,
+          "deaths": 1,
+          "duration": 129.97,
+          "fileSHA256": "96cc368b6e8b6c08c12aa8ea1d70de11f03b95e5383fc81a3728b6add40c24ce",
+          "kills": 19,
+          "modeState": {
+            "scores": {
+              "blue": 31,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 18,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 81,
+            "deaths": 0,
+            "hits": 8,
+            "kills": 2,
+            "shots": 15
+          }
+        },
+        "withdraw": {
+          "changedTicks": 140,
+          "damageTaken": 259,
+          "deaths": 1,
+          "duration": 131.72,
+          "fileSHA256": "03f035dc64534bdd55605078c0828b09bba5c2cc41ec5539ec3f3c267a5e6a62",
+          "kills": 12,
+          "modeState": {
+            "scores": {
+              "blue": 33,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 11,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 9,
+            "kills": 2,
+            "shots": 12
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-f-m4a1-11",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 1554
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 173.87,
+          "fileSHA256": "80c59cd8e1dd98f459a3bbe30bfee49c294e3b252988606e9b3a33d471e24656",
+          "kills": 2,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 2,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 173.87,
+          "fileSHA256": "edf5661e31cada134b4293ea4b1ad09d881f5247cf4ddca70e979929f07a03df",
+          "kills": 2,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 2,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "strafe": {
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 173.87,
+          "fileSHA256": "ce4df2799ab7e95cd8d562808e0aff2e5c89737c6d53b00b81e9bf808a6f64b6",
+          "kills": 2,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 2,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "withdraw": {
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 173.87,
+          "fileSHA256": "16d2fe2206313f6ab63238f0afaa9a906ff49a79af2101f520d729c38a6cd62f",
+          "kills": 2,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 2,
+          "termination": "results",
+          "windowOutcome": null
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": false,
+      "id": "v66-a-aa12-12",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": null
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 142,
+          "damageTaken": 438,
+          "deaths": 2,
+          "duration": 151.57,
+          "fileSHA256": "984c01c84e0b915cb8287dc74d24b21980d66b052a60c3ef0cf06993c1baa4e8",
+          "kills": 8,
+          "modeState": {
+            "scores": {
+              "blue": 41,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 6,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 8,
+            "kills": 2,
+            "shots": 9
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 270,
+          "deaths": 1,
+          "duration": 162.42,
+          "fileSHA256": "6c71d2c6bf3b4a1df9bf49203d7ac43c91e5b1ced9388c1f2d2668167d4daaca",
+          "kills": 10,
+          "modeState": {
+            "scores": {
+              "blue": 45,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 9,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 15,
+            "kills": 2,
+            "shots": 21
+          }
+        },
+        "strafe": {
+          "changedTicks": 70,
+          "damageTaken": 178,
+          "deaths": 1,
+          "duration": 176.12,
+          "fileSHA256": "739e4abe94d6e9ee7d4174a3513c044ef1635023a3510f85c6a40e2c255aad20",
+          "kills": 8,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 7,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 6,
+            "kills": 1,
+            "shots": 7
+          }
+        },
+        "withdraw": {
+          "changedTicks": 150,
+          "damageTaken": 27,
+          "deaths": 0,
+          "duration": 168.43,
+          "fileSHA256": "5d28d122e3f7f7c79f6be1aca8bfefd6bd252fd0c8959191f5951aa2cec87703",
+          "kills": 4,
+          "modeState": {
+            "scores": {
+              "blue": 41,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 4,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-f-mp5-13",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 1188
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 0,
+          "damageTaken": 496,
+          "deaths": 2,
+          "duration": 142.3,
+          "fileSHA256": "0420f4e97c8765c425b3d56abcf0f049b45fd6739d072fbf70ed676c29c0efea",
+          "kills": 13,
+          "modeState": {
+            "scores": {
+              "blue": 38,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 11,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 496,
+          "deaths": 2,
+          "duration": 142.3,
+          "fileSHA256": "a3d72f390c229b963910fd598694fc3c827f4280821443d30f58fa4033a38fad",
+          "kills": 13,
+          "modeState": {
+            "scores": {
+              "blue": 38,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 11,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "strafe": {
+          "changedTicks": 0,
+          "damageTaken": 496,
+          "deaths": 2,
+          "duration": 142.3,
+          "fileSHA256": "7fb8669400315a244662cd8f57feb13b59bd7ef4570b78fd19bebcf36c66d35e",
+          "kills": 13,
+          "modeState": {
+            "scores": {
+              "blue": 38,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 11,
+          "termination": "results",
+          "windowOutcome": null
+        },
+        "withdraw": {
+          "changedTicks": 0,
+          "damageTaken": 496,
+          "deaths": 2,
+          "duration": 142.3,
+          "fileSHA256": "f7a14c746f05b3ffde9c84cfb395e9121cb3997199763af173267758923d0efe",
+          "kills": 13,
+          "modeState": {
+            "scores": {
+              "blue": 38,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 11,
+          "termination": "results",
+          "windowOutcome": null
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": false,
+      "id": "v66-f-mp5-14",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": null
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 81,
+          "damageTaken": 244,
+          "deaths": 1,
+          "duration": 135.02,
+          "fileSHA256": "1270fbcaf94894f1767d05c08f24a258f504c2114d953c570c72e296fa725618",
+          "kills": 13,
+          "modeState": {
+            "scores": {
+              "blue": 32,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 12,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 16,
+            "kills": 0,
+            "shots": 22
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 186,
+          "deaths": 0,
+          "duration": 155.8,
+          "fileSHA256": "c98ecfebbe68f5e6210d2216cc77cabdcfa7c2d42a94b8c046c20979ec6562cf",
+          "kills": 14,
+          "modeState": {
+            "scores": {
+              "blue": 36,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 14,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 9,
+            "kills": 1,
+            "shots": 11
+          }
+        },
+        "strafe": {
+          "changedTicks": 132,
+          "damageTaken": 178,
+          "deaths": 1,
+          "duration": 173.27,
+          "fileSHA256": "b8be10c549a9fbd90d562c834ff6f1d7ce34d7691e631020906ad5827ef227c5",
+          "kills": 11,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 10,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 21,
+            "kills": 3,
+            "shots": 25
+          }
+        },
+        "withdraw": {
+          "changedTicks": 103,
+          "damageTaken": 166,
+          "deaths": 1,
+          "duration": 150.58,
+          "fileSHA256": "bec31c93ce9ea5f2712d48f135eeebd3ac3ff6a0931ae40287c62b2c771f9893",
+          "kills": 14,
+          "modeState": {
+            "scores": {
+              "blue": 36,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 13,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 8,
+            "kills": 1,
+            "shots": 9
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-a-mp5-15",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 1200
+    },
+    {
+      "arms": {
+        "close": {
+          "changedTicks": 115,
+          "damageTaken": 282,
+          "deaths": 1,
+          "duration": 183.38,
+          "fileSHA256": "0b7a8d1b5a87e879b12155ce60269b9fa90e008360b25bc8413d7b7f45730bbe",
+          "kills": 10,
+          "modeState": {
+            "scores": {
+              "blue": 47,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 9,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 9,
+            "kills": 2,
+            "shots": 9
+          }
+        },
+        "keep": {
+          "changedTicks": 0,
+          "damageTaken": 167,
+          "deaths": 1,
+          "duration": 192.07,
+          "fileSHA256": "c7b4c22f1e7f2bef5596d03ba58b0d8260ebb4f64d1e8cdb1d497b5f013fb91f",
+          "kills": 9,
+          "modeState": {
+            "scores": {
+              "blue": 46,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 8,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 0,
+            "shots": 6
+          }
+        },
+        "strafe": {
+          "changedTicks": 101,
+          "damageTaken": 203,
+          "deaths": 1,
+          "duration": 192.57,
+          "fileSHA256": "569ec9427052f1e9a9ffb7aca312127636532da084e14a80790e4bec904006a8",
+          "kills": 11,
+          "modeState": {
+            "scores": {
+              "blue": 47,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 10,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 0,
+            "shots": 8
+          }
+        },
+        "withdraw": {
+          "changedTicks": 132,
+          "damageTaken": 385,
+          "deaths": 2,
+          "duration": 194.02,
+          "fileSHA256": "c96d7370a6848938c2da4b7d69433717bf9369a970187c84492c6781b45ab498",
+          "kills": 9,
+          "modeState": {
+            "scores": {
+              "blue": 47,
+              "red": 50
+            },
+            "target": 50,
+            "type": "tdm"
+          },
+          "natural": true,
+          "netKills": 7,
+          "termination": "results",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePairedEffect": true,
+      "id": "v66-f-uzi-16",
+      "naturalAll": true,
+      "problems": [],
+      "status": "PASS",
+      "triggerTick": 1620
+    }
+  ],
+  "holdoutAccessed": false,
+  "missingGroups": [],
+  "productionPromoted": false,
+  "registrySHA256": "cabb7472b86f7ae13dd6c01312264e197afb20fa7c4af1bf0098f91b951f1084",
+  "rightCensoredGroups": 0,
+  "schema": "fpsarena-v66-natural-matched-four-arm-audit-v1",
+  "triggeredGroups": 10
+}

@@ -1,0 +1,502 @@
+{
+  "breakdown": {
+    "map": {
+      "arena": {
+        "meanKeepKills": 10.166666666666666,
+        "meanKeepShots": 97.33333333333333,
+        "noTriggerGroups": [
+          "v66-a-aa12-12"
+        ],
+        "totalGroups": 6,
+        "triggeredGroups": 5
+      },
+      "foundry": {
+        "meanKeepKills": 9.333333333333334,
+        "meanKeepShots": 76.16666666666667,
+        "noTriggerGroups": [
+          "v66-f-mp5-14"
+        ],
+        "totalGroups": 6,
+        "triggeredGroups": 5
+      },
+      "neon": {
+        "meanKeepKills": 15.75,
+        "meanKeepShots": 78.75,
+        "noTriggerGroups": [
+          "v66-n-m4a1-07",
+          "v66-n-m4a1-08",
+          "v66-n-aa12-09",
+          "v66-n-aa12-10"
+        ],
+        "totalGroups": 4,
+        "triggeredGroups": 0
+      }
+    },
+    "stratum": {
+      "aim-lock": {
+        "meanKeepKills": 10.2,
+        "meanKeepShots": 91.1,
+        "noTriggerGroups": [
+          "v66-f-mp5-14"
+        ],
+        "totalGroups": 10,
+        "triggeredGroups": 9
+      },
+      "post-fire": {
+        "meanKeepKills": 13.0,
+        "meanKeepShots": 74.16666666666667,
+        "noTriggerGroups": [
+          "v66-n-m4a1-07",
+          "v66-n-m4a1-08",
+          "v66-n-aa12-09",
+          "v66-n-aa12-10",
+          "v66-a-aa12-12"
+        ],
+        "totalGroups": 6,
+        "triggeredGroups": 1
+      }
+    },
+    "weapon": {
+      "aa12": {
+        "meanKeepKills": 1.3333333333333333,
+        "meanKeepShots": 8.333333333333334,
+        "noTriggerGroups": [
+          "v66-n-aa12-09",
+          "v66-n-aa12-10",
+          "v66-a-aa12-12"
+        ],
+        "totalGroups": 3,
+        "triggeredGroups": 0
+      },
+      "m4a1": {
+        "meanKeepKills": 24.666666666666668,
+        "meanKeepShots": 140.0,
+        "noTriggerGroups": [
+          "v66-n-m4a1-07",
+          "v66-n-m4a1-08"
+        ],
+        "totalGroups": 3,
+        "triggeredGroups": 1
+      },
+      "mp5sd": {
+        "meanKeepKills": 12.8,
+        "meanKeepShots": 99.4,
+        "noTriggerGroups": [
+          "v66-f-mp5-14"
+        ],
+        "totalGroups": 5,
+        "triggeredGroups": 4
+      },
+      "uzi": {
+        "meanKeepKills": 7.6,
+        "meanKeepShots": 82.8,
+        "noTriggerGroups": [],
+        "totalGroups": 5,
+        "triggeredGroups": 5
+      }
+    }
+  },
+  "descriptiveNotPolicySelection": true,
+  "groups": [
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-a-mp5-01",
+      "keepDeaths": 1,
+      "keepDuration": 153.63,
+      "keepKills": 12,
+      "keepShots": 106,
+      "map": "arena",
+      "publicCueCounts": {
+        "no-recent-combat-cue": 26,
+        "outside-band": 6,
+        "public-combat-cue": 3
+      },
+      "rawKeepSha256": "6ea93a4733988213f3529b09431fa6c95a3810af6fe0a39eb5888a18b039d12c",
+      "rejectionCounts": {},
+      "seed": 660101,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 1314,
+      "triggered": true,
+      "weapon": "mp5sd"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-a-mp5-02",
+      "keepDeaths": 1,
+      "keepDuration": 143.52,
+      "keepKills": 15,
+      "keepShots": 137,
+      "map": "arena",
+      "publicCueCounts": {
+        "outside-band": 149,
+        "public-combat-cue": 2
+      },
+      "rawKeepSha256": "54e56e5d55ae637cb8de278f5c4aea52734256db7c7f18ebcd8a80632c74a15f",
+      "rejectionCounts": {},
+      "seed": 660102,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 2016,
+      "triggered": true,
+      "weapon": "mp5sd"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-f-uzi-03",
+      "keepDeaths": 1,
+      "keepDuration": 170.15,
+      "keepKills": 6,
+      "keepShots": 68,
+      "map": "foundry",
+      "publicCueCounts": {
+        "public-combat-cue": 2
+      },
+      "rawKeepSha256": "43fe86d4acb071d56988408411cad95aeb3029262bfcbb4ac0d039ae08ddb850",
+      "rejectionCounts": {},
+      "seed": 660103,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 1128,
+      "triggered": true,
+      "weapon": "uzi"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-f-uzi-04",
+      "keepDeaths": 1,
+      "keepDuration": 157.72,
+      "keepKills": 5,
+      "keepShots": 45,
+      "map": "foundry",
+      "publicCueCounts": {
+        "no-recent-combat-cue": 9,
+        "outside-band": 21,
+        "public-combat-cue": 2
+      },
+      "rawKeepSha256": "0db82b649d9a9973baa05c03607beea55cfc9278d9d385388d00bfc56e0e60d8",
+      "rejectionCounts": {},
+      "seed": 660104,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 1314,
+      "triggered": true,
+      "weapon": "uzi"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-a-uzi-05",
+      "keepDeaths": 2,
+      "keepDuration": 159.68,
+      "keepKills": 12,
+      "keepShots": 107,
+      "map": "arena",
+      "publicCueCounts": {
+        "public-combat-cue": 2
+      },
+      "rawKeepSha256": "8f48a84dd6be2f25a6ad6372483ee2742d5e2bb3c875c1f38bfa0b437256ec22",
+      "rejectionCounts": {},
+      "seed": 660105,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 1140,
+      "triggered": true,
+      "weapon": "uzi"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-a-uzi-06",
+      "keepDeaths": 1,
+      "keepDuration": 178.02,
+      "keepKills": 6,
+      "keepShots": 107,
+      "map": "arena",
+      "publicCueCounts": {
+        "no-recent-combat-cue": 34,
+        "outside-band": 10,
+        "public-combat-cue": 5
+      },
+      "rawKeepSha256": "e27d6feea5b7f12927ca0e3b904157c7dcf88635bf991784f46c18bb10ebbb43",
+      "rejectionCounts": {},
+      "seed": 660106,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 1428,
+      "triggered": true,
+      "weapon": "uzi"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-n-m4a1-07",
+      "keepDeaths": 0,
+      "keepDuration": 127.65,
+      "keepKills": 26,
+      "keepShots": 131,
+      "map": "neon",
+      "publicCueCounts": {
+        "outside-band": 510
+      },
+      "rawKeepSha256": "ed3c0142ea2a693ef70185fa215170b4d5f867a7adb1697a7b7e5299155b152c",
+      "rejectionCounts": {},
+      "seed": 660107,
+      "stratum": "post-fire",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": null,
+      "triggered": false,
+      "weapon": "m4a1"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-n-m4a1-08",
+      "keepDeaths": 0,
+      "keepDuration": 116,
+      "keepKills": 35,
+      "keepShots": 182,
+      "map": "neon",
+      "publicCueCounts": {
+        "combat-interrupt": 12,
+        "no-recent-combat-cue": 22,
+        "no-target-or-weapon": 11,
+        "outside-band": 464
+      },
+      "rawKeepSha256": "abf85cc15a680c43338e89df07f20a1f2920ef127d68119bf82023abd17f5e03",
+      "rejectionCounts": {},
+      "seed": 660108,
+      "stratum": "post-fire",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": null,
+      "triggered": false,
+      "weapon": "m4a1"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-n-aa12-09",
+      "keepDeaths": 0,
+      "keepDuration": 166.13,
+      "keepKills": 1,
+      "keepShots": 1,
+      "map": "neon",
+      "publicCueCounts": {
+        "no-recent-combat-cue": 61,
+        "outside-band": 28,
+        "public-combat-cue": 7,
+        "range-not-engaged": 412
+      },
+      "rawKeepSha256": "74959e263f84570fd9ebd90018f93bcc46f5147cb857480d101f756ff39a2d02",
+      "rejectionCounts": {},
+      "seed": 660109,
+      "stratum": "post-fire",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": null,
+      "triggered": false,
+      "weapon": "aa12"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-n-aa12-10",
+      "keepDeaths": 0,
+      "keepDuration": 165.97,
+      "keepKills": 1,
+      "keepShots": 1,
+      "map": "neon",
+      "publicCueCounts": {
+        "no-recent-combat-cue": 75,
+        "no-target-or-weapon": 15,
+        "outside-band": 74,
+        "range-not-engaged": 343
+      },
+      "rawKeepSha256": "d79425a4090f65efebc638a1b24747aa493427abf8b25379aa3b5ddd2d8d0e89",
+      "rejectionCounts": {},
+      "seed": 660110,
+      "stratum": "post-fire",
+      "team": "red",
+      "teamWon": false,
+      "triggerTick": null,
+      "triggered": false,
+      "weapon": "aa12"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-f-m4a1-11",
+      "keepDeaths": 2,
+      "keepDuration": 135.2,
+      "keepKills": 13,
+      "keepShots": 107,
+      "map": "foundry",
+      "publicCueCounts": {
+        "combat-interrupt": 4,
+        "no-recent-combat-cue": 38,
+        "outside-band": 21,
+        "public-combat-cue": 2
+      },
+      "rawKeepSha256": "0cdf057edcf6d504b3eee9d5ca19ef112d3e19814cdfdc3ace949e2a66ed9b21",
+      "rejectionCounts": {},
+      "seed": 660111,
+      "stratum": "post-fire",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 1554,
+      "triggered": true,
+      "weapon": "m4a1"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-a-aa12-12",
+      "keepDeaths": 0,
+      "keepDuration": 173.87,
+      "keepKills": 2,
+      "keepShots": 23,
+      "map": "arena",
+      "publicCueCounts": {
+        "no-target-or-weapon": 6,
+        "outside-band": 80,
+        "range-not-engaged": 419
+      },
+      "rawKeepSha256": "edf5661e31cada134b4293ea4b1ad09d881f5247cf4ddca70e979929f07a03df",
+      "rejectionCounts": {},
+      "seed": 660112,
+      "stratum": "post-fire",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": null,
+      "triggered": false,
+      "weapon": "aa12"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-f-mp5-13",
+      "keepDeaths": 1,
+      "keepDuration": 162.42,
+      "keepKills": 10,
+      "keepShots": 74,
+      "map": "foundry",
+      "publicCueCounts": {
+        "public-combat-cue": 2
+      },
+      "rawKeepSha256": "6c71d2c6bf3b4a1df9bf49203d7ac43c91e5b1ced9388c1f2d2668167d4daaca",
+      "rejectionCounts": {},
+      "seed": 660113,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 1188,
+      "triggered": true,
+      "weapon": "mp5sd"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-f-mp5-14",
+      "keepDeaths": 2,
+      "keepDuration": 142.3,
+      "keepKills": 13,
+      "keepShots": 76,
+      "map": "foundry",
+      "publicCueCounts": {
+        "low-hp": 340,
+        "missing-or-dead": 8,
+        "no-recent-combat-cue": 129,
+        "outside-band": 17,
+        "public-combat-cue": 9
+      },
+      "rawKeepSha256": "a3d72f390c229b963910fd598694fc3c827f4280821443d30f58fa4033a38fad",
+      "rejectionCounts": {},
+      "seed": 660114,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": null,
+      "triggered": false,
+      "weapon": "mp5sd"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-a-mp5-15",
+      "keepDeaths": 0,
+      "keepDuration": 155.8,
+      "keepKills": 14,
+      "keepShots": 104,
+      "map": "arena",
+      "publicCueCounts": {
+        "public-combat-cue": 2
+      },
+      "rawKeepSha256": "c98ecfebbe68f5e6210d2216cc77cabdcfa7c2d42a94b8c046c20979ec6562cf",
+      "rejectionCounts": {},
+      "seed": 660115,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 1200,
+      "triggered": true,
+      "weapon": "mp5sd"
+    },
+    {
+      "allFourArmsMatched": true,
+      "engineNatural": true,
+      "id": "v66-f-uzi-16",
+      "keepDeaths": 1,
+      "keepDuration": 192.07,
+      "keepKills": 9,
+      "keepShots": 87,
+      "map": "foundry",
+      "publicCueCounts": {
+        "no-recent-combat-cue": 69,
+        "public-combat-cue": 2
+      },
+      "rawKeepSha256": "c7b4c22f1e7f2bef5596d03ba58b0d8260ebb4f64d1e8cdb1d497b5f013fb91f",
+      "rejectionCounts": {},
+      "seed": 660116,
+      "stratum": "aim-lock",
+      "team": "red",
+      "teamWon": true,
+      "triggerTick": 1620,
+      "triggered": true,
+      "weapon": "uzi"
+    }
+  ],
+  "limitations": [
+    "Cue sampling only reflects current V61 trigger gate",
+    "Not all no-trigger reasons are independently measurable from this summary",
+    "High team win rate reflects official simulator opponents, not trained agent advantage"
+  ],
+  "noTriggerReasonTotals": {
+    "combat-interrupt": 12,
+    "low-hp": 340,
+    "missing-or-dead": 8,
+    "no-recent-combat-cue": 287,
+    "no-target-or-weapon": 32,
+    "outside-band": 1173,
+    "public-combat-cue": 16,
+    "range-not-engaged": 1174
+  },
+  "notTriggeredGroups": 6,
+  "oldAndNewHoldoutsAccessed": false,
+  "registrySHA256": "cabb7472b86f7ae13dd6c01312264e197afb20fa7c4af1bf0098f91b951f1084",
+  "schema": "fpsarena-v66-no-treatment-trigger-coverage-v1",
+  "source": "audited preregistered discovery results only",
+  "totalGroups": 16,
+  "triggeredGroups": 10
+}

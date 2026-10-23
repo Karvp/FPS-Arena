@@ -1,3 +1,19 @@
+# Latest persistent checkpoint — V66 diverse full natural TDM discovery
+
+- Parent b9682cc, tag research-v65-full-natural-tdm. Research simulator baseline C35AJ, NOT fully reimported v57-v59.
+- 16 preregistered new seed groups, 4 research arms each: 64/64 natural server-completed 4v4 matches, 0 censored, official bot opponents. Team wins 60/64 descriptive only.
+- Four-arm preaction witness audit 16/16 PASS; 10/16 valid triggers. Strict group threshold 12 NOT reached.
+- Coverage: Arena 5/6; Foundry 5/6; Neon 0/4; UZI 5/5, MP5SD 4/5, M4A1 1/3, AA12 0/3.
+- Matched net kills per valid independent group vs Keep: Close +1.20, Strafe +2.00, Withdraw +0.70. Every 95% CI includes zero; deaths/damage risk gates also fail.
+- Keep matches no-instrument baseline on TWO full natural seeds, 105/105 original fields each (one triggered and one not).
+- Complete new evidence: 64 arm JSON files + 2 additional natural baseline JSONs, stored in Git. No duplicated source ZIPs.
+- research/tdm-v66-natural-frozen-registry.json SHA256 cabb7472b86f7ae13dd6c01312264e197afb20fa7c4af1bf0098f91b951f1084.
+- research/tdm-v66-natural-independent-audit.json, research/tdm-v66-natural-evaluation.json and research/tdm-v66-trigger-coverage.json; V66-PERSISTENT-STATUS.md.
+- Full suite 1361/1362 PASS, one historical Windows C:\C:\Users path problem.
+- No new trained actor, no promotion, Classic LibreWolf, official server and expert production weights untouched. All holdouts sealed.
+- V67 priority: public range-aware legal map routing and engagement acquisition for Neon/AA12, with fresh preregistered seeds.
+
+---
 # Current persistent checkpoint — V65 natural TDM paired survival research
 
 - Source baseline remains C35AJ, with v57–v59 research source NOT fully reimported.
