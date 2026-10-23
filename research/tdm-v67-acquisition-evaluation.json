@@ -1,0 +1,255 @@
+{
+  "allHoldoutsSealed": true,
+  "byArm": {
+    "direct": {
+      "meanDamageTaken": 256.3333333333333,
+      "meanDeaths": 1.0833333333333333,
+      "meanKills": 7.666666666666667,
+      "meanPathFound": 0.0,
+      "meanRoutePlans": 0.0,
+      "meanShots": 42.583333333333336,
+      "naturalCount": 12,
+      "teamWins": 10
+    },
+    "flank": {
+      "meanDamageTaken": 355.5833333333333,
+      "meanDeaths": 1.5833333333333333,
+      "meanKills": 8.666666666666666,
+      "meanPathFound": 56.0,
+      "meanRoutePlans": 56.0,
+      "meanShots": 43.583333333333336,
+      "naturalCount": 12,
+      "teamWins": 10
+    },
+    "keep": {
+      "meanDamageTaken": 109.25,
+      "meanDeaths": 0.4166666666666667,
+      "meanKills": 5.666666666666667,
+      "meanPathFound": 0.0,
+      "meanRoutePlans": 0.0,
+      "meanShots": 30.583333333333332,
+      "naturalCount": 12,
+      "teamWins": 9
+    },
+    "route": {
+      "meanDamageTaken": 324.1666666666667,
+      "meanDeaths": 1.4166666666666667,
+      "meanKills": 8.083333333333334,
+      "meanPathFound": 47.583333333333336,
+      "meanRoutePlans": 47.583333333333336,
+      "meanShots": 43.666666666666664,
+      "naturalCount": 12,
+      "teamWins": 10
+    }
+  },
+  "calibrationSeed441109Excluded": true,
+  "discoveryGroups": 12,
+  "eligibleGroups": 12,
+  "limitations": [
+    "C35AJ headless sim and official bots, not representative human players",
+    "same-seed forks diverge after intervention",
+    "naturally completed matches can have different durations",
+    "extra acquisition may increase deaths/damage despite more shots and kills",
+    "independent audit addendum fixes a reporting code name collision without altering frozen protocol"
+  ],
+  "minimumIndependentMatchedGroupGatePassed": true,
+  "naturalMatchCount": 48,
+  "noTriggerGroups": [],
+  "pairedArmMinusKeep": {
+    "direct": {
+      "damageTaken": {
+        "CI95": [
+          56.333333333333336,
+          234.5020833333333
+        ],
+        "max": 359.0,
+        "mean": 147.08333333333334,
+        "min": -117.0,
+        "nGroups": 12
+      },
+      "deaths": {
+        "CI95": [
+          0.3333333333333333,
+          1.0
+        ],
+        "max": 2.0,
+        "mean": 0.6666666666666666,
+        "min": 0.0,
+        "nGroups": 12
+      },
+      "hits": {
+        "CI95": [
+          0.5,
+          23.583333333333332
+        ],
+        "max": 66.0,
+        "mean": 10.916666666666666,
+        "min": -15.0,
+        "nGroups": 12
+      },
+      "kills": {
+        "CI95": [
+          -0.4166666666666667,
+          4.5
+        ],
+        "max": 10.0,
+        "mean": 2.0,
+        "min": -6.0,
+        "nGroups": 12
+      },
+      "netKills": {
+        "CI95": [
+          -0.9166666666666666,
+          3.75
+        ],
+        "max": 9.0,
+        "mean": 1.3333333333333333,
+        "min": -6.0,
+        "nGroups": 12
+      },
+      "shots": {
+        "CI95": [
+          1.25,
+          24.916666666666668
+        ],
+        "max": 67.0,
+        "mean": 12.0,
+        "min": -15.0,
+        "nGroups": 12
+      }
+    },
+    "flank": {
+      "damageTaken": {
+        "CI95": [
+          175.16666666666666,
+          325.41875
+        ],
+        "max": 488.0,
+        "mean": 246.33333333333334,
+        "min": 45.0,
+        "nGroups": 12
+      },
+      "deaths": {
+        "CI95": [
+          0.75,
+          1.6666666666666667
+        ],
+        "max": 3.0,
+        "mean": 1.1666666666666667,
+        "min": 0.0,
+        "nGroups": 12
+      },
+      "hits": {
+        "CI95": [
+          5.916666666666667,
+          17.916666666666668
+        ],
+        "max": 33.0,
+        "mean": 11.833333333333334,
+        "min": -5.0,
+        "nGroups": 12
+      },
+      "kills": {
+        "CI95": [
+          1.5833333333333333,
+          4.5
+        ],
+        "max": 8.0,
+        "mean": 3.0,
+        "min": -1.0,
+        "nGroups": 12
+      },
+      "netKills": {
+        "CI95": [
+          0.5833333333333334,
+          3.1666666666666665
+        ],
+        "max": 6.0,
+        "mean": 1.8333333333333333,
+        "min": -1.0,
+        "nGroups": 12
+      },
+      "shots": {
+        "CI95": [
+          7.916666666666667,
+          18.333333333333332
+        ],
+        "max": 30.0,
+        "mean": 13.0,
+        "min": -1.0,
+        "nGroups": 12
+      }
+    },
+    "route": {
+      "damageTaken": {
+        "CI95": [
+          181.75,
+          247.08333333333334
+        ],
+        "max": 311.0,
+        "mean": 214.91666666666666,
+        "min": 118.0,
+        "nGroups": 12
+      },
+      "deaths": {
+        "CI95": [
+          0.6666666666666666,
+          1.3333333333333333
+        ],
+        "max": 2.0,
+        "mean": 1.0,
+        "min": 0.0,
+        "nGroups": 12
+      },
+      "hits": {
+        "CI95": [
+          -3.168749999999998,
+          23.916666666666668
+        ],
+        "max": 53.0,
+        "mean": 10.5,
+        "min": -40.0,
+        "nGroups": 12
+      },
+      "kills": {
+        "CI95": [
+          -0.5833333333333334,
+          5.166666666666667
+        ],
+        "max": 10.0,
+        "mean": 2.4166666666666665,
+        "min": -10.0,
+        "nGroups": 12
+      },
+      "netKills": {
+        "CI95": [
+          -1.75,
+          4.25
+        ],
+        "max": 10.0,
+        "mean": 1.4166666666666667,
+        "min": -11.0,
+        "nGroups": 12
+      },
+      "shots": {
+        "CI95": [
+          -1.5833333333333333,
+          28.916666666666668
+        ],
+        "max": 71.0,
+        "mean": 13.083333333333334,
+        "min": -32.0,
+        "nGroups": 12
+      }
+    }
+  },
+  "promoteToProduction": false,
+  "registrySHA256": "3b829b193b973a9f71d3d093f763dd1c03fa1106e981b70c7d3f2df4f75f54e4",
+  "safetyGateByArm": {
+    "direct": false,
+    "flank": false,
+    "route": false
+  },
+  "schema": "fpsarena-v67-independent-audit-natural-fullmatch-statistics-v1",
+  "triggeredGroups": 12
+}

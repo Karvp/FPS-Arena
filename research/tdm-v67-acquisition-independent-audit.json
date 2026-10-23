@@ -1,0 +1,1832 @@
+{
+  "allPass": true,
+  "auditImplementedInIndependentUnfrozenAddendum": true,
+  "censoredGroups": 0,
+  "eligiblePairedGroups": 12,
+  "failedGroups": [],
+  "frozenProtocolAuditKnownFailure": "UnboundLocalError: local result variable in audit_case",
+  "frozenProtocolSourceSHA256": "6b06280d567d48ce86bc1a7d60e0eebc67c1284326f0d764e8ca586abcc583ed",
+  "frozenRegistrySHA256": "3b829b193b973a9f71d3d093f763dd1c03fa1106e981b70c7d3f2df4f75f54e4",
+  "groups": [
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 539,
+          "damageTaken": 352,
+          "deaths": 2,
+          "duration": 167.05,
+          "finalDistance": 48.9869,
+          "hits": 13,
+          "inRangeTicks": 44,
+          "initialFarDistance": 65.8469,
+          "kills": 4,
+          "natural": true,
+          "netKills": 2,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 50,
+            "red": 49
+          },
+          "sha256": "6d7f86faa142ca6f75e73e939d067a5ca79e1a06152a39d9148b55e67b2c97d4",
+          "shots": 12,
+          "stops": {
+            "combat-or-hp": 246,
+            "inRange": 44,
+            "no-safe-heading": 63,
+            "stale-or-missing-target": 118
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 180,
+            "deaths": 1,
+            "hits": 12,
+            "kills": 4,
+            "shots": 11
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 657,
+          "damageTaken": 201,
+          "deaths": 1,
+          "duration": 166.07,
+          "finalDistance": 47.7237,
+          "hits": 26,
+          "inRangeTicks": 0,
+          "initialFarDistance": 65.8469,
+          "kills": 6,
+          "natural": true,
+          "netKills": 5,
+          "routeFound": 122,
+          "routePlans": 122,
+          "scores": {
+            "blue": 43,
+            "red": 50
+          },
+          "sha256": "6bcd6c5fb6393a4a2bd6c6dead963b2ab95be9e4feb5dea105fa230f7b0c5835",
+          "shots": 25,
+          "stops": {
+            "combat-or-hp": 198,
+            "no-safe-heading": 112
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 174,
+            "deaths": 1,
+            "hits": 4,
+            "kills": 2,
+            "shots": 4
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 32,
+          "deaths": 0,
+          "duration": 172.02,
+          "finalDistance": null,
+          "hits": 6,
+          "inRangeTicks": 0,
+          "initialFarDistance": 65.8469,
+          "kills": 1,
+          "natural": true,
+          "netKills": 1,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "21b374a93c37eb903e1f070cab6f8f9f191eec6365b6e51477cda442111613cd",
+          "shots": 6,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 653,
+          "damageTaken": 196,
+          "deaths": 1,
+          "duration": 179.32,
+          "finalDistance": 54.265,
+          "hits": 13,
+          "inRangeTicks": 5,
+          "initialFarDistance": 65.8469,
+          "kills": 3,
+          "natural": true,
+          "netKills": 2,
+          "routeFound": 110,
+          "routePlans": 110,
+          "scores": {
+            "blue": 48,
+            "red": 50
+          },
+          "sha256": "127c2c59c094bc465399dde91eabb012e687de531d32dd87a3a7b3f377624716",
+          "shots": 12,
+          "stops": {
+            "combat-or-hp": 253,
+            "inRange": 5,
+            "no-safe-heading": 100
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 175,
+            "deaths": 1,
+            "hits": 4,
+            "kills": 1,
+            "shots": 5
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-n-aa12-01",
+      "map": "neon",
+      "naturalFourArm": true,
+      "seed": 670101,
+      "status": "PASS",
+      "triggerDistance": 65.8469,
+      "triggerTick": 860,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 494,
+          "damageTaken": 379,
+          "deaths": 1,
+          "duration": 144.63,
+          "finalDistance": 18.3384,
+          "hits": 19,
+          "inRangeTicks": 0,
+          "initialFarDistance": 80.5923,
+          "kills": 6,
+          "natural": true,
+          "netKills": 5,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 42,
+            "red": 50
+          },
+          "sha256": "f123ae5d3e00a4dcd49981a544f30ca63091507994b8ce8e1f6f4148d2562337",
+          "shots": 19,
+          "stops": {
+            "combat-or-hp": 123,
+            "no-safe-heading": 368
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 116,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 0,
+            "shots": 2
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 786,
+          "damageTaken": 509,
+          "deaths": 1,
+          "duration": 157.4,
+          "finalDistance": 30.7579,
+          "hits": 23,
+          "inRangeTicks": 0,
+          "initialFarDistance": 80.5923,
+          "kills": 7,
+          "natural": true,
+          "netKills": 6,
+          "routeFound": 40,
+          "routePlans": 40,
+          "scores": {
+            "blue": 46,
+            "red": 50
+          },
+          "sha256": "c87417deb2afe7d96abf6bd757cea18a14c42d66cfd212fab801001b98e1888f",
+          "shots": 21,
+          "stops": {
+            "combat-or-hp": 210,
+            "no-safe-heading": 26
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 209,
+            "deaths": 1,
+            "hits": 2,
+            "kills": 1,
+            "shots": 0
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 21,
+          "deaths": 0,
+          "duration": 167.82,
+          "finalDistance": null,
+          "hits": 0,
+          "inRangeTicks": 0,
+          "initialFarDistance": 80.5923,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 50,
+            "red": 48
+          },
+          "sha256": "d002e28bae6287d059ba0a2549f3840237ab6db8305426737284e4c6f138bfbc",
+          "shots": 0,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 798,
+          "damageTaken": 282,
+          "deaths": 1,
+          "duration": 160.58,
+          "finalDistance": 31.1714,
+          "hits": 15,
+          "inRangeTicks": 0,
+          "initialFarDistance": 80.5923,
+          "kills": 4,
+          "natural": true,
+          "netKills": 3,
+          "routeFound": 28,
+          "routePlans": 28,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "cedbaaa7bf35479af69fa1cea908a447036a571b46d21d38476cc811115fb1d9",
+          "shots": 14,
+          "stops": {
+            "combat-or-hp": 210,
+            "no-safe-heading": 14
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 158,
+            "deaths": 1,
+            "hits": 2,
+            "kills": 1,
+            "shots": 0
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-n-aa12-02",
+      "map": "neon",
+      "naturalFourArm": true,
+      "seed": 670102,
+      "status": "PASS",
+      "triggerDistance": 80.5923,
+      "triggerTick": 866,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 341,
+          "damageTaken": 353,
+          "deaths": 1,
+          "duration": 165.97,
+          "finalDistance": 40.9179,
+          "hits": 20,
+          "inRangeTicks": 0,
+          "initialFarDistance": 85.663,
+          "kills": 3,
+          "natural": true,
+          "netKills": 2,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 48,
+            "red": 50
+          },
+          "sha256": "05c210862971cba2348c246d80abf610617149f34e41e09bc3939d8810f9f81f",
+          "shots": 18,
+          "stops": {
+            "combat-or-hp": 420,
+            "no-safe-heading": 251
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 102,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 757,
+          "damageTaken": 352,
+          "deaths": 2,
+          "duration": 158.3,
+          "finalDistance": 19.7522,
+          "hits": 22,
+          "inRangeTicks": 0,
+          "initialFarDistance": 85.663,
+          "kills": 2,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 33,
+          "routePlans": 33,
+          "scores": {
+            "blue": 50,
+            "red": 48
+          },
+          "sha256": "3dada6cb024c8ac47f69054ee37691abb98634d569423e0a5d7f2cd8de665993",
+          "shots": 20,
+          "stops": {
+            "combat-or-hp": 192,
+            "no-safe-heading": 19,
+            "stale-or-missing-target": 38
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 259,
+            "deaths": 1,
+            "hits": 14,
+            "kills": 1,
+            "shots": 12
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 155,
+          "deaths": 1,
+          "duration": 174.98,
+          "finalDistance": null,
+          "hits": 1,
+          "inRangeTicks": 0,
+          "initialFarDistance": 85.663,
+          "kills": 0,
+          "natural": true,
+          "netKills": -1,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 50,
+            "red": 48
+          },
+          "sha256": "65fa14090e3e6907c4e6936dacd639dde38170ab4a29bd8912a48a511dddc6fc",
+          "shots": 0,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 33,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 710,
+          "damageTaken": 466,
+          "deaths": 2,
+          "duration": 182.53,
+          "finalDistance": 32.3604,
+          "hits": 17,
+          "inRangeTicks": 0,
+          "initialFarDistance": 85.663,
+          "kills": 4,
+          "natural": true,
+          "netKills": 2,
+          "routeFound": 42,
+          "routePlans": 42,
+          "scores": {
+            "blue": 48,
+            "red": 50
+          },
+          "sha256": "7b9bbb5e0bc8beadcbfa37dc3c465b420072f97684a3ff008664ebd7010ae96f",
+          "shots": 20,
+          "stops": {
+            "combat-or-hp": 252,
+            "no-safe-heading": 31,
+            "stale-or-missing-target": 34
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 316,
+            "deaths": 2,
+            "hits": 3,
+            "kills": 0,
+            "shots": 3
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-n-aa12-03",
+      "map": "neon",
+      "naturalFourArm": true,
+      "seed": 670103,
+      "status": "PASS",
+      "triggerDistance": 85.663,
+      "triggerTick": 872,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 547,
+          "damageTaken": 21,
+          "deaths": 0,
+          "duration": 170.28,
+          "finalDistance": 55.5399,
+          "hits": 0,
+          "inRangeTicks": 0,
+          "initialFarDistance": 43.424,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "3c9807885d9050b683ca317e850357f4d33a4b578c32017ec95a035cba81eddb",
+          "shots": 0,
+          "stops": {
+            "no-safe-heading": 503
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 754,
+          "damageTaken": 370,
+          "deaths": 2,
+          "duration": 163.27,
+          "finalDistance": 35.038,
+          "hits": 5,
+          "inRangeTicks": 0,
+          "initialFarDistance": 43.424,
+          "kills": 4,
+          "natural": true,
+          "netKills": 2,
+          "routeFound": 45,
+          "routePlans": 45,
+          "scores": {
+            "blue": 50,
+            "red": 42
+          },
+          "sha256": "d3bc083dad909d08aab4c2cf0217ce45e1cebe7d951ac7e5c8784d3a1ed61097",
+          "shots": 4,
+          "stops": {
+            "combat-or-hp": 210,
+            "no-safe-heading": 30
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 153,
+            "deaths": 1,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 174.93,
+          "finalDistance": null,
+          "hits": 0,
+          "inRangeTicks": 0,
+          "initialFarDistance": 43.424,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "6ac1ef77b0d67cc2cc590a9a7a816415360ad8ffed6c63063284b1f18484d1f3",
+          "shots": 0,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 815,
+          "damageTaken": 186,
+          "deaths": 1,
+          "duration": 163.22,
+          "finalDistance": 28.7914,
+          "hits": 18,
+          "inRangeTicks": 34,
+          "initialFarDistance": 43.424,
+          "kills": 4,
+          "natural": true,
+          "netKills": 3,
+          "routeFound": 82,
+          "routePlans": 82,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "f2b0843ebac9d95b44caa33ad5717e1ab4873f40a626b01c0abfe342efcdcc10",
+          "shots": 18,
+          "stops": {
+            "combat-or-hp": 123,
+            "inRange": 34,
+            "no-safe-heading": 65
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 163,
+            "deaths": 1,
+            "hits": 18,
+            "kills": 4,
+            "shots": 18
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-n-aa12-04",
+      "map": "neon",
+      "naturalFourArm": true,
+      "seed": 670104,
+      "status": "PASS",
+      "triggerDistance": 43.424,
+      "triggerTick": 878,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 559,
+          "damageTaken": 27,
+          "deaths": 0,
+          "duration": 172.18,
+          "finalDistance": 36.0191,
+          "hits": 0,
+          "inRangeTicks": 0,
+          "initialFarDistance": 74.2745,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "b7f5cb00e43e0f782bd971d310f7f1632b66e2be0417f911ce41f3f21b96e4b9",
+          "shots": 0,
+          "stops": {
+            "no-safe-heading": 491
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 27,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 690,
+          "damageTaken": 176,
+          "deaths": 1,
+          "duration": 170.25,
+          "finalDistance": 86.7753,
+          "hits": 8,
+          "inRangeTicks": 0,
+          "initialFarDistance": 74.2745,
+          "kills": 1,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 142,
+          "routePlans": 142,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "9af748dfe9fb94f166b1704a46ae97b8e451e03f221fa5de24e4efe12fb9ca7c",
+          "shots": 7,
+          "stops": {
+            "combat-or-hp": 186,
+            "no-safe-heading": 130
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 176,
+            "deaths": 1,
+            "hits": 3,
+            "kills": 0,
+            "shots": 3
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 131,
+          "deaths": 0,
+          "duration": 505.68,
+          "finalDistance": null,
+          "hits": 8,
+          "inRangeTicks": 0,
+          "initialFarDistance": 74.2745,
+          "kills": 1,
+          "natural": true,
+          "netKills": 1,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "9e8ccb9ad62d2ed23ad29013eb72709bcda4941d7a1f51c119a70acd7fc5abb3",
+          "shots": 8,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 27,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 796,
+          "damageTaken": 403,
+          "deaths": 2,
+          "duration": 146.87,
+          "finalDistance": 25.0986,
+          "hits": 5,
+          "inRangeTicks": 0,
+          "initialFarDistance": 74.2745,
+          "kills": 3,
+          "natural": true,
+          "netKills": 1,
+          "routeFound": 14,
+          "routePlans": 14,
+          "scores": {
+            "blue": 50,
+            "red": 43
+          },
+          "sha256": "00f9d66fe8a838513f93fa9de6d0cd315c4cacf5298c1ee07dd3acd7d7d7ed8d",
+          "shots": 5,
+          "stops": {
+            "combat-or-hp": 199
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 162,
+            "deaths": 1,
+            "hits": 1,
+            "kills": 1,
+            "shots": 1
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-n-aa12-05",
+      "map": "neon",
+      "naturalFourArm": true,
+      "seed": 670105,
+      "status": "PASS",
+      "triggerDistance": 74.2745,
+      "triggerTick": 884,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 544,
+          "damageTaken": 53,
+          "deaths": 0,
+          "duration": 168.78,
+          "finalDistance": 67.0448,
+          "hits": 0,
+          "inRangeTicks": 0,
+          "initialFarDistance": 82.6571,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 50,
+            "red": 46
+          },
+          "sha256": "dcd4ac9c18e9b0642e59b3c33ca1905c3f1e47b2ec629b6050619a07042ed917",
+          "shots": 0,
+          "stops": {
+            "no-safe-heading": 506
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 667,
+          "damageTaken": 357,
+          "deaths": 2,
+          "duration": 161.78,
+          "finalDistance": 35.4188,
+          "hits": 33,
+          "inRangeTicks": 11,
+          "initialFarDistance": 82.6571,
+          "kills": 8,
+          "natural": true,
+          "netKills": 6,
+          "routeFound": 40,
+          "routePlans": 40,
+          "scores": {
+            "blue": 46,
+            "red": 50
+          },
+          "sha256": "088bdb8ad1f2eb37fab0d04899e23bd4b13b2ca942e6780b114509f6ffffe91a",
+          "shots": 30,
+          "stops": {
+            "combat-or-hp": 222,
+            "inRange": 11,
+            "no-safe-heading": 28
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 187,
+            "deaths": 1,
+            "hits": 7,
+            "kills": 1,
+            "shots": 7
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 46,
+          "deaths": 0,
+          "duration": 178.25,
+          "finalDistance": null,
+          "hits": 0,
+          "inRangeTicks": 0,
+          "initialFarDistance": 82.6571,
+          "kills": 0,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 50,
+            "red": 48
+          },
+          "sha256": "48af04d9bab872125166dbfa2c44a3354fa8b21d736aedf4b25978d6917225ef",
+          "shots": 0,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 717,
+          "damageTaken": 253,
+          "deaths": 1,
+          "duration": 161.45,
+          "finalDistance": 49.5591,
+          "hits": 6,
+          "inRangeTicks": 8,
+          "initialFarDistance": 82.6571,
+          "kills": 2,
+          "natural": true,
+          "netKills": 1,
+          "routeFound": 41,
+          "routePlans": 41,
+          "scores": {
+            "blue": 50,
+            "red": 47
+          },
+          "sha256": "fa5dd763f9eb29952c1a333cbebe6ccfa12a13dd8b587c777751e5a20411a474",
+          "shots": 7,
+          "stops": {
+            "combat-or-hp": 223,
+            "inRange": 8,
+            "no-safe-heading": 28
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 158,
+            "deaths": 1,
+            "hits": 6,
+            "kills": 2,
+            "shots": 6
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-n-aa12-06",
+      "map": "neon",
+      "naturalFourArm": true,
+      "seed": 670106,
+      "status": "PASS",
+      "triggerDistance": 82.6571,
+      "triggerTick": 890,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 612,
+          "damageTaken": 528,
+          "deaths": 3,
+          "duration": 169.07,
+          "finalDistance": 60.3182,
+          "hits": 13,
+          "inRangeTicks": 0,
+          "initialFarDistance": 57.4393,
+          "kills": 2,
+          "natural": true,
+          "netKills": -1,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 45,
+            "red": 50
+          },
+          "sha256": "ec0dd49851d5b37d088306dda1e06b613a85abf5af68bead46ba662ffc8a0da9",
+          "shots": 11,
+          "stops": {
+            "combat-or-hp": 187,
+            "no-safe-heading": 183
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 172,
+            "deaths": 1,
+            "hits": 3,
+            "kills": 0,
+            "shots": 3
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 752,
+          "damageTaken": 627,
+          "deaths": 3,
+          "duration": 152.32,
+          "finalDistance": 25.5164,
+          "hits": 17,
+          "inRangeTicks": 0,
+          "initialFarDistance": 57.4393,
+          "kills": 5,
+          "natural": true,
+          "netKills": 2,
+          "routeFound": 17,
+          "routePlans": 17,
+          "scores": {
+            "blue": 36,
+            "red": 50
+          },
+          "sha256": "58dc30d05d6048c31d82aad446815d120ea1bb1c8cf1c4f18d7c083bf4473ba6",
+          "shots": 20,
+          "stops": {
+            "combat-or-hp": 185
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 150,
+            "deaths": 1,
+            "hits": 1,
+            "kills": 0,
+            "shots": 1
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 412,
+          "deaths": 2,
+          "duration": 149.95,
+          "finalDistance": null,
+          "hits": 9,
+          "inRangeTicks": 0,
+          "initialFarDistance": 57.4393,
+          "kills": 2,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 38,
+            "red": 50
+          },
+          "sha256": "0765a7d776b9ed45c1e6b5500e7ce50ea180e10b3c7fb5e17b0f1eed2e05a21e",
+          "shots": 7,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 21,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 671,
+          "damageTaken": 530,
+          "deaths": 2,
+          "duration": 155.47,
+          "finalDistance": 7.272,
+          "hits": 54,
+          "inRangeTicks": 114,
+          "initialFarDistance": 57.4393,
+          "kills": 12,
+          "natural": true,
+          "netKills": 10,
+          "routeFound": 41,
+          "routePlans": 41,
+          "scores": {
+            "blue": 41,
+            "red": 50
+          },
+          "sha256": "9de6d01dd6f4ebbca74285be57d460eb4fa8ebf32e883bc9a2ea9e3a4745ebb1",
+          "shots": 60,
+          "stops": {
+            "combat-or-hp": 223,
+            "inRange": 114,
+            "no-safe-heading": 29
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 228,
+            "deaths": 1,
+            "hits": 11,
+            "kills": 5,
+            "shots": 9
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-a-aa12-07",
+      "map": "arena",
+      "naturalFourArm": true,
+      "seed": 670107,
+      "status": "PASS",
+      "triggerDistance": 57.4393,
+      "triggerTick": 896,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 513,
+          "damageTaken": 421,
+          "deaths": 1,
+          "duration": 165.22,
+          "finalDistance": 25.2617,
+          "hits": 17,
+          "inRangeTicks": 0,
+          "initialFarDistance": 70.0612,
+          "kills": 4,
+          "natural": true,
+          "netKills": 3,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 44,
+            "red": 50
+          },
+          "sha256": "1896955f3d6d6b21e7539040b8ee2fe0ff8edc47e63c80e0db7536b182714bba",
+          "shots": 21,
+          "stops": {
+            "combat-or-hp": 2,
+            "no-safe-heading": 413,
+            "stale-or-missing-target": 58
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 62,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 0,
+            "shots": 2
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 656,
+          "damageTaken": 547,
+          "deaths": 3,
+          "duration": 173.03,
+          "finalDistance": 45.7458,
+          "hits": 29,
+          "inRangeTicks": 0,
+          "initialFarDistance": 70.0612,
+          "kills": 6,
+          "natural": true,
+          "netKills": 3,
+          "routeFound": 32,
+          "routePlans": 32,
+          "scores": {
+            "blue": 48,
+            "red": 50
+          },
+          "sha256": "157e4f6e989ef44024021d97614824f53ea8d9cdf6125195fc26fe3e07c2b2e2",
+          "shots": 31,
+          "stops": {
+            "combat-or-hp": 286,
+            "no-safe-heading": 19
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 183,
+            "deaths": 1,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 62,
+          "deaths": 0,
+          "duration": 168.32,
+          "finalDistance": null,
+          "hits": 19,
+          "inRangeTicks": 0,
+          "initialFarDistance": 70.0612,
+          "kills": 3,
+          "natural": true,
+          "netKills": 3,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 46,
+            "red": 50
+          },
+          "sha256": "ab5c023ce6d105b974cbf2a158ec61f60d2ceb3b13fdec1ab47025d2c105a83e",
+          "shots": 22,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 689,
+          "damageTaken": 336,
+          "deaths": 2,
+          "duration": 164,
+          "finalDistance": 26.2545,
+          "hits": 1,
+          "inRangeTicks": 0,
+          "initialFarDistance": 70.0612,
+          "kills": 0,
+          "natural": true,
+          "netKills": -2,
+          "routeFound": 14,
+          "routePlans": 14,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "e7c07e1e114033c08796e95dade0ec89516e4b7480f58b0031c48bb0b38ff973",
+          "shots": 1,
+          "stops": {
+            "combat-or-hp": 248
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 336,
+            "deaths": 2,
+            "hits": 1,
+            "kills": 0,
+            "shots": 1
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-a-aa12-08",
+      "map": "arena",
+      "naturalFourArm": true,
+      "seed": 670108,
+      "status": "PASS",
+      "triggerDistance": 70.0612,
+      "triggerTick": 902,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 675,
+          "damageTaken": 335,
+          "deaths": 2,
+          "duration": 166.15,
+          "finalDistance": 63.9838,
+          "hits": 43,
+          "inRangeTicks": 29,
+          "initialFarDistance": 103.5607,
+          "kills": 11,
+          "natural": true,
+          "netKills": 9,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "3077ba1c83b19342660dba54f69ace29c2fec0efe25db33ecf6b05edd1f0b5aa",
+          "shots": 42,
+          "stops": {
+            "combat-or-hp": 194,
+            "inRange": 29,
+            "no-safe-heading": 107
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 153,
+            "deaths": 1,
+            "hits": 8,
+            "kills": 1,
+            "shots": 8
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 404,
+          "damageTaken": 269,
+          "deaths": 1,
+          "duration": 182.22,
+          "finalDistance": 13.5327,
+          "hits": 17,
+          "inRangeTicks": 0,
+          "initialFarDistance": 103.5607,
+          "kills": 3,
+          "natural": true,
+          "netKills": 2,
+          "routeFound": 7,
+          "routePlans": 7,
+          "scores": {
+            "blue": 49,
+            "red": 50
+          },
+          "sha256": "5fbd2f8499e7f2b4b43e6728b698efd48ddd18ee83b2ad8e40658671073f4b80",
+          "shots": 15,
+          "stops": {
+            "combat-or-hp": 642
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 143,
+            "deaths": 0,
+            "hits": 8,
+            "kills": 1,
+            "shots": 6
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 151,
+          "deaths": 1,
+          "duration": 167.9,
+          "finalDistance": null,
+          "hits": 10,
+          "inRangeTicks": 0,
+          "initialFarDistance": 103.5607,
+          "kills": 2,
+          "natural": true,
+          "netKills": 1,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 48,
+            "red": 50
+          },
+          "sha256": "62871e46319794ce47b80811f9b7721c5fb3ee0c65f898517d6f0e467f207637",
+          "shots": 11,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 151,
+            "deaths": 1,
+            "hits": 1,
+            "kills": 0,
+            "shots": 2
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 404,
+          "damageTaken": 411,
+          "deaths": 2,
+          "duration": 172.07,
+          "finalDistance": 13.2829,
+          "hits": 35,
+          "inRangeTicks": 0,
+          "initialFarDistance": 103.5607,
+          "kills": 9,
+          "natural": true,
+          "netKills": 7,
+          "routeFound": 7,
+          "routePlans": 7,
+          "scores": {
+            "blue": 47,
+            "red": 50
+          },
+          "sha256": "43c3d252806ddae75bdd1330faec3bcba55c30ac14d8cefeb88f7cdf676dbbd9",
+          "shots": 33,
+          "stops": {
+            "combat-or-hp": 642
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 143,
+            "deaths": 0,
+            "hits": 5,
+            "kills": 1,
+            "shots": 5
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-f-aa12-09",
+      "map": "foundry",
+      "naturalFourArm": true,
+      "seed": 670109,
+      "status": "PASS",
+      "triggerDistance": 103.5607,
+      "triggerTick": 950,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 252,
+          "damageTaken": 161,
+          "deaths": 1,
+          "duration": 165.3,
+          "finalDistance": 62.6074,
+          "hits": 3,
+          "inRangeTicks": 0,
+          "initialFarDistance": 73.8924,
+          "kills": 1,
+          "natural": true,
+          "netKills": 0,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 45,
+            "red": 50
+          },
+          "sha256": "9f2b8f355a76457a35805ca37a0d621e9b7bc2e50e203d512dbfd40d16ed783a",
+          "shots": 3,
+          "stops": {
+            "combat-or-hp": 525,
+            "no-safe-heading": 254
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 161,
+            "deaths": 1,
+            "hits": 3,
+            "kills": 1,
+            "shots": 3
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 210,
+          "damageTaken": 417,
+          "deaths": 1,
+          "duration": 168.55,
+          "finalDistance": 39.7239,
+          "hits": 20,
+          "inRangeTicks": 0,
+          "initialFarDistance": 73.8924,
+          "kills": 6,
+          "natural": true,
+          "netKills": 5,
+          "routeFound": 4,
+          "routePlans": 4,
+          "scores": {
+            "blue": 44,
+            "red": 50
+          },
+          "sha256": "2a15659640c5da5236905efd48c815708c8f6e0e93077f67515c70a470a8b2f1",
+          "shots": 20,
+          "stops": {
+            "combat-or-hp": 834
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 150,
+            "deaths": 0,
+            "hits": 10,
+            "kills": 2,
+            "shots": 9
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 278,
+          "deaths": 1,
+          "duration": 160.78,
+          "finalDistance": null,
+          "hits": 18,
+          "inRangeTicks": 0,
+          "initialFarDistance": 73.8924,
+          "kills": 7,
+          "natural": true,
+          "netKills": 6,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 44,
+            "red": 50
+          },
+          "sha256": "aeb692efb6f22bb276963309a0e281904946b890806776cb2e38f8196e8676c3",
+          "shots": 18,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 210,
+          "damageTaken": 417,
+          "deaths": 1,
+          "duration": 168.55,
+          "finalDistance": 39.7239,
+          "hits": 20,
+          "inRangeTicks": 0,
+          "initialFarDistance": 73.8924,
+          "kills": 6,
+          "natural": true,
+          "netKills": 5,
+          "routeFound": 4,
+          "routePlans": 4,
+          "scores": {
+            "blue": 44,
+            "red": 50
+          },
+          "sha256": "057aa6ee5189658be211ef156d99036f749c1586e96b7c9b430a1eba466b5724",
+          "shots": 20,
+          "stops": {
+            "combat-or-hp": 834
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 150,
+            "deaths": 0,
+            "hits": 10,
+            "kills": 2,
+            "shots": 9
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-f-aa12-10",
+      "map": "foundry",
+      "naturalFourArm": true,
+      "seed": 670110,
+      "status": "PASS",
+      "triggerDistance": 73.8924,
+      "triggerTick": 914,
+      "weapon": "aa12"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 425,
+          "damageTaken": 239,
+          "deaths": 1,
+          "duration": 105.93,
+          "finalDistance": 43.3011,
+          "hits": 160,
+          "inRangeTicks": 9,
+          "initialFarDistance": 77.1431,
+          "kills": 33,
+          "natural": true,
+          "netKills": 32,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 26,
+            "red": 50
+          },
+          "sha256": "d80769179eebe4ef8313cdad57fd4bccbd7cbd360a82301317f393303c30b203",
+          "shots": 186,
+          "stops": {
+            "combat-or-hp": 333,
+            "inRange": 9,
+            "no-safe-heading": 77,
+            "stale-or-missing-target": 181
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 133,
+            "deaths": 0,
+            "hits": 64,
+            "kills": 12,
+            "shots": 75
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 446,
+          "damageTaken": 219,
+          "deaths": 1,
+          "duration": 119.22,
+          "finalDistance": 33.8985,
+          "hits": 112,
+          "inRangeTicks": 355,
+          "initialFarDistance": 77.1431,
+          "kills": 26,
+          "natural": true,
+          "netKills": 25,
+          "routeFound": 22,
+          "routePlans": 22,
+          "scores": {
+            "blue": 33,
+            "red": 50
+          },
+          "sha256": "2aee6b85593773eaf70e0e0ed593f6a7b4bbc21f7edd9738b1b6b787916f2de3",
+          "shots": 142,
+          "stops": {
+            "combat-or-hp": 84,
+            "inRange": 355,
+            "no-safe-heading": 10,
+            "stale-or-missing-target": 132
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 25,
+            "deaths": 0,
+            "hits": 66,
+            "kills": 12,
+            "shots": 83
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 0,
+          "deaths": 0,
+          "duration": 134.5,
+          "finalDistance": null,
+          "hits": 94,
+          "inRangeTicks": 0,
+          "initialFarDistance": 77.1431,
+          "kills": 23,
+          "natural": true,
+          "netKills": 23,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 38,
+            "red": 50
+          },
+          "sha256": "e13f17e725f869d7129b2b6cf372316c304edf95850b662460b4520068dbe26a",
+          "shots": 119,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 25,
+            "kills": 6,
+            "shots": 32
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 443,
+          "damageTaken": 209,
+          "deaths": 1,
+          "duration": 116.03,
+          "finalDistance": 24.5927,
+          "hits": 147,
+          "inRangeTicks": 255,
+          "initialFarDistance": 77.1431,
+          "kills": 31,
+          "natural": true,
+          "netKills": 30,
+          "routeFound": 21,
+          "routePlans": 21,
+          "scores": {
+            "blue": 31,
+            "red": 50
+          },
+          "sha256": "3618f7eb56981062d5b658e40a2309847c4f0271b59de108393ec2dd70ff5cd9",
+          "shots": 190,
+          "stops": {
+            "combat-or-hp": 69,
+            "inRange": 255,
+            "no-safe-heading": 10,
+            "stale-or-missing-target": 256
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 51,
+            "deaths": 0,
+            "hits": 76,
+            "kills": 14,
+            "shots": 80
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-n-m4a1-11",
+      "map": "neon",
+      "naturalFourArm": true,
+      "seed": 670111,
+      "status": "PASS",
+      "triggerDistance": 77.1431,
+      "triggerTick": 920,
+      "weapon": "m4a1"
+    },
+    {
+      "arms": {
+        "direct": {
+          "activeTicks": 1050,
+          "changedTicks": 297,
+          "damageTaken": 207,
+          "deaths": 1,
+          "duration": 129.32,
+          "finalDistance": 48.5384,
+          "hits": 154,
+          "inRangeTicks": 0,
+          "initialFarDistance": 68.0016,
+          "kills": 28,
+          "natural": true,
+          "netKills": 27,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 35,
+            "red": 50
+          },
+          "sha256": "51e443b10725c59a38a76e6d1503b35a4b2b57c89d6e22b823213d700fa81125",
+          "shots": 199,
+          "stops": {
+            "combat-or-hp": 50,
+            "no-safe-heading": 555,
+            "stale-or-missing-target": 82
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 48,
+            "deaths": 0,
+            "hits": 43,
+            "kills": 7,
+            "shots": 57
+          }
+        },
+        "flank": {
+          "activeTicks": 1050,
+          "changedTicks": 634,
+          "damageTaken": 223,
+          "deaths": 1,
+          "duration": 131.97,
+          "finalDistance": 25.1401,
+          "hits": 141,
+          "inRangeTicks": 119,
+          "initialFarDistance": 68.0016,
+          "kills": 30,
+          "natural": true,
+          "netKills": 29,
+          "routeFound": 168,
+          "routePlans": 168,
+          "scores": {
+            "blue": 39,
+            "red": 50
+          },
+          "sha256": "773e6c1a1abdd519538724ae9450cf51bef2a4f843031939232dabe9e19e9567",
+          "shots": 188,
+          "stops": {
+            "combat-or-hp": 50,
+            "inRange": 119,
+            "no-safe-heading": 157,
+            "stale-or-missing-target": 8
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 105,
+            "deaths": 0,
+            "hits": 48,
+            "kills": 9,
+            "shots": 56
+          }
+        },
+        "keep": {
+          "activeTicks": 1050,
+          "changedTicks": 0,
+          "damageTaken": 23,
+          "deaths": 0,
+          "duration": 131.58,
+          "finalDistance": null,
+          "hits": 146,
+          "inRangeTicks": 0,
+          "initialFarDistance": 68.0016,
+          "kills": 29,
+          "natural": true,
+          "netKills": 29,
+          "routeFound": 0,
+          "routePlans": 0,
+          "scores": {
+            "blue": 35,
+            "red": 50
+          },
+          "sha256": "a7b061c268ab2c1327510439ea260af971587abe2e569802478bc2ff7423b96a",
+          "shots": 176,
+          "stops": {
+            "keep": 1050
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 18,
+            "kills": 4,
+            "shots": 22
+          }
+        },
+        "route": {
+          "activeTicks": 1050,
+          "changedTicks": 620,
+          "damageTaken": 201,
+          "deaths": 1,
+          "duration": 146.95,
+          "finalDistance": 29.6622,
+          "hits": 106,
+          "inRangeTicks": 127,
+          "initialFarDistance": 68.0016,
+          "kills": 19,
+          "natural": true,
+          "netKills": 18,
+          "routeFound": 167,
+          "routePlans": 167,
+          "scores": {
+            "blue": 38,
+            "red": 50
+          },
+          "sha256": "9986837c916894fe84e8acbe8a389186af735aad010046cf336721f13ef6b862",
+          "shots": 144,
+          "stops": {
+            "combat-or-hp": 50,
+            "inRange": 127,
+            "no-safe-heading": 157,
+            "stale-or-missing-target": 8
+          },
+          "team": "red",
+          "windowOutcome": {
+            "damageTaken": 50,
+            "deaths": 0,
+            "hits": 54,
+            "kills": 10,
+            "shots": 70
+          }
+        }
+      },
+      "censoredAny": false,
+      "eligiblePaired": true,
+      "errors": [],
+      "id": "v67-n-m4a1-12",
+      "map": "neon",
+      "naturalFourArm": true,
+      "seed": 670112,
+      "status": "PASS",
+      "triggerDistance": 68.0016,
+      "triggerTick": 926,
+      "weapon": "m4a1"
+    }
+  ],
+  "matchGroupCount": 12,
+  "missingGroups": [],
+  "naturalFourArmGroups": 12,
+  "newAndOldHoldoutsOpened": false,
+  "passGroups": 12,
+  "promotionAllowed": false,
+  "schema": "fpsarena-v67-independent-auditor-erratum-v1",
+  "triggeredGroups": 12
+}

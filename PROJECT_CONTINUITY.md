@@ -1,3 +1,19 @@
+# Current persistent checkpoint — V67 public weapon-range map acquisition
+
+- Parent research commit df89929, tag research-v66-diverse-natural-tdm. Simulator baseline still C35AJ; newer v57-v59 original source not fully recovered.
+- Separate V67 research runtime added: public weapon-effective-range far target trigger, collision-swept Direct, bounded static-map 2D A* Route and Flank; 1,050 tick movement-only intervention, base firing and aim unmodified.
+- V67 preregistered registry SHA256 3b829b193b973a9f71d3d093f763dd1c03fa1106e981b70c7d3f2df4f75f54e4, frozen before ANY fresh discovery matches.
+- Twelve new independent groups x 4 arms = 48 natural server-terminated 4v4 TDM matches. Twelve of 12 groups triggered; 12/12 independent prestate/RNG/command/public matching audit PASS, zero censored and zero engine errors.
+- Keep means: 5.67 kills, 0.42 deaths, 109 damage taken. Direct 7.67/1.08/256; Route 8.08/1.42/324; Flank 8.67/1.58/356.
+- Flank net kills delta +1.833 with group bootstrap 95% CI [+0.583,+3.167], BUT deaths +1.167 and damage +246.333 (both CIs strictly worse than Keep). Other arms also have significantly worse survival. Strict PROMOTION GATE FAIL.
+- Engineering calibration seed 441109 (excluded from training/discovery): Neon AA12 Keep zero shots and kills, Direct 2 kills/7 shots, Route 1 kill/6 shots, Flank 1 kill/7 shots, with survival tradeoffs.
+- Frozen protocol script has an audit-case Python local-variable shadowing bug: scripts/tdm_v67_acquisition.py audit raises UnboundLocalError. DO NOT edit the frozen script; audited independent additive implementation scripts/tdm_v67_independent_audit.py verifies all 48 raw matches and source hashes instead.
+- Two uninstrumented whole-natural-match controls match Keep 105/105 original metric fields. Full tests 1373/1374 PASS (one historical Windows malformed path).
+- Raw evidence all tracked in Git: 48 discovery + 4 calibration + 2 uninstrumented = 54 JSON (474543 bytes), with exact SHA manifest research/tdm-v67-locked-manifest.json.
+- No new neural critic trained, no production promotion. Classic LibreWolf, official server, original expert neural weights unchanged; 3 new sealed V67 holdouts and all prior ones remain unopened.
+- Next: V68 hazard/exposure-aware route acquisition with public enemy angles/LOS and teammate cover, on new preregistered seeds.
+
+---
 # Latest persistent checkpoint — V66 diverse full natural TDM discovery
 
 - Parent b9682cc, tag research-v65-full-natural-tdm. Research simulator baseline C35AJ, NOT fully reimported v57-v59.
