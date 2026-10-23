@@ -33,6 +33,7 @@ import {FiringCompatibleMacroC35H,C35H_POLICIES} from './firing-compatible-macro
 import {PublicFiringCorridorObserverC35I} from './public-firing-corridor-c35i.mjs';
 import {FiringCorridorCalibrationObserverC35J} from './firing-corridor-calibration-c35j.mjs';
 import {PublicTargetLOSObserverC35K} from './public-target-los-c35k.mjs';
+import {V60BranchTrial,witnessV60} from './tdm-stratified-replay-v60.mjs';
 import {BallisticTruthObserverC35L} from './ballistic-truth-c35l.mjs';
 import {PublicTrackFreshnessObserverC35O} from './public-track-freshness-c35o.mjs';
 import {PublicConfidenceObserverC35P} from './public-target-confidence-c35p.mjs';
@@ -68,6 +69,9 @@ const fullMatch=args.includes('--full-match');
 const c19Natural=args.includes('--c19-natural');
 const c20MatchedSeed=args.includes('--c20-matched-seed');
 const seed0=Number(flag('seed','20261010'));
+const v60Arm=flag('tdm-v60-arm',null),v60Stratum=String(flag('tdm-v60-stratum','range-gap'));
+if(!v60Arm&&args.includes('--tdm-v60-stratum'))throw Error('V60_ORPHAN_STRATUM');
+if(v60Arm&&(modes.length!==1||modes[0]!=='tdm'))throw Error('V60_RESEARCH_TDM_ONLY');
 const botCount=Number(flag('bots','5'));
 const traineeSkill=String(flag('trainee-skill','random'));
 const traineeThrow=String(flag('trainee-throw','frag'));
@@ -253,7 +257,7 @@ const outPath=path.resolve(String(flag('out',path.join(extRoot,'reports','ARENA_
 if(!Number.isInteger(episodes)||episodes<1||episodes>100||!Number.isFinite(seconds)||seconds<2||seconds>1200||!Number.isInteger(botCount)||botCount<1||botCount>11||!['baseline','aggressive','survival','balanced','legacy-peek','combat-first','squad-experiment','aim-0','aim-30','aim-100','aim-geom','legacy-aim','sightline-lab','dodge-lab','combined-lab','steer-650','steer-900','route-lab','strafe-lab','route-strafe','evade-lab','cover-lab','cover-evasion-lab','stance-lab','stance-cover-lab','stance-all-lab','sprint-cover-lab','sprint-all-lab','sprint-stance-lab','preemptive-lab','preemptive-evasion-lab','occluded-pursuit-lab','peek-cache-lab','macro-routing-lab','macro-target-lab','macro-actuation-lab','legacy-ads','release','macro-combat-lab','macro-covered-lab','macro-vantage-lab','macro-temporal-lab','macro-ownership-lab','macro-options-shadow-lab','macro-options-active-lab','goal-aware-shadow-lab','goal-aware-active-lab','director-shadow-lab','director-active-lab','director-safe-lab','director-opportunity-lab','director-engagement-lab','director-engagement-shadow-lab','director-engagement-trial-lab','director-engagement-probe-lab','director-engagement-frontier-lab','director-engagement-frontier-shadow-lab','director-engagement-recovery-lab','director-engagement-coverage-lab','director-engagement-exploration-lab','director-engagement-exploration-all-lab','director-engagement-episode-lab','director-engagement-episode-control-lab','director-engagement-episode-active-lab','director-main-stats-shadow-lab','director-main-stats-recovery-lab','director-ballistic-shadow-lab','director-ballistic-recovery-lab','director-motion-shadow-lab','director-motion-recovery-lab'].includes(profile))throw Error('Invalid training settings');
 for(const m of modes)if(!['tdm','snd','hp','br','zm'].includes(m))throw Error('Unknown mode '+m);
 const savedRandom=Math.random;
-function seeded(seed){let x=seed>>>0;return ()=>{x=(x+0x6D2B79F5)>>>0;let z=x;z=Math.imul(z^(z>>>15),z|1);z^=z+Math.imul(z^(z>>>7),z|61);return ((z^(z>>>14))>>>0)/4294967296;};}
+function seeded(seed){let x=seed>>>0;const next=()=>{x=(x+0x6D2B79F5)>>>0;let z=x;z=Math.imul(z^(z>>>15),z|1);z^=z+Math.imul(z^(z>>>7),z|61);return ((z^(z>>>14))>>>0)/4294967296;};next.state=()=>x;return next;}
 let virtualTime=0;
 Object.defineProperty(globalThis,'performance',{value:{now:()=>virtualTime*1000},configurable:true});
 if(!globalThis.CustomEvent)globalThis.CustomEvent=class CustomEvent extends Event {constructor(type,o){super(type);this.detail=o?.detail;}};
@@ -429,6 +433,7 @@ async function episode(mode,idx){
  const world=new ServerGame({to(){return {emit(){}};}},kind);
  world.config={mode,map:mode==='br'?'oilrig':mode==='zm'?'marsh':classicMaps[idx%classicMaps.length],sub:'resurgence'};
  const client=new HeadlessGame();const events=[];const packets=[];let seq=1;
+ const v60Trial=v60Arm&&mode==='tdm'?new V60BranchTrial({arm:v60Arm,stratum:v60Stratum,weapon:traineePrimary,seed:rseed}):null;
  const c35dRecorder=c35dTracePath?new PublicMacroTransitionRecorderC35D({matchId:`c35d-${world.config.map}-${rseed}`,setupId:c35dSetupId,seed:rseed,seconds}):null;
  const c12Recorder=c12DatasetPath?new MatchEngagementRecorderC12({matchId:`main-${mode}-${rseed}-${profile}`,mode,map:world.config.map,seed:rseed,profile}):null;
  const c14Assignment=(c31DatasetPath||c30DatasetPath||c29DatasetPath||c21DatasetPath||c22DatasetPath||c24DatasetPath)?null:c17DatasetPath?stratifiedAssignmentC17({mode,map:world.config.map,loadout:traineePrimary,seed:rseed,replicate:c17Replicate,experimentSeed:c17ExperimentSeed}):explorationDatasetPath?matchAssignmentC14(rseed,{forcedArm:c14ForcedArm}):null;
@@ -669,10 +674,13 @@ if(mode!=='br'&&mode!=='zm')trainee.setLoadout(traineePrimary,null,null,traineeT
    c35aiObserver?.beforeStep({now:virtualTime,optionRows:c35ahController.rows,activeOptionIndex:c35ahController.active?.index??null,incumbent:c35adCmd,applied:c35ahCmd,player:trainee});
    const c35abShotBefore=metrics.shots;
    const c35adHitsBefore=metrics.hits,c35adKillsBefore=metrics.ownKills,c35adDamageBefore=metrics.damageTaken;
-   world.queueInput(trainee,{...c35ahCmd,seq:seq++,ep:trainee.epoch,
+   const v60Cmd=v60Trial?v60Trial.beforeStep({tick:world.tick+1,now:virtualTime,client,command:c35ahCmd}):c35ahCmd;
+   if(v60Trial&&v60Trial.triggerTick===world.tick+1)v60Trial.setWitness(witnessV60({world,client,trainee,randomState:Math.random.state?.()}),{shots:metrics.shots,hits:metrics.hits,kills:trainee.kills,deaths:trainee.deaths,damageTaken:metrics.damageTaken});
+   world.queueInput(trainee,{...v60Cmd,seq:seq++,ep:trainee.epoch,
       yaw:client.rig.yaw,pitch:client.rig.pitch,lt:Math.max(0,world.now-snapshotLag)});
    if(c35lObserver||c35aaObserver||c35abController||c35acController||c35adController)setBallisticTruthSinkC35L(world,shot=>{if(shot.shooterId===String(trainee.id)){c35lObserver?.onShot(shot);c35aaObserver?.onShot(shot);c35abController?.onShot(shot);c35acController?.onShot(shot);c35adController?.onShot(shot);}});
    world.step();
+   v60Trial?.afterStep({tick:world.tick,shots:metrics.shots,hits:metrics.hits,kills:trainee.kills,deaths:trainee.deaths,damageTaken:metrics.damageTaken});
    c35aiObserver?.afterStep({now:virtualTime,player:trainee});
    if(c35lObserver||c35aaObserver||c35abController||c35acController||c35adController)setBallisticTruthSinkC35L(world,null);
    c35wController?.afterStep({serverShots:metrics.shots,serverHits:metrics.hits,serverKills:metrics.ownKills,serverDamageTaken:metrics.damageTaken,serverAlive:!!trainee.alive});
@@ -766,6 +774,7 @@ if(mode!=='br'&&mode!=='zm')trainee.setLoadout(traineePrimary,null,null,traineeT
  metrics.macroOptionServerEventAttributed={shots:Object.values(macroServerOptionStats).reduce((n,v)=>n+v.shots,0),
    hits:Object.values(macroServerOptionStats).reduce((n,v)=>n+v.hits,0),
    kills:Object.values(macroServerOptionStats).reduce((n,v)=>n+v.kills,0)};
+ if(v60Trial)metrics.tdmV60=v60Trial.finish();
  metrics.errors=agentErrors.length;
  if(agentErrors.length)metrics.errorMessages=agentErrors.slice(-6);
  metrics.score=trainee.score;

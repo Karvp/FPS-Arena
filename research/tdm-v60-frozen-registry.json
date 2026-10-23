@@ -1,0 +1,90 @@
+{
+  "arms": [
+    "keep",
+    "close",
+    "strafe",
+    "withdraw"
+  ],
+  "baseline": "C35AJ local, not V31 or v57",
+  "calibrationSeeds": [
+    441108,
+    441109
+  ],
+  "cases": [
+    {
+      "id": "train-neon-aa12-0",
+      "map": "neon",
+      "seed": 520001,
+      "split": "discovery",
+      "stratum": "range-gap",
+      "weapon": "aa12"
+    },
+    {
+      "id": "train-foundry-aa12-1",
+      "map": "foundry",
+      "seed": 520002,
+      "split": "discovery",
+      "stratum": "range-gap",
+      "weapon": "aa12"
+    },
+    {
+      "id": "train-arena-uzi-2",
+      "map": "arena",
+      "seed": 520003,
+      "split": "discovery",
+      "stratum": "contact",
+      "weapon": "uzi"
+    },
+    {
+      "id": "train-foundry-uzi-3",
+      "map": "foundry",
+      "seed": 520004,
+      "split": "discovery",
+      "stratum": "contact",
+      "weapon": "uzi"
+    },
+    {
+      "id": "holdout-neon-m4a1-4",
+      "map": "neon",
+      "seed": 520005,
+      "split": "holdout",
+      "stratum": "contact",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "holdout-arena-mp5sd-5",
+      "map": "arena",
+      "seed": 520006,
+      "split": "holdout",
+      "stratum": "contact",
+      "weapon": "mp5sd"
+    }
+  ],
+  "limitations": [
+    "this is deterministic replay not state cloning",
+    "partial public-state proxy from headless runner",
+    "server witness only for auditing, not for controller",
+    "aggregate WASD checks, not independent tick-by-tick audit"
+  ],
+  "protectedHash": {
+    "lab/arena/source-main/server/bot.js": "651c0bb573865c27fe7cbdf9bc7329decfdb02d55c7c8a6432ab134fa9791024",
+    "lab/arena/source-main/server/game.js": "c000e00ba7d5333b7add0ee3014346c6e38dc89bdc46a12073cb2d23e523b625",
+    "page-agent.js": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed"
+  },
+  "protocol": {
+    "failureHandling": "keep not-triggered and right-censored cases",
+    "holdoutAutomaticallyBlocked": true,
+    "noTrainingBefore": "at least 16 independent triggered groups and 8 reward/hazard-positive",
+    "researchOnly": true,
+    "unit": "seed-group",
+    "windowOutcomeTicks": 300,
+    "windowTreatmentTicks": 120
+  },
+  "schema": "fpsarena-v60-frozen-preregistered-v1",
+  "sourceHash": {
+    "lab/arena/tdm-stratified-replay-v60.mjs": "fad99f4058e29e266036b3d7daaa7db7bbd1ee5a997099385f6df6815d229c05",
+    "lab/arena/train-main.mjs": "281f534441c8927315354a786542454ddc64c9863aa0fd8ffb30308c3573b506",
+    "scripts/tdm_v60_protocol.py": "ca1ecb4014ee94d274deeb0e83e23ebe1c2bd1dcd3170ee14cbc1b6f0e969e6e",
+    "tests/tdm-v60-stratified-replay.test.mjs": "e7bcf770b3235c70e9a36249b50034f0d860d224fed0704c7ac2920a13543ef3"
+  }
+}
