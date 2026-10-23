@@ -1,0 +1,131 @@
+{
+  "arms": [
+    "keep",
+    "close",
+    "strafe",
+    "withdraw"
+  ],
+  "baseline": "C35AJ local, v61 public-combat trigger research, not V31 or v57",
+  "calibrationSeeds": [
+    441108,
+    441109
+  ],
+  "cases": [
+    {
+      "id": "v61-train-arena-uzi-aim",
+      "map": "arena",
+      "seed": 610101,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v61-train-arena-uzi-fire",
+      "map": "arena",
+      "seed": 610102,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v61-train-foundry-uzi-aim",
+      "map": "foundry",
+      "seed": 610103,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v61-train-foundry-uzi-fire",
+      "map": "foundry",
+      "seed": 610104,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v61-train-neon-aa12-fire",
+      "map": "neon",
+      "seed": 610105,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v61-train-foundry-aa12-aim",
+      "map": "foundry",
+      "seed": 610106,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "aa12"
+    },
+    {
+      "id": "v61-train-arena-mp5sd-aim",
+      "map": "arena",
+      "seed": 610107,
+      "split": "discovery",
+      "stratum": "aim-lock",
+      "weapon": "mp5sd"
+    },
+    {
+      "id": "v61-train-neon-m4a1-fire",
+      "map": "neon",
+      "seed": 610108,
+      "split": "discovery",
+      "stratum": "post-fire",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "v61-train-foundry-m4a1-damage",
+      "map": "foundry",
+      "seed": 610109,
+      "split": "discovery",
+      "stratum": "post-damage",
+      "weapon": "m4a1"
+    },
+    {
+      "id": "v61-hold-arena-uzi-fire",
+      "map": "arena",
+      "seed": 610110,
+      "split": "holdout",
+      "stratum": "post-fire",
+      "weapon": "uzi"
+    },
+    {
+      "id": "v61-hold-foundry-aa12-aim",
+      "map": "foundry",
+      "seed": 610111,
+      "split": "holdout",
+      "stratum": "aim-lock",
+      "weapon": "aa12"
+    }
+  ],
+  "limitations": [
+    "this is deterministic replay not state cloning",
+    "partial public-state proxy from headless runner",
+    "server witness only for auditing, not for controller",
+    "aggregate WASD checks, not independent tick-by-tick audit"
+  ],
+  "protectedHash": {
+    "lab/arena/source-main/server/bot.js": "651c0bb573865c27fe7cbdf9bc7329decfdb02d55c7c8a6432ab134fa9791024",
+    "lab/arena/source-main/server/game.js": "c000e00ba7d5333b7add0ee3014346c6e38dc89bdc46a12073cb2d23e523b625",
+    "page-agent.js": "6a0381159e7c726a4ce8c0122618f1e1f299c43c5734d1d07b02ae4bb56d73ed"
+  },
+  "protocol": {
+    "failureHandling": "keep not-triggered and right-censored cases",
+    "holdoutAutomaticallyBlocked": true,
+    "noTrainingBefore": "at least 16 independent triggered groups and 8 reward/hazard-positive",
+    "researchOnly": true,
+    "unit": "seed-group",
+    "windowOutcomeTicks": 480,
+    "windowTreatmentTicks": 150
+  },
+  "schema": "fpsarena-v61-frozen-preregistered-v1",
+  "sourceHash": {
+    "lab/arena/tdm-engagement-trigger-v61.mjs": "df86e1311ef5791f3d564f0eeb5ae605e887773f2096cd3d909505e5b7d35d08",
+    "lab/arena/tdm-stratified-replay-v60.mjs": "fad99f4058e29e266036b3d7daaa7db7bbd1ee5a997099385f6df6815d229c05",
+    "lab/arena/train-main-v61.mjs": "195eddbf1c3389e7a375539679addceaecb4abc41c139f7ac54f18ee7bb61657",
+    "scripts/tdm_v61_protocol.py": "d4af76d915127e44fcd4acc56d5126a069150f56708dfddb1c1139f635815042",
+    "tests/tdm-v61-engagement-trigger.test.mjs": "e45289c9784dd368de459f4dedf93a20d3d219cc91ddda36bdd57f7a526cba36"
+  }
+}

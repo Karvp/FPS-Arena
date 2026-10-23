@@ -1,0 +1,498 @@
+{
+  "allPass": true,
+  "groups": [
+    {
+      "arms": {
+        "close": {
+          "changed": 60,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "1632c87fbdb76245e6b40bf3ea43a91e5e615befbe15e89562cd706f6b182f70"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 1,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "d4c4998e3ee4f704a0725c2926c560204d91b985f92ce0beef43024af2ca4a01"
+        },
+        "strafe": {
+          "changed": 106,
+          "finalDeaths": 0,
+          "finalKills": 8,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "85addf24d227d55f795ee8c3f8988534bce283b1994134b7ff6db5477bddd411"
+        },
+        "withdraw": {
+          "changed": 81,
+          "finalDeaths": 0,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "7787cf96f734f98090735379676cdc929ef056b8e456de41dc3c1c025984d4ef"
+        }
+      },
+      "changedArms": 3,
+      "event": false,
+      "id": "v61-train-arena-uzi-aim",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1626
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 2,
+          "finalDeaths": 0,
+          "finalKills": 1,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "a5b09619b98b5c4603bf79bed6fde8d747ecee5bcc27029d64f6e814fb868a18"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "88a09fbbebbe5bec9ea19f8af210a09df0ebbe658c6d35a0aea21ee2db2857a4"
+        },
+        "strafe": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "7d65a0ce6e1a6d1d6e0544725785e3fa4793f128ede6c837850be3c56ad16cdf"
+        },
+        "withdraw": {
+          "changed": 2,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "07829b6676c21d8062ce39fb8e468aa845bb354f28ddc7055b071abd04806005"
+        }
+      },
+      "changedArms": 2,
+      "event": false,
+      "id": "v61-train-arena-uzi-fire",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 3546
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 84,
+          "finalDeaths": 1,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 0,
+            "shots": 7
+          },
+          "sha256": "b437157b8410c2b1e7dac122f0b09f88de7a15f2e8838d31e1bd79cec42d0c8e"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 0,
+            "shots": 5
+          },
+          "sha256": "53748349f70fe338e6e2b4feaa9ec945977eec66e0849f72c4ae055bb382d68a"
+        },
+        "strafe": {
+          "changed": 149,
+          "finalDeaths": 0,
+          "finalKills": 3,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 1,
+            "kills": 0,
+            "shots": 1
+          },
+          "sha256": "90af529acd7394b91cef80ad880dec8cddd2846a725754560a73b4ee0c02ded4"
+        },
+        "withdraw": {
+          "changed": 16,
+          "finalDeaths": 0,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 3,
+            "kills": 1,
+            "shots": 6
+          },
+          "sha256": "c256e50a9e5b7b5a438b823228a6e049d20410f36065a8a4c48c45f5151a03df"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v61-train-foundry-uzi-aim",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1290
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 101,
+          "finalDeaths": 1,
+          "finalKills": 2,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "f0d211a27b8662fc9ac13ff3fc8eb449e5cfbf14923953b088789aee0c9b068f"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 5,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 0,
+            "shots": 5
+          },
+          "sha256": "1d1d48937b16c12e63034e73f3dc6fd50337e165eeeb8bf0a0e20753e8a9be3b"
+        },
+        "strafe": {
+          "changed": 42,
+          "finalDeaths": 1,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 23,
+            "deaths": 0,
+            "hits": 5,
+            "kills": 1,
+            "shots": 5
+          },
+          "sha256": "f2beb625c469d3adf05647dbf65e4b14de757d986a4c2d37360b4c30fd2c1d4e"
+        },
+        "withdraw": {
+          "changed": 150,
+          "finalDeaths": 1,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 0,
+            "kills": 0,
+            "shots": 0
+          },
+          "sha256": "24062d6afa172f1a67c52589037b9a971285e7f271a6845a0d18849d2f9b6937"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v61-train-foundry-uzi-fire",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1248
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": null,
+          "sha256": "59c15db5ca9b73bf5689e4d8fb310fc63532a5b1627e14fdff211b3454cf357e"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": null,
+          "sha256": "ae1d6236bda3e10ef5fbc298c85e495c62e7a5b939a48b1236b2b72b64d0ec2b"
+        },
+        "strafe": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": null,
+          "sha256": "da24e554627cb99f937d33aa9963bbb29bc456f3c3e75d6a124c8f4e9cfaf46e"
+        },
+        "withdraw": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": null,
+          "sha256": "63060d8fa9c3384c11bff81acaf89bf2268e9014d46fb93ce689ed9a6b43b0fe"
+        }
+      },
+      "changedArms": 0,
+      "event": false,
+      "id": "v61-train-neon-aa12-fire",
+      "issues": [],
+      "status": "PASS",
+      "trigger": null
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": null,
+          "sha256": "81ffee68fb345f4b4f44a526bed09f1674fe55904f549adec914f23e1d844505"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": null,
+          "sha256": "3e2ecf6b2999f784ef3dc2d2ce3da253e997daf440c54cff180f3f5251d75d2b"
+        },
+        "strafe": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": null,
+          "sha256": "558799c331020e532c9fec6ffc3853aa4cfe0be62ea5dbfdd62b538b6a23e648"
+        },
+        "withdraw": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": null,
+          "sha256": "25ef147e84294968d9c73779bc656098bf735ab47043db87b49c8b5689b38233"
+        }
+      },
+      "changedArms": 0,
+      "event": false,
+      "id": "v61-train-foundry-aa12-aim",
+      "issues": [],
+      "status": "PASS",
+      "trigger": null
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 69,
+          "finalDeaths": 0,
+          "finalKills": 7,
+          "outcome": {
+            "damageTaken": 27,
+            "deaths": 0,
+            "hits": 13,
+            "kills": 2,
+            "shots": 21
+          },
+          "sha256": "7a9c472c8e2b5e3b53ae46e67e6bc3ffea2814e979ae45261ddb60e541cf9717"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 0,
+          "outcome": {
+            "damageTaken": 50,
+            "deaths": 0,
+            "hits": 6,
+            "kills": 0,
+            "shots": 7
+          },
+          "sha256": "4b94c801da6747e02ff3339b55e1aa61e5ba26a1ca87c4642461d124247f462c"
+        },
+        "strafe": {
+          "changed": 36,
+          "finalDeaths": 0,
+          "finalKills": 8,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 6,
+            "kills": 1,
+            "shots": 11
+          },
+          "sha256": "efbf7fec351de929aff2c80f40bccc094e7c1ca83ae15f692a4604efb4e8a6a8"
+        },
+        "withdraw": {
+          "changed": 150,
+          "finalDeaths": 0,
+          "finalKills": 4,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 1,
+            "shots": 3
+          },
+          "sha256": "05ef8f42b318ed6167f20440bd7e8bc9b0f0085b24a7e8b8d113e8b811663abf"
+        }
+      },
+      "changedArms": 3,
+      "event": true,
+      "id": "v61-train-arena-mp5sd-aim",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 1596
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 10,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 0,
+            "shots": 2
+          },
+          "sha256": "0bb107d9595e8982fe1bd404e3c7a77c3939f73065f515be6f206b26f78ea6ef"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 0,
+          "finalKills": 10,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 0,
+            "shots": 2
+          },
+          "sha256": "25b95a8df165362f229209ac1ad350f08f14410a13a7dd0390f8f4b9fa5f4b91"
+        },
+        "strafe": {
+          "changed": 3,
+          "finalDeaths": 0,
+          "finalKills": 11,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 0,
+            "shots": 2
+          },
+          "sha256": "c603ba1bfcfe19267c21f8c5ebf3e76b4f8680c9bef7c34174388f4f4a965e30"
+        },
+        "withdraw": {
+          "changed": 3,
+          "finalDeaths": 0,
+          "finalKills": 14,
+          "outcome": {
+            "damageTaken": 0,
+            "deaths": 0,
+            "hits": 2,
+            "kills": 0,
+            "shots": 2
+          },
+          "sha256": "ce999d985e3c78d3cc6ab082c0e3013ecbed0956d5f363a678ce27555505ca2e"
+        }
+      },
+      "changedArms": 2,
+      "event": false,
+      "id": "v61-train-neon-m4a1-fire",
+      "issues": [],
+      "status": "PASS",
+      "trigger": 2286
+    },
+    {
+      "arms": {
+        "close": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 14,
+          "outcome": null,
+          "sha256": "7655e738681372533eaf1439cdb642adf93a4d3ad006b8eab3b181242adc4364"
+        },
+        "keep": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 14,
+          "outcome": null,
+          "sha256": "1ec69645bebdf49cd88c970fbb5751b4cbcd2d216a64921243b6a7715374eeb7"
+        },
+        "strafe": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 14,
+          "outcome": null,
+          "sha256": "8507b5ac56cd75d5e8d46de5d72463cfe029423487da2f8bb77638d8a0d538a1"
+        },
+        "withdraw": {
+          "changed": 0,
+          "finalDeaths": 1,
+          "finalKills": 14,
+          "outcome": null,
+          "sha256": "73ff0c73c01769ed890bc05e765e55f6d2ed7550ca43c7b9b42832c608ed23a3"
+        }
+      },
+      "changedArms": 0,
+      "event": false,
+      "id": "v61-train-foundry-m4a1-damage",
+      "issues": [],
+      "status": "PASS",
+      "trigger": null
+    }
+  ],
+  "groupsCompleted": 9,
+  "hazardRewardGroups": 3,
+  "holdoutOpened": false,
+  "noPromotion": true,
+  "registrySha256": "acfb1841939aa36e1e18014cb50ad4bafe6077c2918dcd214e4f12ab194773f4",
+  "schema": "fpsarena-v61-independent-group-audit-v1",
+  "triggered": 6
+}
