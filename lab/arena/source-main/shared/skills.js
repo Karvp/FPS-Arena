@@ -17,7 +17,7 @@ export const SKILLS = {
     mark: 3, heavy: { move: 0.5, rate: 0.5, duration: 3 }, debuff: { move: 0.15, rate: 0.15, duration: 17, cleanse: 3 },
     ally: { heal: 50, duration: 6, rate: 0.2, move: 0.2, regenHp: 1, regenAr: 1, regenEvery: 0.1 },
     desc: 'Cast a huge green wave that passes through walls and players for 80 m. Enemies are marked for 3 s (your team sees them) and for those 3 s take a heavy debuff: -50 % movement, handling and fire rate. After that they keep a -15 % debuff for 17 s (hold F for 3 s to remove it). You and your teammates hit by the wave recover 50 health at once and get +20 % movement, handling and fire rate for 6 s, plus health and armor recovery.' },
-  kupi:   { id: 'kupi',   name: 'Iphone Kupi',    cost: 80, duration: 30, volume: 1, audio: 'assets/audio/kupiaudio.mp3', deathAudio: 'assets/audio/ggfuggingez.mp3', desc: 'Plays the Kupi audio loudly for EVERY player for 30 s. The file is kupiaudio.mp3; anyone who dies during those 30 s hears ggfuggingez.mp3 (the defeated player only).' },
+  kupi:   { id: 'kupi',   name: 'Iphone Kupi',    cost: 80, duration: 30, volume: 1, audio: 'assets/audio/kupi-tone.wav', deathAudio: 'assets/audio/kupi-eliminated.wav', desc: 'Plays the Kupi audio loudly for EVERY player for 30 s. The file is kupiaudio.mp3; anyone who dies during those 30 s hears ggfuggingez.mp3 (the defeated player only).' },
 };
 export const SKILL_LIST = Object.keys(SKILLS);
 export const MOVE_SKILLS = ['hook', 'pad', 'grav'];                 // skills executed by the shared movement code (prediction + server)

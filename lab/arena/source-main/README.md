@@ -1,4 +1,6 @@
 # FPS ARENA – browser multiplayer FPS (Three.js + Node + Express + Socket.IO)
+**Portfolio edition (2026-10):** Weapons and attachments use generated geometric substitutes. Two original synthesized sound cues replace the archived sound effects. Run `npm ci`, `npm run check`, `npm test` and `npm run smoke` to validate this version.
+
 
 ## Run
 ```
@@ -45,7 +47,7 @@ All numbers live in `shared/skills.js` (SKILLS / THROWABLES). Kill-based bonuses
 | Electromagnetic Machinecannon 2nd Model | 100 | hand cannon, 2 rounds: red laser (150 dmg, 1 m hit-box padding) through walls AND through every enemy on its line; trigger = 200 ms aim lock, then it fires. Enemies within 50 m are marked (for you only) until the skill ends; marked players see "EM2 active" |
 | Warmonger Activation Kit | 75 | 2 s charge (move only), then 15 s of +10 % movement/handling, +5 % fire rate, 25 % lifesteal and 35 % less damage taken; each kill +5 s and +5 % of each bonus (reset when it ends). Everybody sees a big red glint on you |
 | Therapeutic Undulating Module | 35 | green wave (13.5 x 4.5 m, 22 m/s, 80 m, fades over the last 10 m) through walls and players. Enemies: marked 3 s (your team sees it) with a heavy -50 % movement/handling/fire rate debuff during those 3 s, then -15 % for 17 s (hold **F** 3 s to remove; the heavy phase cannot be removed). You and teammates hit by the wave: +50 health at once, +20 % fire rate/movement/handling for 6 s, +1 hp and +1 armor per 0.1 s |
-| Iphone Kupi | 80 | `assets/audio/kupiaudio.mp3` loudly for every player for 30 s; a player who dies in that window hears `assets/audio/ggfuggingez.mp3` (only them). **Both files must be added to `assets/audio/`** |
+| Iphone Kupi | 80 | `assets/audio/kupi-tone.wav` loudly for every player for 30 s; a player who dies in that window hears `assets/audio/kupi-eliminated.wav` (only them). **Two original synthesized electronic cues are included in this portfolio edition.** |
 
 ## Throwables (G)
 Choose one in LOADOUT → THROWABLES (Classic starts with 2; Battle Royale / Zombies crates drop them, max 4). Grenades fly ~30 m/s, the rest ~25 m/s.

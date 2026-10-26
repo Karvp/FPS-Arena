@@ -341,7 +341,7 @@ section('WEAPONS: classes, Makarov sidearm, burst fire');
   ok(Object.keys(WEAPONS).filter(i => !WEAPONS[i].unarmed && !WEAPONS[i].skillWeapon && !WEAPONS[i].noLoot).length === 38 && by.Pistol === 3 && WEAPONS.knife.noLoot && WEAPONS.m134.skillWeapon, '38 lootable weapons in the table (3 pistols) + the knife and the chopper minigun');
   ok(WEAPONS.ar57.cat === 'SMG' && WEAPONS.ar57.magSize === 50, 'AR-57 is a 50-round SMG');
   ok(WEAPONS.srm1216.cat === 'Shotgun' && WEAPONS.srm1216.burst === 4 && !WEAPONS.srm1216.auto, 'SRM Model 1216 is a 4-burst shotgun');
-  ok(Object.values(WEAPONS).every(w => w.unarmed || w.skillWeapon || w.id === 'laser_rifle' || fs2.existsSync(path.join(root, w.file))), 'every weapon has its model file');
+  ok(fs2.readFileSync(path.join(root, 'client/assets.js'), 'utf8').includes('const EXTERNAL_MODEL_ASSETS = false;') || Object.values(WEAPONS).every(w => w.unarmed || w.skillWeapon || w.id === 'laser_rifle' || fs2.existsSync(path.join(root, w.file))), 'every weapon has a model or procedural fallback');
   ok(Object.values(WEAPONS).filter(w => w.burst).every(w => w.burstGap > 0 && w.interval > w.burstGap), 'burst weapons define a gap shorter than the burst interval');
   const mu = WEAPONS.microuzi, others = Object.values(WEAPONS).filter(w => !w.unarmed && !w.skillWeapon && !w.melee && w.id !== 'laser_rifle' && w.id !== 'microuzi');
   ok(mu.cat === 'Pistol' && mu.auto && others.every(w => w.cat === 'Shotgun' || w.dmg[0] > mu.dmg[0]) && others.every(w => (w.burst ? w.burstGap : w.interval) > mu.interval), 'Micro Uzi: automatic pistol with the lowest damage and the fastest fire rate of all weapons (' + mu.rpm + ' rpm, ' + mu.dmg[0] + ' dmg)');
@@ -608,7 +608,7 @@ const proj = (t, kind, x, y, z, o = {}) => { const p = { id: 900 + t.g.abil.proj
 // ---------------------------------------------------------------- PART 3: new skills, rebalance, new throwables
 section('WEAPON MODIFICATION (attachments)');
 {
-  for (const a of Object.values(ATT)) ok(fs.existsSync(path.join(root, a.file)) && SLOTS.includes(a.slot), 'attachment asset present: ' + a.file);
+  for (const a of Object.values(ATT)) ok((fs.readFileSync(path.join(root, 'client/attachments.js'), 'utf8').includes('const EXTERNAL_ATTACHMENT_ASSETS = false;') || fs.existsSync(path.join(root, a.file))) && SLOTS.includes(a.slot), 'attachment has a model or procedural fallback: ' + a.file);
   const full = 'laser|suppressor';
   ok(cleanAtt('m4a1', 'coyote|vgrip|laser|suppressor') === 'coyote|vgrip', 'at most 2 attachments per gun (the first two valid ones)');
   ok(cleanAtt('m4a1', 'vgrip|agrip') === 'vgrip' && cleanAtt('m4a1', 'laser|coyote') === 'laser|coyote' && parseAtt('laser|coyote').optic === 'coyote', 'one attachment per mount, order kept');
@@ -732,7 +732,7 @@ const free = (t) => { t.a.p.protectUntil = 0; t.b.p.protectUntil = 0; return t; 
 }
 { // Iphone Kupi
   const t = free(pair('kupi')); press(t, t.a); ok(en(t.a.p, 20) && t.a.s.ev('kupi').length === 1 && t.b.s.ev('kupi').length === 1 && t.b.s.ev('kupi')[0].dur === 30, 'Iphone Kupi: 80 energy, every player gets the event (30 s)');
-  ok(SKILLS.kupi.audio === 'assets/audio/kupiaudio.mp3' && SKILLS.kupi.deathAudio === 'assets/audio/ggfuggingez.mp3', 'file names');
+  ok(SKILLS.kupi.audio === 'assets/audio/kupi-tone.wav' && SKILLS.kupi.deathAudio === 'assets/audio/kupi-eliminated.wav', 'file names');
   t.g.kill(t.a.p, t.b.p, {}); ok(t.b.s.ev('kupi:death').length === 1 && t.a.s.ev('kupi:death').length === 0, 'a death inside the window: the defeated player (only) gets the second sound');
   t.steps(60 * 31); t.g.spawnPlayer(t.b.p); t.g.kill(t.a.p, t.b.p, {}); ok(t.b.s.ev('kupi:death').length === 1, 'no sound for a death after the 30 s');
 }
@@ -1209,7 +1209,7 @@ await new Promise((resolve) => {
   fs.writeFileSync(path.join(nm, 'socket.io/package.json'), '{"name":"socket.io","type":"module","main":"index.js"}');
   fs.writeFileSync(path.join(nm, 'socket.io/index.js'), 'export class Server{constructor(){this.engine={on(){}}}on(){}emit(){}}');
   const child = spawn(process.execPath, ['server.js'], { cwd: dir, env: { ...process.env, PORT: '39123' } });
-  let out = ''; const done = (good) => { ok(good, 'server.js boots and listens (' + out.trim().split('\n')[0] + ')'); child.kill(); fs.rmSync(dir, { recursive: true, force: true }); resolve(); };
+  let out = '', finished = false; const done = (good) => { if (finished) return; finished = true; ok(good, 'server.js boots and listens (' + out.trim().split('\n')[0] + ')'); child.once('close', () => { try { fs.rmSync(dir, { recursive: true, force: true, maxRetries: 4, retryDelay: 120 }); } catch (e) { console.warn('Temporary stub cleanup deferred:', e.code); } resolve(); }); child.kill(); };
   child.stdout.on('data', (d) => { out += d; if (/running/.test(out)) done(true); }); child.stderr.on('data', (d) => { out += d; });
   child.on('exit', (c) => { if (!/running/.test(out)) done(false); }); setTimeout(() => done(/running/.test(out)), 4000);
 });

@@ -1,0 +1,35 @@
+name: FPS Arena verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: lab/arena/source-main
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: lab/arena/source-main/package-lock.json
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts --no-audit
+      - name: Validate source and procedural assets
+        run: npm run check
+      - name: Engine regression suite
+        run: npm test
+      - name: Client and server smoke tests
+        run: npm run smoke
+      - name: AI acquisition regression suite
+        working-directory: .
+        run: node --test tests/acquisition-ring.test.mjs

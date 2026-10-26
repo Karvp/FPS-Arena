@@ -20,6 +20,18 @@ const NORM = {
   suppressor: { yaw: 0,   fit: ['z', 0.2],   mount: 'rear' },
 };
 const loader = new GLTFLoader();
+// Portfolio build excludes unverified third-party GLB assets.
+const EXTERNAL_ATTACHMENT_ASSETS = false;
+function proceduralAttachment(id) {
+  // Plain primitives replace archived third-party model files.
+  const geom = id === 'suppressor' ? new THREE.CylinderGeometry(0.018, 0.018, 0.17, 12)
+    : new THREE.BoxGeometry(0.045, 0.035, 0.09);
+  const material = new THREE.MeshStandardMaterial({ color: 0x394958, metalness: 0.35, roughness: 0.65 });
+  const mesh = new THREE.Mesh(geom, material);
+  if (id === 'suppressor') mesh.rotation.x = Math.PI / 2;
+  const group = new THREE.Group(); group.add(mesh);
+  return group;
+}
 const store = new Map(), inflight = new Map(), listeners = new Set();
 export const onAttLoaded = (fn) => { listeners.add(fn); return () => listeners.delete(fn); };
 export const attLoaded = (id) => store.has(id);
@@ -40,6 +52,14 @@ function normalize(id, scene) {
 }
 export function loadAttachment(id) {
   if (!ATT[id]) return Promise.resolve(null);
+  if (!EXTERNAL_ATTACHMENT_ASSETS) {
+    if (!inflight.has(id)) {
+      store.set(id, normalize(id, proceduralAttachment(id)));
+      inflight.set(id, Promise.resolve());
+      listeners.forEach(fn => fn(id));
+    }
+    return inflight.get(id);
+  }
   if (!inflight.has(id)) inflight.set(id, loader.loadAsync('/' + ATT[id].file).then((g) => {
     store.set(id, normalize(id, g.scene)); console.log(`[ATTACH] LOADED: ${id}`); listeners.forEach(f => f(id));
   }).catch((e) => { console.error(`[ATTACH] FAILED: ${id} / ${e && e.message ? e.message : e}`); }));

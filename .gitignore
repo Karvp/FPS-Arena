@@ -17,3 +17,7 @@ node_modules/
 *.tmp
 .DS_Store
 Thumbs.db
+
+# External model art is not licensed for redistribution here.
+lab/arena/source-main/assets/models/*.glb
+lab/arena/source-main/assets/attachments/*.glb

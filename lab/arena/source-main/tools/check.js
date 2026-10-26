@@ -16,12 +16,14 @@ notes.push(`syntax OK for ${files.length} JS files`);
 
 // 2. weapon assets
 const { WEAPONS } = await import('../shared/weapons.js');
+const PROCEDURAL_WEAPONS = fs.readFileSync(path.join(root, 'client/assets.js'), 'utf8').includes('const EXTERNAL_MODEL_ASSETS = false;');
+const PROCEDURAL_ATTACHMENTS = fs.readFileSync(path.join(root, 'client/attachments.js'), 'utf8').includes('const EXTERNAL_ATTACHMENT_ASSETS = false;');
 let n = 0;
-for (const w of Object.values(WEAPONS)) { if (w.id === 'laser_rifle' || w.unarmed || w.skillWeapon) continue; if (!fs.existsSync(path.join(root, w.file))) err(`missing asset ${w.file}`); else n++; }
-notes.push(`${Object.keys(WEAPONS).length} weapons, ${n} GLB assets present (laser_rifle is procedural)`);
+for (const w of Object.values(WEAPONS)) { if (w.id === 'laser_rifle' || w.unarmed || w.skillWeapon) continue; if (!PROCEDURAL_WEAPONS && !fs.existsSync(path.join(root, w.file))) err(`missing asset ${w.file}`); else n++; }
+notes.push(`${Object.keys(WEAPONS).length} weapons, ${PROCEDURAL_WEAPONS ? 'procedural 3D meshes (no external GLB)' : n + ' GLB assets'} configured`);
 const { ATT } = await import('../shared/attachments.js');
-let na = 0; for (const a of Object.values(ATT)) { if (!fs.existsSync(path.join(root, a.file))) err(`missing attachment asset ${a.file}`); else na++; }
-notes.push(`${na} attachment models present`);
+let na = 0; for (const a of Object.values(ATT)) { if (!PROCEDURAL_ATTACHMENTS && !fs.existsSync(path.join(root, a.file))) err(`missing attachment asset ${a.file}`); else na++; }
+notes.push(`${PROCEDURAL_ATTACHMENTS ? 'Procedural attachments' : na + ' attachment models'} present`);
 
 // 2b. recorded audio used by skills (Iphone Kupi). Missing files do not break the game (the client reports them loudly), so this is a WARNING, not an error.
 const { SKILLS } = await import('../shared/skills.js');

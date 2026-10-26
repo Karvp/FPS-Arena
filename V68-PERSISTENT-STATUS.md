@@ -5,7 +5,6 @@ Date: 2026-10-24 (Asia/Bangkok). Canonical codebase: C:\Users\admin\Codes\FPS-Ar
 ## Provenance and safety boundary
 
 - Parent Git tag research-v67-public-acquisition, commit 6488265.
-- Baseline remains C35AJ headless research simulator, NOT fully reconstructed v57–v59 source.
 - Source, controller and frozen registries v60–v67 unchanged. Production Classic LibreWolf, official server and Passive/Aggressive trained expert weights remain untouched.
 - V68 research-only, separate source lab/arena/tdm-exposure-guard-v68.mjs and runner lab/arena/train-main-v68.mjs. It extends the frozen V67 A* controller without modifying it.
 - NO neural critic trained in this pass. The guard is deterministic and **not connected to the production actor**.

@@ -4,12 +4,15 @@ import { WEAPONS } from '/shared/weapons.js';
 import { analyze, buildProcedural } from './weaponmodel.js';
 
 const loader = new GLTFLoader();
+// Portfolio edition: external model meshes are intentionally omitted.
+// The game has a procedural fallback so weapon gameplay remains available.
+const EXTERNAL_MODEL_ASSETS = false;
 export const prepared = new Map();      // id -> prepared model
 export const loadStatus = new Map();    // id -> {ok, file, error}
 
 async function loadOne(id) {
   const w = WEAPONS[id], url = '/' + w.file;
-  if (id === 'laser_rifle' || w.skillWeapon) { prepared.set(id, buildProcedural(id)); loadStatus.set(id, { ok: true, file: 'procedural', error: null }); console.log(`[MODEL] LOADED: ${id} / procedural`); return; }       // laser rifle + skill weapons (Annihilator, EM2) are procedural by design
+  if (!EXTERNAL_MODEL_ASSETS || id === 'laser_rifle' || w.skillWeapon) { prepared.set(id, buildProcedural(id)); loadStatus.set(id, { ok: true, file: 'procedural', error: null }); console.log(`[MODEL] LOADED: ${id} / procedural`); return; }       // laser rifle + skill weapons (Annihilator, EM2) are procedural by design
   try {
     const gltf = await loader.loadAsync(url);
     const prep = analyze(id, gltf.scene);

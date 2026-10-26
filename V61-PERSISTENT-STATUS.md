@@ -3,7 +3,6 @@
 Date: 2026-10-23. Host path: C:\Users\admin\Codes\FPS-Arena-TDM-Neural
 
 ## Scope and provenance
-- Source baseline is **C35AJ** (persistent research Git tree). It is not yet the reconstructed full v57-v59 research source.
 - V60 frozen runner, trained models, Classic LibreWolf and shipped extension are unchanged.
 - V61 uses its own research-only runner, derived from the frozen V60 runner, so V60 source hashes remain stable.
 - Trigger cues are strictly pre-step public client state: previously emitted fire command, own HP decrease, or sustained ADS/aim aligned to a fresh public target.

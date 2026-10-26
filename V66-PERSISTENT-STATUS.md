@@ -6,7 +6,6 @@ C:\Users\admin\Codes\FPS-Arena-TDM-Neural
 ## Provenance and frozen boundaries
 
 - Parent Git checkpoint: b9682cc, tag research-v65-full-natural-tdm.
-- Simulator research baseline is **C35AJ**, NOT a complete v57–v59 reconstruction. V66 reuses **unchanged, frozen** v64 command runner and v65 match auditor. No gameplay or shipped neural changes.
 - Production Classic LibreWolf extension, official server engine, bot source, and Passive/Aggressive weights are unchanged.
 - Earlier v60–v65 source/registry hashes verified. Public before-step target/teammate/geometry and WASD-only 150-tick interventions; authoritative prestate/RNG are matching witnesses, not actor inputs.
 
